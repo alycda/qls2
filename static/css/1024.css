@@ -6,15 +6,9 @@
     margin: 0 auto
 }
 
-.content {
-    width: 650px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 150px;
-    border: 1px solid #000;
-
-}
+/*.content {*/
+    /*width: 650px;*/
+/*}*/
 
 .right-dock {
     width: 225px;

@@ -7,6 +7,7 @@ $(document).ready(function() {
     var $container = $('#tiles');
     // initialize
     $container.masonry({
+        isResizeBound: false,
         columnWidth: 1,
         itemSelector: '.tile'
     });
