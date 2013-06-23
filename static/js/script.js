@@ -16,5 +16,8 @@ $(document).ready(function() {
 
     $container.masonry('unbindResize');
 
+    $(window).resize(function() {
+        $('.content').width($('html').width() - 400)
+    })
 
 });
