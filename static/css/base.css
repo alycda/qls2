@@ -98,10 +98,16 @@ body {
 #tiles {
     position: relative;
     z-index: -1;
-    top: 34px;
+    top: 100%;
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
+    -webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out;
+
 }
 
 .tile.t1, .tile.t7 {

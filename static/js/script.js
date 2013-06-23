@@ -7,8 +7,11 @@ $(document).ready(function() {
     var $container = $('#tiles');
     // initialize
     $container.masonry({
-        isResizeBound: false,
         columnWidth: 1,
         itemSelector: '.tile'
     });
+
+    $container.masonry('unbindResize');
+
+    $('#tiles').css('top', 0);
 });
