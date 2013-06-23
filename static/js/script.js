@@ -6,14 +6,15 @@ $(document).ready(function() {
 
     var $container = $('#tiles');
     // initialize
-    $container.masonry({
-        columnWidth: 1,
-        itemSelector: '.tile'
+    $container.imagesLoaded( function(){
+        $('#tiles').css('top', 0);
+        $container.masonry({
+            columnWidth: 1,
+            itemSelector: '.tile'
+        });
     });
 
     $container.masonry('unbindResize');
 
-    $('#tiles').masonry();
 
-//    $('#tiles').css('top', 0);
 });
