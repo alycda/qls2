@@ -19,7 +19,7 @@ body {
 .left-dock {
     height: 100%;
     width: 150px;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     position: absolute;
     top: 0;
     left: 0;
@@ -34,7 +34,7 @@ body {
     position: absolute;
     top: 0;
     left: 150px;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -42,11 +42,15 @@ body {
 .right-dock {
     width: 225px;
     height: 100%;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     position: absolute;
     top: 0;
-    left: 1027px;
+    left: 1020px;
     background: #c2d9d0;
+    -moz-box-shadow: 0px 0px 15px #000;
+    -webkit-box-shadow: 0px 0px 15px #000;
+    box-shadow: 0px 0px 15px #000;
+
 }
 
 .nav {
@@ -61,7 +65,7 @@ body {
     display: block;
     width: 150px;
     height: 42px;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     line-height: 42px;
     font-family: 'Open Sans Bold', sans-serif;
     background: #e0b66a;
@@ -148,4 +152,8 @@ body {
     padding: 15px;
     font-size: 15px;
 
+}
+
+.weather {
+    margin-top: 20px;
 }
