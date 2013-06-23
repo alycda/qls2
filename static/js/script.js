@@ -13,5 +13,7 @@ $(document).ready(function() {
 
     $container.masonry('unbindResize');
 
+    $container.masonry('reloadItems');
+
     $('#tiles').css('top', 0);
 });
