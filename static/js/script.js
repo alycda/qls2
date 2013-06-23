@@ -15,5 +15,5 @@ $(document).ready(function() {
 
     $container.masonry('reloadItems');
 
-    $('#tiles').css('top', 0);
+//    $('#tiles').css('top', 0);
 });

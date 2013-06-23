@@ -99,7 +99,7 @@ body {
 #tiles {
     position: relative;
     z-index: -1;
-    top: 100%;
+    top: 0;
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
