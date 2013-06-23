@@ -1,12 +1,12 @@
-* {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
     padding: 0;
+}
+
+.nav li a {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .wrapper {
@@ -23,6 +23,9 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    -moz-box-shadow: 0px 0px 15px #000;
+    -webkit-box-shadow: 0px 0px 15px #000;
+    box-shadow: 0px 0px 15px #000;
 }
 
 .content {
@@ -32,7 +35,8 @@ body {
     top: 0;
     left: 150px;
     border: 1px solid #000;
-
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .right-dock {
@@ -73,4 +77,49 @@ body {
 .nav li a:hover {
     width: 170px;
     padding-left: 40px;
+}
+
+.nav li.latifah a {
+    background: #e18367
+}
+
+.filter {
+    width: 877px;
+    background: #b8c9be;
+    height: 34px;
+    position: fixed;
+}
+
+#tiles {
+    position: relative;
+    z-index: -1;
+    top: 34px;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.tile.t1, .tile.t7 {
+    width: 292px;
+    overflow: hidden;
+}
+
+.tile.t2 {
+    width: 348px;
+    overflow: hidden;
+}
+
+.tile.t3, .tile.t9, .tile.t6 {
+    width: 225px;
+    overflow: hidden;
+}
+
+.tile.t4, .tile.t10, .tile.t8 {
+    width: 165px;
+    overflow: hidden;
+}
+
+.tile.t5, .tile.t11 {
+    width: 183px;
+    overflow: hidden;
 }
