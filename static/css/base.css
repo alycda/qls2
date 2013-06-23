@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1250px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto
+}
+
+.left-dock {
+    height: 100%;
+    width: 149px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    width: 877px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    border: 1px solid #000;
+
+}
+
+.right-dock {
+    width: 225px;
+    height: 100%;
+    border: 1px solid #000;
+    position: absolute;
+    top: 0;
+    left: 1028px;
+}
