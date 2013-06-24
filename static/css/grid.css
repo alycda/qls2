@@ -314,7 +314,7 @@
     .pure-hidden-desktop    {}
     .pure-visible-desktop   { display: none; }
     .pure-u-1-8 {width: 20%;height: 100px;}
-    .wide {width: 40%;}
+    .wide {width: 33.3334%;}
     .tall {height: 200px}
 }
 

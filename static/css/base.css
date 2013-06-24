@@ -27,6 +27,7 @@ body {
     -webkit-box-shadow: 0px 0px 15px #000;
     box-shadow: 0px 0px 15px #000;
     background: #e8e7e3;
+
 }
 
 .content {
@@ -73,23 +74,84 @@ body {
     background: #e0b66a;
     color: #fff;
     letter-spacing: 1pt;
-    padding-left: 20px;
+    text-align: center;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -ms-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
+    text-decoration: none;
 }
+.nav .living a{
+    /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(left, #e0b66a 0%, #b39359 100%);
 
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(left, #e0b66a 0%, #b39359 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(left, #e0b66a 0%, #b39359 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #e0b66a), color-stop(1, #b39359));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(left, #e0b66a 0%, #b39359 100%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to right, #e0b66a 0%, #b39359 100%);
+}
+.nav .learning a{
+    /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(left, #b39359 0%, #e0b66a 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(left, #b39359 0%, #e0b66a 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(left, #b39359 0%, #e0b66a 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #b39359), color-stop(1, #e0b66a));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(left, #b39359 0%, #e0b66a 100%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to right, #b39359 0%, #e0b66a 100%);
+}
+.nav .latifah a{
+    /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #e18367), color-stop(1, #aa634e));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to right, #e18367 0%, #aa634e 100%);
+}
 .nav li a:hover {
     width: 170px;
     padding-left: 40px;
 }
-
-.nav li.latifah a {
-    background: #e18367
+.nav .icon {
+    margin-top: -2px;
+    margin-right: 5px;
 }
-
+.nav .arrow {
+    position: absolute;
+    right: 5px;
+    top: 14px;
+}
 .filter {
     width: 877px;
     background: #b8c9be;
