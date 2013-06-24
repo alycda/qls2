@@ -153,7 +153,7 @@ body {
     top: 14px;
 }
 .filter {
-    width: 877px;
+    width: 100%;
     background: #b8c9be;
     height: 34px;
     position: fixed;
