@@ -227,3 +227,21 @@ body {
 .weather {
     margin-top: 20px;
 }
+
+.daily {
+    background: url(/images/doobie.png);
+    width: 226px;
+    height: 41px;
+    font-family: 'Glegoo', "Times New Roman";
+    font-size: 13px;
+}
+
+.daily a {
+    text-decoration: none;
+    width: 50%;
+    text-align: center;
+    display: block;
+    float: left;
+    color: #222;
+    margin:10px 0
+}
