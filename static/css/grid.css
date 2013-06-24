@@ -289,45 +289,61 @@
 }
 
 
-
-@media (min-width:980px) {
-    .pure-visible-phone     { display: none; }
-    .pure-visible-tablet    { display: none; }
-    .pure-visible-desktop   { }
-    .pure-hidden-phone      { }
-    .pure-hidden-tablet     { }
-    .pure-hidden-desktop    { display: none; }
-    .pure-u-1-8 {height:150px;}
-}
-
-
-
-
-@media (max-width:480px) {
-    .pure-u-1-8 {width: 50%;height: 100px;}
-}
-
-
-
 @media (max-width:767px) {
 
     .pure-visible-phone     { }
     .pure-hidden-phone      { display: none; }
     .pure-hidden-desktop    { }
     .pure-visible-desktop   { display: none; }
-    .pure-u-1-8 {width: 33%;;height: 100px;}
+    .pure-u-1-8 {width: 50%;height: 150px;}
+    .wide {width: 100%;}
+    .tall {height: 300px}
+}
+
+@media (min-width:800px) {
+    .pure-u-1-8 {width: 50%;height: 150px;}
+    .wide {width: 100%;}
+    .tall {height: 300px}
+
 }
 
 
-
-@media (min-width:768px) and (max-width:979px) {
+@media (min-width:980px) {
     .pure-visible-tablet    {}
     .pure-hidden-tablet     { display: none; }
     .pure-hidden-desktop    {}
     .pure-visible-desktop   { display: none; }
-    .pure-u-1-8 {width: 16.66667%;height: 100px;}
+    .pure-u-1-8 {width: 20%;height: 100px;}
+    .wide {width: 40%;}
+    .tall {height: 200px}
 }
 
+@media (min-width:1200px) {
+    .pure-visible-phone     { display: none; }
+    .pure-visible-tablet    { display: none; }
+    .pure-visible-desktop   { }
+    .pure-hidden-phone      { }
+    .pure-hidden-tablet     { }
+    .pure-hidden-desktop    { display: none; }
+    .pure-u-1-8 {width: 16.6667%;height: 150px;}
+    .wide {width: 33.3334%;}
+    .tall {height: 300px}
+}
+
+@media (min-width:1400px) {
+    .pure-u-1-8 {width: 12.5%;height: 150px;}
+    .wide {width: 25%;}
+    .tall {height: 300px}
+}
+
+.pure-u-1-8 {
+    /*-webkit-transition: all 0.8s ease-out;*/
+    /*-moz-transition: all 0.8s ease-out;*/
+    /*-ms-transition: all 0.8s ease-out;*/
+    /*-o-transition: all 0.8s ease-out;*/
+    /*transition: all 0.8s ease-out;*/
+
+}
 
 .tile-1 {
     background: url(/images/tile1.jpg) no-repeat;
@@ -367,5 +383,13 @@
 }
 .tile-9 {
     background: url(/images/tile9.jpg) no-repeat;
+    background-size: cover;
+}
+.tile-10 {
+    background: url(/images/tile10.jpg) no-repeat;
+    background-size: cover;
+}
+.tile-11 {
+    background: url(/images/tile11.jpg) no-repeat;
     background-size: cover;
 }

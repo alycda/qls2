@@ -5,16 +5,3 @@
     position: relative;
     margin: 0 auto
 }
-
-/*.content {*/
-    /*width: 650px;*/
-/*}*/
-
-.right-dock {
-    width: 225px;
-    height: 100%;
-    border: 1px solid #000;
-    position: absolute;
-    top: 0;
-    left: 790px;
-}
