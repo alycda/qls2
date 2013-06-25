@@ -83,8 +83,13 @@ body {
     text-decoration: none;
 }
 
-body.latifah .nav li a.latifah {
-    padding-left: 20px;
+body.living .nav li.living a,
+body.loving .nav li.loving a,
+body.learning .nav li.learning a,
+body.laughing .nav li.laughing a,
+body.latifah .nav li.latifah a {
+    width: 170px;
+    padding-left: 40px;
 }
 
 .nav .living a{

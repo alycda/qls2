@@ -3,8 +3,12 @@
 
 var $container = $('.pure-g-r');
 
+var viewWidth = $('html').width();
+
 $(document).ready(function() {
     window.mySwipe = Swipe(document.getElementById('slider'));
+
+    $('.content').width($('html').width() - 375);
 
     // initialize
     $container.imagesLoaded( function(){
@@ -13,27 +17,21 @@ $(document).ready(function() {
             columnWidth: '.tile', //must be the base tile width
             itemSelector: '.pure-u-1-8',
             gutterWidth: 0,
-            containerStyle: null
+            containerStyle: null,
+            transitionDuration: 0
         });
         $container.masonry('unbindResize');
-        onResize()
     });
 
 
     $('body.home').backstretch('/images/main-hero_1024.jpg')
 });
 
-function onResize() {
-    $('.pure-g-r').fadeIn();
-    $('.content').width($('html').width() - 375);
-    setTimeout(function() {
-        $container.masonry('layout');
-    }, 100)
-}
-
 var timer;
 $(window).bind('resize', function(){
-    $('.pure-g-r').hide();
+    $('.content').width($('html').width() - 375);
     timer && clearTimeout(timer);
-    timer = setTimeout(onResize, 100);
+    timer = setTimeout(function() {
+        $container.masonry('layout');
+    }, 500);
 });

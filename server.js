@@ -91,6 +91,65 @@ server.get('/latifah', function(req,res){
         }
     });
 });
+
+server.get('/living', function(req,res){
+    res.render('living.jade', {
+        locals : {
+            title : 'Your Page Title'
+            ,description: 'Your Page Description'
+            ,author: 'Your Name'
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'living'
+        }
+    });
+});
+
+server.get('/loving', function(req,res){
+    res.render('loving.jade', {
+        locals : {
+            title : 'Your Page Title'
+            ,description: 'Your Page Description'
+            ,author: 'Your Name'
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'loving'
+        }
+    });
+});
+
+server.get('/learning', function(req,res){
+    res.render('learning.jade', {
+        locals : {
+            title : 'Your Page Title'
+            ,description: 'Your Page Description'
+            ,author: 'Your Name'
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'learning'
+        }
+    });
+});
+
+server.get('/laughing', function(req,res){
+    res.render('laughing.jade', {
+        locals : {
+            title : 'Your Page Title'
+            ,description: 'Your Page Description'
+            ,author: 'Your Name'
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'laughing'
+        }
+    });
+});
+server.get('/latifah', function(req,res){
+    res.render('latifah.jade', {
+        locals : {
+            title : 'Your Page Title'
+            ,description: 'Your Page Description'
+            ,author: 'Your Name'
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'latifah'
+        }
+    });
+});
 //A Route for Creating a 500 Error (Useful to keep around)
 server.get('/500', function(req, res){
     throw new Error('This is a 500 Error');
