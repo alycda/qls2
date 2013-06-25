@@ -82,6 +82,11 @@ body {
     transition: all 0.2s ease-out;
     text-decoration: none;
 }
+
+body.latifah .nav li a.latifah {
+    padding-left: 20px;
+}
+
 .nav .living a{
     /* IE10 Consumer Preview */
     background-image: -ms-linear-gradient(left, #e0b66a 0%, #b39359 100%);

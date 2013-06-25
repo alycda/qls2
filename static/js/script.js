@@ -20,6 +20,7 @@ $(document).ready(function() {
     });
 
 
+    $('body.home').backstretch('/images/main-hero_1024.jpg')
 });
 
 function onResize() {

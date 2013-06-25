@@ -63,7 +63,8 @@ server.get('/', function(req,res){
               title : 'Your Page Title'
              ,description: 'Your Page Description'
              ,author: 'Your Name'
-             ,analyticssiteid: 'XXXXXXX' 
+             ,analyticssiteid: 'XXXXXXX'
+             ,pageid: 'home'
             }
   });
 });
@@ -79,6 +80,17 @@ server.get('/grid', function(req,res){
     });
 });
 
+server.get('/latifah', function(req,res){
+    res.render('latifah.jade', {
+        locals : {
+            title : 'Your Page Title'
+            ,description: 'Your Page Description'
+            ,author: 'Your Name'
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'latifah'
+        }
+    });
+});
 //A Route for Creating a 500 Error (Useful to keep around)
 server.get('/500', function(req, res){
     throw new Error('This is a 500 Error');
