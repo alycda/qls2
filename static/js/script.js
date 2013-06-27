@@ -69,12 +69,26 @@ function switchContent(href) {
         case '/living':
             $('body').addClass('living');
             break;
+        case '/loving':
+            $('body').addClass('loving');
+            break;
+        case '/learning':
+            $('body').addClass('learning');
+            break;
+        case '/laughing':
+            $('body').addClass('laughing');
+            break;
 
         case '/latifah':
             $('body').addClass('latifah');
+            $('.content').width($('html').width() - 375);
 
             var $container = $('.pure-g-r');
-            $('.content').width($('html').width() - 375);
+
+            $(window).resize(function() {
+                $('.content').width($('html').width() - 375);
+
+            })
 
             // initialize
             $container.imagesLoaded( function(){

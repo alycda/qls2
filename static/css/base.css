@@ -295,9 +295,16 @@ body.home .filter {
     display: none;
 }
 
-body.latifah .filter {
+body.latifah .content {
     display: block;
     left: 150px;
+}
+body.latifah .content img.page {
+    width: 100%;
+    margin-top: 34px;
+}
+body.latifah .filter {
+    margin-left: 0;
 }
 a.logo {
     width:150px;
