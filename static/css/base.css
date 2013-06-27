@@ -37,7 +37,6 @@ body {
     /*border: 1px solid #000;*/
     overflow-y: scroll;
     overflow-x: hidden;
-    margin-left: 150px;
     z-index: 1;
 }
 
@@ -86,6 +85,23 @@ body.laughing .nav li.laughing a,
 body.latifah .nav li.latifah a {
     width: 170px;
     padding-left: 40px;
+    /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #e18367), color-stop(1, #aa634e));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to right, #e18367 0%, #aa634e 100%);
 }
 
 .nav .living a, .nav .latifah a{
@@ -167,6 +183,8 @@ body.latifah .nav li.latifah a {
     height: 34px;
     position: fixed;
     z-index: 10;
+    margin-left: 150px;
+    top: 0px;
 }
 
 #tiles {
@@ -267,13 +285,13 @@ body.latifah .nav li.latifah a {
     height: 100%;
 }
 
-body.home .content {
+body.home .content, body.living .content {
     left: 0;
     width: 100%!important;
     margin-left: 0;
 }
 
-body .filter {
+body.home .filter {
     display: none;
 }
 
@@ -287,4 +305,22 @@ a.logo {
     display: block;
     text-align: center;
     padding-top: 30px
+}
+body.living .content img {
+    display: block;
+
+}
+body.living {
+    background: #d9d7d6;
+
+}
+body.living img.page {
+    display: block;
+    margin: 34px auto
+}
+
+.socialbar {
+    position: absolute;
+    top: 0;
+    right: 370px;
 }

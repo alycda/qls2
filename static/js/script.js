@@ -44,9 +44,10 @@ function showTiles() {
 }
 
 function switchContent(href) {
+    $('body').removeClass()
     switch(href) {
         case '/':
-            $('body').removeClass().addClass('home');
+            $('body').addClass('home');
 
             var elem = document.getElementById('mySwipe');
             window.mySwipe = Swipe(elem, {
@@ -65,8 +66,12 @@ function switchContent(href) {
             $('#b').backstretch("img/screen3-hero-bg.jpg");
             $('#c').backstretch("img/new-whitehouse.jpg");
             break;
+        case '/living':
+            $('body').addClass('living');
+            break;
+
         case '/latifah':
-            $('body').removeClass().addClass('latifah');
+            $('body').addClass('latifah');
 
             var $container = $('.pure-g-r');
             $('.content').width($('html').width() - 375);
