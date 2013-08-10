@@ -41,8 +41,13 @@ server.listen(port);
 ///////////////////////////////////////////
 
 /////// ADD ALL YOUR ROUTES HERE  /////////
+var auth = express.basicAuth(function(user, pass) {
+    return (user == "super" && pass == "secret");
+},'Super duper secret area');
 
-server.get('/', function(req,res){
+
+
+server.get('/', auth, function(req,res){
   res.render('index.jade', {
     locals : {
               title : 'Your Page Title'
