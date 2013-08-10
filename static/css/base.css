@@ -335,7 +335,7 @@ body.living img.page {
 #topadunit {
     /* fallback */
     background-color: #202020;
-    background-image: url(images/radial_bg.png);
+    background-image: url(/images/radial_bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
 
