@@ -1,8 +1,65 @@
+html,
 body {
-    margin: 0;
-    padding: 0;
-    min-width: 960px;
+  height: 100%; /*req'd for sticky footer*/
+  /* The html and body elements cannot have any padding or margin. */
 }
+
+body {
+  min-width: 960px;
+}
+
+#topadunit {
+    /* fallback */
+    background-color: #202020;
+    background-image: url(/images/radial_bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /* Safari 4-5, Chrome 1-9 */
+    /* Can't specify a percentage size? Laaaaaame. */
+    background: -webkit-gradient(radial, center center, 0, center center, 460, from(#60452e), to(#202020));
+
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-radial-gradient(circle, #60452e, #202020);
+
+    /* Firefox 3.6+ */
+    background: -moz-radial-gradient(circle, #60452e, #202020);
+
+    /* IE 10 */
+    background: -ms-radial-gradient(circle, #60452e, #202020);
+    height:90px;
+    width: 100%;
+}
+
+#topadunit img {
+    display: block;
+    margin: 0 auto
+}
+
+.myContainer {
+    width: 860px;
+    margin: 0 auto;
+    background: #f00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .nav {
 /*    margin: 0;
@@ -299,9 +356,9 @@ body.latifah .nav li.latifah a {
     position: absolute;
     bottom: 5%;
     left:50%;
-    margin-left: -233px;
+    margin-left: -333px; /*-233px*/
     /*margin: 0 auto;*/
-    width: 465px;
+    width: 500px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
@@ -394,33 +451,7 @@ body.living img.page {
     right: 370px;
 }
 
-#topadunit {
-    /* fallback */
-    background-color: #202020;
-    background-image: url(/images/radial_bg.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
 
-    /* Safari 4-5, Chrome 1-9 */
-    /* Can't specify a percentage size? Laaaaaame. */
-    background: -webkit-gradient(radial, center center, 0, center center, 460, from(#60452e), to(#202020));
-
-    /* Safari 5.1+, Chrome 10+ */
-    background: -webkit-radial-gradient(circle, #60452e, #202020);
-
-    /* Firefox 3.6+ */
-    background: -moz-radial-gradient(circle, #60452e, #202020);
-
-    /* IE 10 */
-    background: -ms-radial-gradient(circle, #60452e, #202020);
-    height:90px;
-    width: 100%;
-}
-
-#topadunit img {
-    display: block;
-    margin: 0 auto
-}
 
 .wrapper {
 }
@@ -507,4 +538,10 @@ ul.watch-widget {
     margin: 10px 0 0;
     list-style: none;
 
+}
+
+
+
+.living .content .filter {
+    display: none;
 }
