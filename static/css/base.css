@@ -370,13 +370,6 @@ body.latifah .content img.page {
 body.latifah .filter {
     margin-left: 0;
 }
-a.logo {
-    width:150px;
-    height:138px;
-    display: block;
-    text-align: center;
-    padding-top: 30px
-}
 body.living .content img {
     display: block;
 
@@ -429,4 +422,47 @@ body.living img.page {
 }
 
 .wrapper {
+}
+
+.home .left-dock {
+    width: 180px
+}
+.home a.logo {
+    width:180px;
+    height:167px;
+    display: block;
+    text-align: center;
+    padding-top: 30px
+}
+.home .nav li a {
+    width: 180px;
+    height: 51px;
+    line-height: 51px;
+    font-size: 1.1em
+}
+
+.home .nav .arrow {
+    top: 19px;
+    right: 8px;
+}
+
+.home .nav .icon {
+    margin-right: 11px;
+}
+
+.home .nav .loving a, .home .nav .laughing a{
+    width: 193px;
+}
+
+.home .nav .learning a {
+    width: 206px;
+}
+.home .nav:hover li a {
+    width: 180px;
+}
+.home .nav:hover li a:hover {
+    width: 206px;
+}
+.home .nav li a:hover img {
+    margin-left: 0px;
 }
