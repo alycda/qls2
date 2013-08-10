@@ -498,3 +498,10 @@ body.living img.page {
 .daily .join {
     background: url(/images/join_bg.png);
 }
+
+ul.watch-widget {
+    padding: 0;
+    margin: 10px 0 0;
+    list-style: none;
+
+}
