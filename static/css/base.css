@@ -331,3 +331,34 @@ body.living img.page {
     top: 0;
     right: 370px;
 }
+
+#topadunit {
+    /* fallback */
+    background-color: #202020;
+    background-image: url(images/radial_bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /* Safari 4-5, Chrome 1-9 */
+    /* Can't specify a percentage size? Laaaaaame. */
+    background: -webkit-gradient(radial, center center, 0, center center, 460, from(#60452e), to(#202020));
+
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-radial-gradient(circle, #60452e, #202020);
+
+    /* Firefox 3.6+ */
+    background: -moz-radial-gradient(circle, #60452e, #202020);
+
+    /* IE 10 */
+    background: -ms-radial-gradient(circle, #60452e, #202020);
+    height:90px;
+    width: 100%;
+}
+
+#topadunit img {
+    display: block;
+    margin: 0 auto
+}
+
+.wrapper {
+}
