@@ -1,7 +1,8 @@
 //setup Dependencies
 var connect = require('connect')
     , express = require('express')
-    , port = (process.env.PORT || 8081);
+    , port = (process.env.PORT || 8081)
+    , http = require('http');
 
 //Setup Express
 var server = express.createServer();
@@ -44,6 +45,26 @@ server.listen(port);
 var auth = express.basicAuth(function(user, pass) {
     return (user == "super" && pass == "secret");
 },'Super duper secret area');
+
+server.get('/gettweets', auth, function(req,res){
+    var url = "http://queen:develop@queen.projects-directory.com/twitter/get-tweets.php";
+    http.get(url, function(res) {
+        var body = '';
+
+        res.on('data', function(chunk) {
+            body += chunk;
+        });
+
+        res.on('end', function() {
+            var feed = JSON.parse(body);
+            console.log(feed);
+        });
+    }).on('error', function(e) {
+            console.log("Got error: " + e.message);
+    });
+
+    res.end();
+});
 
 
 
