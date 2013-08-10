@@ -27,7 +27,7 @@ body {
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
     text-decoration: none;
-} .nav li a, .cta .text, a.logo {
+} .nav li a, .internalcta .text, a.logo {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -221,18 +221,20 @@ body.latifah .nav li.latifah a {
     overflow: hidden;
 }
 
-.cta {
+.internalcta {
     position: relative;
+    border-bottom: 1px solid #a0a7a5;
+
 }
 
-.cta h2 {
+.internalcta h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 11px;
     text-transform: uppercase;
     margin: 0 0 15px;
 }
 
-.cta .text {
+.internalcta .text {
     background: #ffe1ac;
     width: 100%;
     height: 98px;
