@@ -15,7 +15,9 @@ html.no-js(lang='en')
     meta(name="description", content=description)
     meta(name="author", content=author)
     meta(name="viewport", content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', href='/css/style.css')
+
+    link(rel='stylesheet', href='/css/bootstrap.css')
+
     link(rel='stylesheet', href='/css/grid.css')
     link(rel='stylesheet', href='/css/base.css' )
     link(rel='stylesheet', href='/css/1250.css', media='(max-width:1250px)' )
@@ -40,7 +42,7 @@ html.no-js(lang='en')
         div.left-dock
             a(href='/', class='logo')
                 img(src='/images/queen-latifah.png')
-            ul.nav
+            ul.nav.list-unstyled.uc
 
                 li.latifah
                     a(href='/latifah')
@@ -110,7 +112,7 @@ html.no-js(lang='en')
                     li
                         a(href="http://www.youtube.com/user/QueenLatifahShow", target="_blank")
                             img(src="/images/icon_youtube.png")
-            
+
             div.daily
                 a.dose(href='#')
                     | Daily Queue

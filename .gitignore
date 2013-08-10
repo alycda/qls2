@@ -2,3 +2,12 @@ node_modules
 psd
 /psd
 /.idea
+static/css/sticky-footer.css
+
+static/images/nav-placeholder.png
+
+static/images/right-placeholder.png
+
+views/footer.jade
+
+views/index2.jade
