@@ -250,26 +250,22 @@ body.latifah .nav li.latifah a {
     margin-top: 20px;
 }
 
-.daily {
-    background: url(/images/doobie.png);
-    width: 226px;
-    height: 41px;
-    font-family: 'Glegoo', "Times New Roman";
-    font-size: 13px;
-}
 
 .daily a {
     text-decoration: none;
-    width: 50%;
+    width: 149px;
+    height: 47px;
     text-align: center;
     display: block;
     float: left;
-    color: #222;
-    margin:10px 0
+    color: #3a3a3a;
+    font-family: 'Glegoo', "Times New Roman";
+    font-size: 14px;
+    line-height: 47px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #a0a7a5;
+
 }
-
-
-
 
 .swipe {
     overflow: hidden;
@@ -489,4 +485,14 @@ body.living img.page {
     float: left;
     line-height: 52px;
     margin: 0 20px
+}
+
+.daily .dose {
+    background: url(/images/daily-dose_bg.png);
+    border-right: 1px solid #a0a7a5;
+
+}
+
+.daily .join {
+    background: url(/images/join_bg.png);
 }
