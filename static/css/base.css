@@ -462,6 +462,8 @@ body.living img.page {
 }
 .home .nav:hover li a:hover {
     width: 206px;
+    padding-left: 0px;
+
 }
 .home .nav li a:hover img {
     margin-left: 0px;
