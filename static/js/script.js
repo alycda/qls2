@@ -4,7 +4,18 @@
 var viewWidth = $('html').width();
 
 $(document).ready(function() {
-    window.mySwipe = Swipe(document.getElementById('slider'));
+    window.mySwipe = Swipe(document.getElementById('mySwipe'), {
+        auto: 5000,
+        transitionEnd: function(index, element) {
+            // re-hide all other elements so the transition will work
+            $(element).siblings('.img').find('.info-bg').fadeOut(10);
+            // call the transition on the current element
+            $(element).find('.info-bg').fadeIn('slow');
+        }
+        // transitionEnd: function(index, element) {}
+    });
+
+    $('#mySwipe #a .info-bg').fadeIn('slow');
 
     switchContent(window.location.pathname)
     $('.left-dock .nav li a, .logo').click(function(e) {
@@ -63,8 +74,8 @@ function switchContent(href) {
             });
 
             $('#a').backstretch("/images/slide1.jpg");
-            $('#b').backstretch("img/screen3-hero-bg.jpg");
-            $('#c').backstretch("img/new-whitehouse.jpg");
+            $('#b').backstretch("/images/slide2.jpg");
+            $('#c').backstretch("/images/slide3.jpg");
             break;
         case '/living':
             $('body').addClass('living');

@@ -19,23 +19,23 @@ server.configure(function(){
 //setup the errors
 server.error(function(err, req, res, next){
     if (err instanceof NotFound) {
-        res.render('404.jade', { locals: { 
+        res.render('404.jade', { locals: {
                   title : '404 - Not Found'
                  ,description: ''
                  ,author: ''
-                 ,analyticssiteid: 'XXXXXXX' 
+                 ,analyticssiteid: 'XXXXXXX'
                 },status: 404 });
     } else {
-        res.render('500.jade', { locals: { 
+        res.render('500.jade', { locals: {
                   title : 'The Server Encountered an Error'
                  ,description: ''
                  ,author: ''
                  ,analyticssiteid: 'XXXXXXX'
-                 ,error: err 
+                 ,error: err
                 },status: 500 });
     }
 });
-server.listen( port);
+server.listen(port);
 
 //Setup Socket.IO
 var io = io.listen(server);
@@ -59,7 +59,7 @@ io.sockets.on('connection', function(socket){
 
 server.get('/', function(req,res){
   res.render('index.jade', {
-    locals : { 
+    locals : {
               title : 'Your Page Title'
              ,description: 'Your Page Description'
              ,author: 'Your Name'
@@ -165,6 +165,5 @@ function NotFound(msg){
     Error.call(this, msg);
     Error.captureStackTrace(this, arguments.callee);
 }
-
 
 console.log('Listening on http://0.0.0.0:' + port );
