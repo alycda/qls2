@@ -674,6 +674,26 @@ ul.watch-widget {
     display: none;
 }
 
+ul.tweets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 223px;
+    margin: 5px auto;
+    border-top: 1px solid #a0a7a5;
+    padding-top: 5px;
+    text-align: center;
+    color: #3a3a3a;
+}
+
+.twitter h3 {
+    text-align: center;
+}
+
+.twitter h3 a {
+    color: #3a3a3a;
+    font-size: 17px;
+}
 
 
 

@@ -46,10 +46,29 @@ $(document).ready(function() {
 });
 
 function func(data) {
-    console.log('func')
+    console.log('func');
 
-    console.log(data)
+    var tweets=$('.tweets');
 
+    $.each(data, function (i) {
+        var tweet = this,
+            text = tweet.text;
+        text = text.replace(/(http:\/\/\S+)/g, '<a href="$1">$1</a>');
+        text = text.replace(/\@(\w+)/g, '<a href="http://twitter.com/$1">@$1</a>');
+        tweets.append('<li>' + text + '</li>');
+    });
+
+    tweets.find('li').hide();
+
+    var i = 1;
+    $('.tweets li:eq('+i+')').fadeIn(500).delay(6500).fadeOut(500)
+    i++;
+    setInterval(
+        function(){
+            i++;
+            $('.tweets li:eq('+i+')').fadeIn(500).delay(8500).fadeOut(500);
+            if(i >= tweets.find('li').length) i = 1;
+        },9500);
 }
 //var timer;
 //$(window).bind('resize', function(){
