@@ -16,12 +16,11 @@ html.no-js(lang='en')
     meta(name="author", content=author)
     meta(name="viewport", content='width=1280')
 
-    link(rel='stylesheet', href='/css/bootstrap.css')
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
 
     link(rel='stylesheet', href='/css/grid.css')
     link(rel='stylesheet', href='/css/base.css' )
-    link(rel='stylesheet', href='/css/1250.css', media='(max-width:1250px)' )
-    link(rel='stylesheet', href='/css/1024.css', media='(max-width:1100px)' )
+
     link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Glegoo')
     link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans:400,700')
     //script(src='js/libs/modernizr-2.0.6.min.js')
@@ -32,6 +31,7 @@ html.no-js(lang='en')
     script
         stLight.options({publisher: "fc82ca7e-e0a9-419a-96b9-ad0a2dc90622", doNotHash: false, doNotCopy: false, hashAddressBar: false});
 
+    script(src="http://cdn.sublimevideo.net/js/j2zp1tsa.js")
 
   body(class=pageid)
     block header
@@ -129,7 +129,7 @@ html.no-js(lang='en')
             div.internalcta
                 img(src='/images/ctaphoto.jpg')
                 a.text(href="http://queenlatifah.com/nominatehero/", target="_blank")
-                    h2 Be on the Show >
+                    h2 Be on the Show &gt;
                     | Nominate Your Hero
             div.right-ad-unit.
                 <!-- begin ad tag (tile=1) -->
@@ -149,10 +149,12 @@ html.no-js(lang='en')
         &copy; 2013 Sony Pictures Television Inc. All Rights Reserved. <a href="/privacy-policy.html">Privacy Policy</a> | <a href="/terms-of-use.html">Terms of Use</a>
 
     block footer
+      block modal
       footer
         script(src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
         script(src='/js/jquery.backstretch.min.js')
         script(src='/js/jquery.imagesloaded.js')
+        script(src='/js/bootstrap.modal.min.js')
         script(src='/js/underscore-min.js')
         script(src='/js/backbone-min.js')
         script(src='/js/masonry.js')
@@ -160,7 +162,7 @@ html.no-js(lang='en')
           window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\\/script>')
         //-script(defer, src='js/plugins.js')
         script(src='/js/script.js')
-        script(src='/js/swipe.js')
+        script(src='/js/swipe.min.js')
         script
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;

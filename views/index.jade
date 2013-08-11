@@ -13,7 +13,7 @@ block content
                   p(style='white-space:pre;')
                     | Dishing to The Hollywood Reporter
                     | about her new daytime talk show
-                  a(class='watch-video', href='#')
+                  a(class='watch-video', data-toggle="modal", href='#videoModal') watch video
             div(id="b", class="img")
               div(class="info-bg", style='display:none;')
                 div(class="info")
@@ -23,7 +23,7 @@ block content
                   p(style='white-space:pre;')
                     | Check out what went down
                     | on my most recent trip to Chi-town
-                  a(class='watch-video', href='#')
+                  a(class='watch-video', data-toggle="modal", href='#videoModal') watch video
             div(id="c", class="img")
               div(class="info-bg", style='display:none;')
                 div(class="info")
@@ -33,3 +33,28 @@ block content
                   hr
                   p(style='white-space:pre;')
                     | Premiering September 16th
+                  a(class='watch-video', data-toggle="modal", href='#videoModal') watch video
+
+block modal
+  div#videoModal.modal.fade
+    div.modal-dialog
+      div.modal-content
+        div.modal-header
+          button(type="button", class="close", data-dismiss="modal", aria-hidden="true") &times;
+          div.sharethis
+            span.st_facebook_hcount
+            span.st_fblike_hcount
+            span.st_twitter_hcount
+            span.st_pinterest_hcount
+            span.st_email_hcount
+        div.modal-body
+          video(id="a240e92d", class="sublime", poster="https://cdn.sublimevideo.net/vpa/ms_800.jpg", width="640", height="360", title="Midnight Sun", data-uid="a240e92d", preload="none")
+            source(src="https://cdn.sublimevideo.net/vpa/ms_360p.mp4")
+            source(src="https://cdn.sublimevideo.net/vpa/ms_720p.mp4")
+            source(src="https://cdn.sublimevideo.net/vpa/ms_360p.webm")
+            source(src="https://cdn.sublimevideo.net/vpa/ms_720p.webm")
+        //div.modal-footer
+          p video controls
+
+
+
