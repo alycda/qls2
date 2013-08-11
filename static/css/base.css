@@ -1,4 +1,8 @@
-html,
+* { /*req'd for sticky footer*/
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+} html,
 body {
   height: 100%; /*req'd for sticky footer*/
   /* The html and body elements cannot have any padding or margin. */
@@ -6,6 +10,7 @@ body {
 
 body {
   min-width: 960px;
+  background: #d9d7d6;
 }
 
 #topadunit {
@@ -29,44 +34,53 @@ body {
     background: -ms-radial-gradient(circle, #60452e, #202020);
     height:90px;
     width: 100%;
-}
-
-#topadunit img {
-    display: block;
+    } #topadunit img {
+        display: block;
+        margin: 0 auto
+} .wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
     margin: 0 auto
+} .left-dock {
+    height: 100%;
+    width: 150px;
+    /*border: 1px solid #000;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /*background: #e8e7e3;*/
+} .left-dock .logo {
+    padding-top: 30px;
+    display: block;
 }
 
-.myContainer {
-    width: 860px;
-    margin: 0 auto;
-    background: #f00;
+.content {
+    width: 100%;
+    /*max-width: 1200px;*/
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    /*border: 1px solid #000;*/
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 1;
+} .right-dock {
+    width: 300px;
+    height: 100%;
+    /*border: 1px solid #000;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #c2d9d0;
+    z-index: 10;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.nav {
-/*    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-transform: uppercase;*/
-} .nav li a {
+.nav li a {
     position: relative;
     display: block;
     width: 150px;
@@ -92,41 +106,123 @@ body {
 }
 
 
-.wrapper {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    margin: 0 auto
-} .left-dock {
-    height: 100%;
-    width: 150px;
-    /*border: 1px solid #000;*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    /*background: #e8e7e3;*/
-} .content {
-    width: 100%;
-    /*max-width: 1200px;*/
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0px;
-    /*border: 1px solid #000;*/
-    overflow-y: scroll;
-    overflow-x: hidden;
-    z-index: 1;
-} .right-dock {
-    width: 300px;
-    height: 100%;
-    /*border: 1px solid #000;*/
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: #c2d9d0;
-    z-index: 10;
+
+
+
+
+
+
+
+
+
+
+.myContainer {
+    width: 860px;
+    margin: 0 auto;
+    /*background: #f00;*/
 }
+
+.sharethis {
+    padding: 14px;
+    height: 50px;
+}
+
+.sharethis .stMainServices {
+    height: 23px !important;
+}
+
+
+#preview {
+    height: 504px;
+    margin-bottom: 60px;
+}
+
+#preview .bar {
+    height: 43px;
+    background: #fff;
+    opacity:0.9;
+filter:alpha(opacity=90);
+position: absolute;
+bottom: 0;
+width: 865px;
+
+}
+
+#preview .caption {
+
+padding: 12px;
+
+margin: 0;
+text-align: center;
+font-family: 'Glegoo', "Times New Roman";
+font-size: 15px;
+}
+
+#preview .caption strong {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+#preview .bar .lightbox-expand {
+    width: 43px;
+height: 43px;
+display: block;
+background: url(/images/lightbox-expand@2x.png);
+background-size:43px 43px;
+text-indent: -9999em;
+position: absolute;
+top: 0;
+right: 0;
+margin: 0
+}
+
+.articles {
+    color: #5a4040;
+}
+
+.articles img {
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.articles .col-6 img + h3 {
+    font-size: 14px;
+ont-family: 'Open Sans', sans-serif;
+text-transform: uppercase;
+width: 210px;
+margin: 0 0 9px;
+font-weight: bold;
+
+}
+
+.articles a.view {
+    background: #a1b3ae;
+    color: #fff;
+    padding: 3px 12px;
+    text-transform: uppercase;
+}
+
+.articles a.view:hover {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -328,6 +424,9 @@ body.latifah .nav li.latifah a {
 
 }
 
+
+
+
 .swipe {
     overflow: hidden;
     visibility: hidden;
@@ -384,6 +483,9 @@ body.latifah .nav li.latifah a {
     font-size: 14px;
 }
 
+
+
+
 .watch-video {
     display: block;
 width: 140px;
@@ -432,10 +534,7 @@ body.living .content img {
     display: block;
 
 }
-body.living {
-    background: #d9d7d6;
 
-}
 body.living img.page {
     display: block;
     margin: 34px auto
@@ -453,18 +552,15 @@ body.living img.page {
 
 
 
-.wrapper {
-}
-
 .home .left-dock {
     width: 180px
 }
+
 .home a.logo {
     width:180px;
     height:167px;
     display: block;
     text-align: center;
-    padding-top: 30px
 }
 .home .nav li a {
     width: 180px;
@@ -545,3 +641,20 @@ ul.watch-widget {
 .living .content .filter {
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

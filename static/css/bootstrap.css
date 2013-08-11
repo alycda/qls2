@@ -831,8 +831,6 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-
-  background: #f0f;
 }
 
 .col-1,
@@ -1732,6 +1730,7 @@ select.input-small {
 /* ==========================================================================
  * Buttons
  * ==========================================================================
+*/
 
 .btn {
   display: inline-block;
