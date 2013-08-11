@@ -14,6 +14,7 @@ body {
 body {
     min-width: 960px;
     background: #d9d7d6;
+    min-height:100%;
 }
 
 #topadunit {
@@ -21,6 +22,7 @@ body {
 }
 
 body.home #topadunit {
+    position: fixed;
     display: block;
     /* fallback */
     background-color: #202020;
@@ -49,11 +51,16 @@ body.home #topadunit {
     margin: 0 auto
 }
 
+body.home .content {
+    margin-top: 90px;
+}
+
 .wrapper {
     width: 100%;
     height: 100%;
     position: relative;
-    margin: 0 auto
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .left-dock {
@@ -496,12 +503,12 @@ body.latifah .filter {
     background-size: 100%;
     position: relative;
     height: 100%;
-
+    margin-top: -90px;
 }
 
 .swipe .info {
     position: absolute;
-    bottom: 5%;
+    bottom: 20px;
     left: 50%;
     margin-left: -333px; /*-233px*/
     /*margin: 0 auto;*/
@@ -594,9 +601,12 @@ body.living img.page {
 }
 
 .left-dock {
-    width: 180px
+    width: 180px;
 }
 
+body.home .left-dock, body.home .right-dock {
+    margin-top: 90px;
+}
 a.logo {
     width: 180px;
     height: 167px;

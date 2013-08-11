@@ -6,6 +6,7 @@ var player;
 
 $(document).ready(function() {
     // fancy content load without page reload
+
     switchContent(window.location.pathname)
     $('.left-dock .nav li a, .logo').click(function(e) {
         e.preventDefault()
@@ -19,7 +20,6 @@ $(document).ready(function() {
 
     })
 
-    //
     $.ajax({
         url: "http://getjsonp.herokuapp.com/gettweets?callback=func",
         type: "GET",
