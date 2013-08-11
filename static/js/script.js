@@ -95,7 +95,6 @@ function switchContent(href) {
             $('#a').backstretch("/images/slide1.jpg");
             $('#b').backstretch("/images/slide2.jpg");
             $('#c').backstretch("/images/slide3.jpg");
-            $('#d').backstretch("/images/slide4.jpg");
             break;
         case '/living':
             $('body').addClass('living');
