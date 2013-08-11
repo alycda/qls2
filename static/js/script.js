@@ -30,22 +30,27 @@ $(document).ready(function() {
 
     })
 
-    $.getJSON('http://queen:develop@queen.projects-directory.com/twitter/get-tweets.php?callback=mycallback', function (json) {
-        var tweets = $('.tweets');
-        console.log(json)
 
-//        $.each(json, function (i) {
-//            var tweet = this,
-//                text = tweet.text;
-//            text = text.replace(/(http:\/\/\S+)/g, '<a href="$1">$1</a>');
-//            text = text.replace(/\@(\w+)/g, '<a href="http://twitter.com/$1">@$1</a>');
-//            tweets.append('<div>' + text + '</div>');
-//        });
-//        tweets.cycle();
+    $.ajax({
+        url: "http://getjsonp.herokuapp.com/gettweets?callback=func",
+        type: "GET",
+        cache: true,
+        dataType: 'jsonp',
+        success: function(data) {
+
+            console.log(data)
+
+        }
     });
 
 });
 
+function func(data) {
+    console.log('func')
+
+    console.log(data)
+
+}
 //var timer;
 //$(window).bind('resize', function(){
 //    $('.content').width($('html').width() - 375);
