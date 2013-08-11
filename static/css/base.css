@@ -410,7 +410,9 @@ body.latifah .nav li.latifah a {
 .internalcta {
     position: relative;
     border-bottom: 1px solid #a0a7a5;
-
+    height:231px;
+    overflow: hidden;
+    width: 300px;
 }
 
 .internalcta h2 {
@@ -431,8 +433,13 @@ body.latifah .nav li.latifah a {
     left: 0;
     font-family: 'Glegoo', "Times New Roman";
     padding: 15px;
-    font-size: 15px;
+    font-size: 20px;
+    display: block;
+    color: #4e585c;
+}
 
+.internalcta a:hover {
+    text-decoration: none;
 }
 
 .weather {
