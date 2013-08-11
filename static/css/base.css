@@ -113,11 +113,11 @@ body.home .content {
     height: 42px;
     /*border: 1px solid #000;*/
     line-height: 42px;
-    font-family: 'Open Sans Bold', sans-serif;
-    font-size: 16px;
+    font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
+    font-size: 19px;
     background: #e0b66a;
     color: #fff;
-    letter-spacing: 1pt;
+    letter-spacing: 1.5pt;
     text-align: center;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
@@ -521,7 +521,7 @@ body.latifah .filter {
 .swipe .info h1 {
     text-transform: uppercase;
     font-weight: normal;
-    font-family: 'Open Sans', sans-serif;
+    font-family:'SackersGothicW01-Light', Arial;
     font-size: 40px;
     line-height: 1.2em;
     margin: 0;
