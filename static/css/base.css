@@ -524,7 +524,7 @@ body.latifah .filter {
     font-family:'SackersGothicW01-Light', Arial;
     font-size: 40px;
     line-height: 1.2em;
-    margin: 0;
+    margin: 0 0 -12px;
 }
 
 .swipe .info hr {
@@ -538,6 +538,7 @@ body.latifah .filter {
     font-family: 'Glegoo', "Times New Roman";
     font-weight: bold;
     font-size: 14px;
+    margin-top: -10px;
 }
 
 .watch-video {
@@ -705,10 +706,13 @@ ul.tweets {
     padding-top: 5px;
     text-align: center;
     color: #3a3a3a;
+    font-family: 'Glegoo', "Times New Roman";
+    line-height: 16px;
 }
 
 .twitter h3 {
     text-align: center;
+    margin-bottom: 5px;
 }
 
 .twitter h3 a {
