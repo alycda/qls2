@@ -150,14 +150,14 @@ server.get('/laughing', function(req,res){
         }
     });
 });
-server.get('/latifah', function(req,res){
-    res.render('latifah.jade', {
+server.get('/queue', function(req,res){
+    res.render('queue.jade', {
         locals : {
             title : 'Your Page Title'
             ,description: 'Your Page Description'
             ,author: 'Your Name'
             ,analyticssiteid: 'XXXXXXX'
-            ,pageid: 'latifah'
+            ,pageid: 'queue'
         }
     });
 });

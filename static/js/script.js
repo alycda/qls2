@@ -126,5 +126,9 @@ function switchContent(href) {
 
             });
             break;
+
+        case '/queue':
+            $('body').addClass('queue');
+            break;
     }
 }

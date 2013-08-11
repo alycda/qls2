@@ -189,12 +189,16 @@ margin: 0
 
 .articles .col-6 img + h3 {
     font-size: 14px;
-ont-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
 text-transform: uppercase;
 width: 210px;
 margin: 0 0 9px;
 font-weight: bold;
 
+}
+
+.articles .col-6 p {
+    font-family: 'Glegoo', "Times New Roman";
 }
 
 .articles a.view {
@@ -210,8 +214,36 @@ font-weight: bold;
 
 
 
-
-
+.queue h1{
+    width: 409px;
+height: 74px;
+margin: 0 auto;
+background: url(/images/the-daily-queue.png);
+text-indent: -9999em;
+margin-top: 40px;
+}
+.queue h2 {
+    font-family: 'Glegoo', "Times New Roman";
+font-size: 24px;
+color: #747474;
+}
+p.date {
+font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+  display: table;
+  white-space: nowrap;
+  text-align: center;
+  margin: 6px auto 16px;
+  color: #a8a8a8;
+}
+p.date:before, p.date:after {
+  content: "";
+  display: table-cell;
+  width: 40%;
+  background: -webkit-linear-gradient(#a8a8a8, #a8a8a8) repeat-x left center;
+  background: linear-gradient(#a8a8a8, #a8a8a8) repeat-x left center;
+  background-size: 1px 1px;
+}
 
 
 
