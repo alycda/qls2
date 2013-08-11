@@ -1,19 +1,27 @@
-* { /*req'd for sticky footer*/
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-} html,
+* {
+    /*req'd for sticky footer*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
 body {
-  height: 100%; /*req'd for sticky footer*/
-  /* The html and body elements cannot have any padding or margin. */
+    height: 100%; /*req'd for sticky footer*/
+    /* The html and body elements cannot have any padding or margin. */
 }
 
 body {
-  min-width: 960px;
-  background: #d9d7d6;
+    min-width: 960px;
+    background: #d9d7d6;
 }
 
 #topadunit {
+    display: none;
+}
+
+body.home #topadunit {
+    display: block;
     /* fallback */
     background-color: #202020;
     background-image: url(/images/radial_bg.jpg);
@@ -32,26 +40,37 @@ body {
 
     /* IE 10 */
     background: -ms-radial-gradient(circle, #60452e, #202020);
-    height:90px;
+    height: 90px;
     width: 100%;
-    } #topadunit img {
-        display: block;
-        margin: 0 auto
-} .wrapper {
+}
+
+#topadunit img {
+    display: block;
+    margin: 0 auto
+}
+
+.wrapper {
     width: 100%;
     height: 100%;
     position: relative;
     margin: 0 auto
-} .left-dock {
+}
+
+.left-dock {
     height: 100%;
-    width: 150px;
+    width: 180px;
     /*border: 1px solid #000;*/
     position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
-    /*background: #e8e7e3;*/
-} .left-dock .logo {
+    background: url(/images/left-dock_bg.png);
+}
+.home .left-dock {
+    background: transparent;
+}
+
+.left-dock .logo {
     padding-top: 30px;
     display: block;
 }
@@ -67,7 +86,9 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     z-index: 1;
-} .right-dock {
+}
+
+.right-dock {
     width: 300px;
     height: 100%;
     /*border: 1px solid #000;*/
@@ -77,8 +98,6 @@ body {
     background: #c2d9d0;
     z-index: 10;
 }
-
-
 
 .nav li a {
     position: relative;
@@ -99,22 +118,13 @@ body {
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
     text-decoration: none;
-} .nav li a, .internalcta .text, a.logo {
+}
+
+.nav li a, .internalcta .text, a.logo {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .myContainer {
     width: 860px;
@@ -131,7 +141,6 @@ body {
     height: 23px !important;
 }
 
-
 #preview {
     height: 504px;
     margin-bottom: 60px;
@@ -140,22 +149,22 @@ body {
 #preview .bar {
     height: 43px;
     background: #fff;
-    opacity:0.9;
-filter:alpha(opacity=90);
-position: absolute;
-bottom: 0;
-width: 865px;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    position: absolute;
+    bottom: 0;
+    width: 865px;
 
 }
 
 #preview .caption {
 
-padding: 12px;
+    padding: 12px;
 
-margin: 0;
-text-align: center;
-font-family: 'Glegoo', "Times New Roman";
-font-size: 15px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Glegoo', "Times New Roman";
+    font-size: 15px;
 }
 
 #preview .caption strong {
@@ -167,15 +176,15 @@ font-size: 15px;
 
 #preview .bar .lightbox-expand {
     width: 43px;
-height: 43px;
-display: block;
-background: url(/images/lightbox-expand@2x.png);
-background-size:43px 43px;
-text-indent: -9999em;
-position: absolute;
-top: 0;
-right: 0;
-margin: 0
+    height: 43px;
+    display: block;
+    background: url(/images/lightbox-expand@2x.png);
+    background-size: 43px 43px;
+    text-indent: -9999em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0
 }
 
 .articles {
@@ -189,11 +198,11 @@ margin: 0
 
 .articles .col-6 img + h3 {
     font-size: 14px;
-font-family: 'Open Sans', sans-serif;
-text-transform: uppercase;
-width: 210px;
-margin: 0 0 9px;
-font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    width: 210px;
+    margin: 0 0 9px;
+    font-weight: bold;
 
 }
 
@@ -212,59 +221,47 @@ font-weight: bold;
     text-decoration: none;
 }
 
-
-
-.queue h1{
+.queue h1 {
     width: 409px;
-height: 74px;
-margin: 0 auto;
-background: url(/images/the-daily-queue.png);
-text-indent: -9999em;
-margin-top: 40px;
+    height: 74px;
+    margin: 0 auto;
+    background: url(/images/the-daily-queue.png);
+    text-indent: -9999em;
+    margin-top: 40px;
 }
+
 .queue h2 {
     font-family: 'Glegoo', "Times New Roman";
-font-size: 24px;
-color: #747474;
+    font-size: 24px;
+    color: #747474;
 }
+
 p.date {
-font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 10px;
-  display: table;
-  white-space: nowrap;
-  text-align: center;
-  margin: 6px auto 16px;
-  color: #a8a8a8;
+    display: table;
+    white-space: nowrap;
+    text-align: center;
+    margin: 6px auto 16px;
+    color: #a8a8a8;
 }
+
 p.date:before, p.date:after {
-  content: "";
-  display: table-cell;
-  width: 40%;
-  background: -webkit-linear-gradient(#a8a8a8, #a8a8a8) repeat-x left center;
-  background: linear-gradient(#a8a8a8, #a8a8a8) repeat-x left center;
-  background-size: 1px 1px;
+    content: "";
+    display: table-cell;
+    width: 40%;
+    background: -webkit-linear-gradient(#a8a8a8, #a8a8a8) repeat-x left center;
+    background: linear-gradient(#a8a8a8, #a8a8a8) repeat-x left center;
+    background-size: 1px 1px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 body.living .nav li.living a,
 body.loving .nav li.loving a,
 body.learning .nav li.learning a,
 body.laughing .nav li.laughing a,
 body.latifah .nav li.latifah a {
-    width: 170px;
-    padding-left: 40px;
+    width: 200px;
+    /*padding-left: 40px;*/
     /* IE10 Consumer Preview */
     background-image: -ms-linear-gradient(left, #e18367 0%, #aa634e 100%);
 
@@ -284,7 +281,7 @@ body.latifah .nav li.latifah a {
     background-image: linear-gradient(to right, #e18367 0%, #aa634e 100%);
 }
 
-.nav .living a, .nav .latifah a{
+.nav .living a, .nav .latifah a {
     /* IE10 Consumer Preview */
     background-image: -ms-linear-gradient(left, #e0b66a 0%, #b39359 100%);
 
@@ -303,7 +300,8 @@ body.latifah .nav li.latifah a {
     /* W3C Markup, IE10 Release Preview */
     background-image: linear-gradient(to right, #e0b66a 0%, #b39359 100%);
 }
-.nav .learning a{
+
+.nav .learning a {
     /* IE10 Consumer Preview */
     background-image: -ms-linear-gradient(left, #b39359 0%, #e0b66a 100%);
 
@@ -322,7 +320,8 @@ body.latifah .nav li.latifah a {
     /* W3C Markup, IE10 Release Preview */
     background-image: linear-gradient(to right, #b39359 0%, #e0b66a 100%);
 }
-.nav a:hover{
+
+.nav a:hover {
     /* IE10 Consumer Preview */
     background-image: -ms-linear-gradient(left, #e18367 0%, #aa634e 100%);
 
@@ -341,23 +340,33 @@ body.latifah .nav li.latifah a {
     /* W3C Markup, IE10 Release Preview */
     background-image: linear-gradient(to right, #e18367 0%, #aa634e 100%);
 }
+
 .nav li a:hover {
     width: 170px;
     padding-left: 40px;
 }
+
 .nav li a:hover img {
     margin-left: -40px;
 }
+
 .nav .icon {
     margin-top: -2px;
     margin-right: 5px;
 }
+
 .nav .arrow {
     position: absolute;
     right: 5px;
     top: 14px;
 }
+
 .filter {
+    display: none;
+}
+
+body.latifah .filter {
+    display: block;
     width: 100%;
     background: #b8c9be;
     height: 34px;
@@ -410,7 +419,7 @@ body.latifah .nav li.latifah a {
 .internalcta {
     position: relative;
     border-bottom: 1px solid #a0a7a5;
-    height:231px;
+    height: 231px;
     overflow: hidden;
     width: 300px;
 }
@@ -446,7 +455,6 @@ body.latifah .nav li.latifah a {
     margin-top: 20px;
 }
 
-
 .daily a {
     text-decoration: none;
     width: 149px;
@@ -463,20 +471,19 @@ body.latifah .nav li.latifah a {
 
 }
 
-
-
-
 .swipe {
     overflow: hidden;
     visibility: hidden;
     position: relative;
 }
+
 .swipe-wrap {
     overflow: hidden;
     position: relative;
 }
+
 .swipe-wrap > div {
-    float:left;
+    float: left;
     /*width:100%;*/
     height: 100%;
     position: relative;
@@ -493,7 +500,7 @@ body.latifah .nav li.latifah a {
 .swipe .info {
     position: absolute;
     bottom: 5%;
-    left:50%;
+    left: 50%;
     margin-left: -333px; /*-233px*/
     /*margin: 0 auto;*/
     width: 500px;
@@ -501,6 +508,7 @@ body.latifah .nav li.latifah a {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
 }
+
 .swipe .info h1 {
     text-transform: uppercase;
     font-weight: normal;
@@ -509,6 +517,7 @@ body.latifah .nav li.latifah a {
     line-height: 1.2em;
     margin: 0;
 }
+
 .swipe .info hr {
     border: 0;
     height: 0;
@@ -522,35 +531,29 @@ body.latifah .nav li.latifah a {
     font-size: 14px;
 }
 
-
-
-
 .watch-video {
     display: block;
-width: 140px;
-height: 50px;
-background: url('/images/watch-video.png') no-repeat;
-text-indent: -9999em;
-margin: 0 auto;
+    width: 140px;
+    height: 50px;
+    background: url('/images/watch-video.png') no-repeat;
+    text-indent: -9999em;
+    margin: 0 auto;
 }
 
 #myswipe {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
 }
+
 #mySwipe, #mySwipe > div {
     /*width: 100%;*/
     height: 100%;
 }
 
-
-
-
-
 body.home .content, body.living .content {
     left: 0;
-    width: 100%!important;
+    width: 100% !important;
     margin-left: 0;
 }
 
@@ -562,13 +565,16 @@ body.latifah .content {
     display: block;
     left: 150px;
 }
+
 body.latifah .content img.page {
     width: 100%;
     margin-top: 34px;
 }
+
 body.latifah .filter {
     margin-left: 0;
 }
+
 body.living .content img {
     display: block;
 
@@ -579,60 +585,58 @@ body.living img.page {
     margin: 34px auto
 }
 
-
-
-
-
 .socialbar {
     position: absolute;
     top: 0;
     right: 370px;
 }
 
-
-
-.home .left-dock {
+.left-dock {
     width: 180px
 }
 
-.home a.logo {
-    width:180px;
-    height:167px;
+a.logo {
+    width: 180px;
+    height: 167px;
     display: block;
     text-align: center;
 }
-.home .nav li a {
+
+.nav li a {
     width: 180px;
     height: 51px;
     font-size: 18px;
     line-height: 51px;
 }
 
-.home .nav .arrow {
+.nav .arrow {
     top: 19px;
     right: 8px;
 }
 
-.home .nav .icon {
+.nav .icon {
     margin-right: 11px;
 }
 
-.home .nav .loving a, .home .nav .laughing a{
+.home .nav .loving a, .home .nav .laughing a {
     width: 193px;
 }
 
 .home .nav .learning a {
     width: 206px;
 }
-.home .nav:hover li a {
+
+.nav:hover li a {
     width: 180px;
 }
-.home .nav:hover li a:hover {
-    width: 206px;
+
+.nav:hover li a:hover {
+    width: 190px;
     padding-left: 0px;
 
 }
-.home .nav li a:hover img {
+
+.nav li a:hover img {
     margin-left: 0px;
 }
 
@@ -674,8 +678,6 @@ ul.watch-widget {
     list-style: none;
 
 }
-
-
 
 .living .content .filter {
     display: none;
