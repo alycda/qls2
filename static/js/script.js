@@ -90,6 +90,8 @@ function switchContent(href) {
     $('body').removeClass()
     switch(href) {
         case '/':
+            $('.logo img').attr('src', '/images/qls-logo_white.png');
+
             $('body').addClass('home');
 
             // backstretch.js (first)
