@@ -13,7 +13,6 @@ block content
                   p(style='white-space:pre;')
                     | Dishing to The Hollywood Reporter
                     | about her new daytime talk show
-                  a(class='watch-video', data-toggle="modal", href='#videoModal') watch video
             div(id="b", class="img")
               div(class="info-bg", style='display:none;')
                 div(class="info")
@@ -33,7 +32,6 @@ block content
                   hr
                   p(style='white-space:pre;')
                     | Premiering September 16th
-                  a(class='watch-video', data-toggle="modal", href='#videoModal') watch video
 
 block modal
   div#videoModal.modal.fade
@@ -48,13 +46,8 @@ block modal
             span.st_pinterest_hcount
             span.st_email_hcount
         div.modal-body
-          video(id="a240e92d", class="sublime", poster="https://cdn.sublimevideo.net/vpa/ms_800.jpg", width="640", height="360", title="Midnight Sun", data-uid="a240e92d", preload="none")
-            source(src="https://cdn.sublimevideo.net/vpa/ms_360p.mp4")
-            source(src="https://cdn.sublimevideo.net/vpa/ms_720p.mp4")
-            source(src="https://cdn.sublimevideo.net/vpa/ms_360p.webm")
-            source(src="https://cdn.sublimevideo.net/vpa/ms_720p.webm")
+          video(id="promo", class="sublime", poster="http://qls.herokuapp.com/mov/poster.png", width="640", height="360", title="Midnight Sun", data-uid="promo", preload="none")
+            source(src="http://qls.herokuapp.com/mov/latifah_promo.mp4", data-quality="hd")
+            source(src="http://qls.herokuapp.com/mov/latifah_promo.webm", data-quality="hd")
         //div.modal-footer
           p video controls
-
-
-

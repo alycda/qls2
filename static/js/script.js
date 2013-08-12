@@ -103,8 +103,8 @@ function switchContent(href) {
                 callback: function(index, element){
                     // console.log('my number is: '+index);
                     // console.log('update dots');
-                    // $('.slides-pagination a').removeClass('current');
-                    // $('.slides-pagination a').eq(index).addClass('current');
+                    $('#position li').removeClass('on');
+                    $('#position li').eq(index).addClass('on');
                 },
                 transitionEnd: function(index, element) {
                     // re-hide all other elements so the transition will work
@@ -114,8 +114,25 @@ function switchContent(href) {
                 }
             }).data('Swipe');
 
+            // create nav
+            // console.log('create '+mySwipe.getNumSlides()+' links for slider');
+
+            $('#mySwipe').before('<ul id="position" class="nav list-inline"></ul>');
+            for (var i = 0; i < mySwipe.getNumSlides(); i++) {
+                // add child
+                $('#position').append('<li data-slide="'+i+'">'+(i+1)+'</li>');
+            };
+            $('#position li').click(function(){
+                // console.log($(this).data('slide'));
+                mySwipe.slide($(this).data('slide'));
+                // shouldn't have to turn the slider back on after click, but we do for now. a little buggy but what the hell...
+                mySwipe.start();
+            })
+
+
             // init first slide animation
             $('#mySwipe #a .info-bg').fadeIn('slow');
+            $('#position li:first').addClass('on');
 
             // pause on hover
             // this is nice, but when the modal is activated, the mouse is no longer 'hovering' over the swipe div, so it then triggers the start function
@@ -131,7 +148,7 @@ function switchContent(href) {
               mySwipe.stop();
             }).on('hidden.bs.modal', function () {
               // pause video
-              sublime.player('a240e92d').pause();
+              sublime.player('promo').pause();
               // resume lazily, after modal transition is complete
               mySwipe.start();
             })
