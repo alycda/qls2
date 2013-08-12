@@ -3,15 +3,18 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-} html, body {
-    height: 100%; /*req'd for sticky footer*/
-    /* The html and body elements cannot have any padding or margin. */
-} body {
-    min-width: 960px;
-    background: #d9d7d6;
-    min-height:100%;
 }
 
+html, body {
+    height: 100%; /*req'd for sticky footer*/
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+body {
+    min-width: 960px;
+    background: #d9d7d6;
+    min-height: 100%;
+}
 
 /* Scaffolding
 -------------------------------------------------- */
@@ -71,6 +74,7 @@ body.home .content {
     z-index: 10;
     background: url(/images/left-dock_bg.png);
 }
+
 .home .left-dock {
     background: transparent;
 }
@@ -142,9 +146,6 @@ body.home .content {
     margin: 0 auto 30px;
     width: 728px;
 }
-
-
-
 
 /* Categories (page)
 -------------------------------------------------- */
@@ -228,13 +229,11 @@ body.home .content {
     text-decoration: none;
 }
 
-
 /* Article (page)
 -------------------------------------------------- */
 .article {
 
 }
-
 
 .queue h1 {
     width: 409px;
@@ -387,7 +386,6 @@ body.latifah .filter {
     height: 34px;
     position: fixed;
     z-index: 10;
-    margin-left: 150px;
     top: 0px;
 }
 
@@ -486,7 +484,6 @@ body.latifah .filter {
 
 }
 
-
 /* swipe carousel
 -------------------------------------------------- */
 .swipe {
@@ -532,7 +529,7 @@ body.latifah .filter {
 .swipe .info h1 {
     text-transform: uppercase;
     font-weight: normal;
-    font-family:'SackersGothicW01-Light', Arial;
+    font-family: 'SackersGothicW01-Light', Arial;
     font-size: 40px;
     line-height: 1.2em;
     margin: 0 0 -12px; /*margin: 0;*/
@@ -579,6 +576,7 @@ z-index: 10;
 left: 37%;
 bottom: 290px;
 } #position li {
+
     float: left;
     width: 10px;
     height: 10px;
@@ -588,17 +586,17 @@ bottom: 290px;
     margin: 5px 15px;
     background-size: 10px;
     cursor: pointer;
-} #position li.on {
+}
+
+#position li.on {
     background-position: 0 10px;
     cursor: auto;
 }
-
 
 /* body not home .content */
 body:not(.home) .content {
     margin-left: 180px; /*width of left sidebar*/
 }
-
 
 body.home .content, body.living .content {
     /* left: 0; /* need to remove*/
@@ -608,21 +606,6 @@ body.home .content, body.living .content {
 
 body.home .filter {
     display: none;
-}
-
-body.latifah .content {
-    display: block;
-    left: 150px;
-
-}
-
-body.latifah .content img.page {
-    width: 100%;
-    margin-top: 34px;
-}
-
-body.latifah .filter {
-    margin-left: 0;
 }
 
 body.living .content img {
@@ -648,6 +631,7 @@ body.living img.page {
 body.home .left-dock, body.home .right-dock {
     margin-top: 90px;
 }
+
 a.logo {
     width: 180px;
     height: 167px;
@@ -795,8 +779,6 @@ a.logo {
     display: none;
 }
 
-
-
 /* Twitter
 -------------------------------------------------- */
 ul.tweets {
@@ -811,16 +793,17 @@ ul.tweets {
     color: #3a3a3a;
     font-family: 'Glegoo', "Times New Roman";
     line-height: 16px;
-} .twitter h3 {
+}
+
+.twitter h3 {
     text-align: center;
     margin-bottom: 5px;
-} .twitter h3 a {
+}
+
+.twitter h3 a {
     color: #3a3a3a;
     font-size: 17px;
 }
-
-
-
 
 #footer {
     width: 100%;
@@ -833,47 +816,55 @@ ul.tweets {
     font-size: 12px;
     line-height: 21px;
     font-family: 'Glegoo', Arial;
-} #footer a {
-    color: #727272;
 }
 
-
-
-
+#footer a {
+    color: #727272;
+}
 
 /* Video Player
 -------------------------------------------------- */
 #videoModal {
 
-} #videoModal .modal-dialog {
+}
+
+#videoModal .modal-dialog {
     width: 662px;
     margin-left: -331px;
     padding-top: 180px;
-} #videoModal .modal-dialog .modal-content {
+}
+
+#videoModal .modal-dialog .modal-content {
     background: none;
     border: none;
     box-shadow: none;
-    -webkit-box-shadow:none;
+    -webkit-box-shadow: none;
 }
+
 #videoModal .modal-dialog .modal-header {
     border: none;
     padding: 0;
-} #videoModal .modal-dialog .modal-body {
+}
+
+#videoModal .modal-dialog .modal-body {
     padding: 0;
-} #videoModal .modal-dialog .modal-footer {
+}
+
+#videoModal .modal-dialog .modal-footer {
     padding: 0;
     margin: 0;
 }
+
 #videoModal .sharethis {
     background: #d4c8aa;
     padding: 10px;
-height: 40px;
-width: 412px;
-position: absolute;
-z-index: 10;
-right: 40px;
--webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    height: 40px;
+    width: 412px;
+    position: absolute;
+    z-index: 10;
+    right: 40px;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 }
 
 #videoModal .close {
@@ -888,14 +879,13 @@ box-shadow: 0 5px 15px rgba(0,0,0,.5);
     margin: 0 -10px 0 0;
     width: 40px;
     height: 40px;
-    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 }
 
 .stButton_gradient {
     height: 22px !important;
 }
-
 
 /* Share this widget
 -------------------------------------------------- */
@@ -908,5 +898,38 @@ box-shadow: 0 5px 15px rgba(0,0,0,.5);
     height: 23px !important;
 }
 
+.container {
+    width: 100%;
+}
 
+.grid {
+    /*margin: 35px 300px 0 180px;*/
+    margin: 35px 0;
+}
 
+.mosaicflow__column {
+    float: left;
+}
+
+.mosaicflow__item {
+    border: 1px solid #fff;
+    position: relative;
+}
+
+.mosaicflow__item .txt {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 80%;
+    margin: 0px 20px;
+    line-height: 14px;
+    text-align: center;
+    font-family: glegoo;
+    font-size: 12px;
+}
+
+.mosaicflow__item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

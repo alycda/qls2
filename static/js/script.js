@@ -199,20 +199,6 @@ function switchContent(href) {
             break;
         case '/latifah':
             $('body').addClass('latifah');
-            $('.content').width($('html').width() - 375);
-
-            var $container = $('.pure-g-r');
-
-            $(window).resize(function() {
-                $('.content').width($('html').width() - 375);
-
-            })
-
-            // initialize
-            $container.imagesLoaded( function(){
-                showTiles()
-
-            });
             break;
 
         case '/queue':
