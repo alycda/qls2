@@ -46,6 +46,11 @@ var auth = express.basicAuth(function(user, pass) {
     return (user == "super" && pass == "secret");
 },'Super duper secret area');
 
+server.get('/listings', function(req, res) {
+    console.log(require('./tvguide.js').listings.alabama.birmingham);
+    res.end();
+});
+
 server.get('/gettweets', auth, function(req,res){
     var url = "http://queen:develop@queen.projects-directory.com/twitter/get-tweets.php";
     http.get(url, function(res) {
