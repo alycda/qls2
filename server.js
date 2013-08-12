@@ -159,7 +159,7 @@ server.get('/article/1', function(req,res){
             ,description: 'Your Page Description'
             ,author: 'Your Name'
             ,analyticssiteid: 'XXXXXXX'
-            ,pageid: 'queue'
+            ,pageid: 'article'
         }
     });
 });
@@ -184,7 +184,7 @@ server.get('/queue/1', function(req,res){
             ,description: 'Your Page Description'
             ,author: 'Your Name'
             ,analyticssiteid: 'XXXXXXX'
-            ,pageid: 'queue'
+            ,pageid: 'q-article'
         }
     });
 });

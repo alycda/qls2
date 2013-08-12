@@ -191,6 +191,12 @@ function switchContent(href) {
             // refresh addThis widget?
 
             break;
+        case '/article/1':
+            $('body').addClass('article');
+
+            // refresh addThis widget?
+
+            break;
         case '/latifah':
             $('body').addClass('latifah');
             $('.content').width($('html').width() - 375);
@@ -211,6 +217,12 @@ function switchContent(href) {
 
         case '/queue':
             $('body').addClass('queue');
+
+            // refresh addThis widget?
+
+            break;
+        case '/queue/1':
+            $('body').addClass('q-article');
 
             // refresh addThis widget?
 
