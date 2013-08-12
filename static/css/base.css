@@ -498,8 +498,24 @@ body.latifah .filter {
     position: relative;
 }
 
-.swipe .info-bg {
-    background: url('/images/bokeh.png') center bottom no-repeat;
+.swipe #a .info-bg {
+    background: url('/images/1_overlay.png') center bottom no-repeat;
+    background-size: 100%;
+    position: relative;
+    height: 100%;
+    margin-top: -90px;
+}
+
+.swipe #b .info-bg {
+    background: none;
+    background-size: 100%;
+    position: relative;
+    height: 100%;
+    margin-top: -90px;
+}
+
+.swipe #c .info-bg {
+    background: none;
     background-size: 100%;
     position: relative;
     height: 100%;
