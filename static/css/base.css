@@ -437,7 +437,7 @@ body.latifah .filter {
     font-family: 'Open Sans', sans-serif;
     font-size: 11px;
     text-transform: uppercase;
-    margin: 0 0 15px;
+    margin: 8px 0 15px; /*margin: 0 0 15px;*/
     font-weight: bold;
 }
 
@@ -501,8 +501,33 @@ body.latifah .filter {
     position: relative;
 }
 
+/*
 .swipe .info-bg {
     background: url('/images/bokeh.png') center bottom no-repeat;
+    background-size: 100%;
+    position: relative;
+    height: 100%;
+    margin-top: -90px;
+}*/
+
+.swipe #a .info-bg {
+    background: url('/images/1_overlay.png') center bottom no-repeat;
+    background-size: 100%;
+    position: relative;
+    height: 100%;
+    margin-top: -90px;
+}
+
+.swipe #b .info-bg {
+    background: none;
+    background-size: 100%;
+    position: relative;
+    height: 100%;
+    margin-top: -90px;
+}
+
+.swipe #c .info-bg {
+    background: none;
     background-size: 100%;
     position: relative;
     height: 100%;
@@ -527,7 +552,7 @@ body.latifah .filter {
     font-family:'SackersGothicW01-Light', Arial;
     font-size: 40px;
     line-height: 1.2em;
-    margin: 0;
+    margin: 0 0 -12px; /*margin: 0;*/
 }
 
 .swipe .info hr {
@@ -737,8 +762,11 @@ ul.tweets {
     padding-top: 5px;
     text-align: center;
     color: #3a3a3a;
+    font-family: 'Glegoo', "Times New Roman";
+    line-height: 16px;
 } .twitter h3 {
     text-align: center;
+    margin-bottom: 5px;
 } .twitter h3 a {
     color: #3a3a3a;
     font-size: 17px;
