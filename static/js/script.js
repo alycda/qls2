@@ -90,6 +90,8 @@ function switchContent(href) {
     $('body').removeClass()
     switch(href) {
         case '/':
+            $('.logo img').attr('src', '/images/qls-logo_white.png');
+
             $('body').addClass('home');
 
             // backstretch.js (first)
@@ -112,6 +114,10 @@ function switchContent(href) {
                     $('#position li').eq(index).addClass('on');
                 },
                 transitionEnd: function(index, element) {
+                    if (index == 0)
+                        $('.logo img').attr('src', '/images/qls-logo_white.png');
+                    else
+                        $('.logo img').attr('src', '/images/queen-latifah.png');
                     // re-hide all other elements so the transition will work
                     $(element).siblings('.img').find('.info-bg').fadeOut(10);
                     // call the transition on the current element
