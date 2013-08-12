@@ -8,17 +8,17 @@ $(document).ready(function() {
     // fancy content load without page reload
 
     switchContent(window.location.pathname)
-    $('.left-dock .nav li a, .logo').click(function(e) {
-        e.preventDefault()
-        var href = $(this).attr("href");
-
-        history.pushState({}, '', href);
-
-        $('.content').load(href + " .content>*", function() {
-            switchContent(href);
-        })
-
-    })
+//    $('.left-dock .nav li a, .logo').click(function(e) {
+//        e.preventDefault()
+//        var href = $(this).attr("href");
+//
+//        history.pushState({}, '', href);
+//
+//        $('.content').load(href + " .content>*", function() {
+//            switchContent(href);
+//        });
+//
+//    })
 
     $.ajax({
         url: "http://getjsonp.herokuapp.com/gettweets?callback=func",
@@ -178,6 +178,8 @@ function switchContent(href) {
             break;
         case '/latifah':
             $('body').addClass('latifah');
+            $('.mosaicflow').mosaicflow();
+
             break;
 
         case '/queue':
