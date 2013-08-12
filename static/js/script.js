@@ -64,27 +64,6 @@ function func(data) {
             if(i >= tweets.find('li').length) i = 1;
         },9500);
 }
-//var timer;
-//$(window).bind('resize', function(){
-//    $('.content').width($('html').width() - 375);
-//    timer && clearTimeout(timer);
-//    timer = setTimeout(function() {
-//        $container.masonry('layout');
-//    }, 500);
-//});
-
-function showTiles() {
-    $('#tiles').css('top', 34);
-    $container.masonry({
-        columnWidth: '.tile', //must be the base tile width
-        itemSelector: '.pure-u-1-8',
-        gutterWidth: 0,
-        containerStyle: null,
-        transitionDuration: 0
-    });
-    $container.masonry('unbindResize');
-
-}
 
 function switchContent(href) {
     $('body').removeClass()
