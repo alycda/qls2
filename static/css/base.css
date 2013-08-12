@@ -81,10 +81,12 @@ body.home .content {
 }
 
 .content {
-    width: 100%;
+    margin-right: 300px; /*width of right sidebar*/
+
+    /* width: 100%; /* need to remove*/
     /*max-width: 1200px;*/
     height: 100%;
-    position: absolute;
+    /* position: absolute; /* need to remove*/
     top: 0;
     left: 0px;
     /*border: 1px solid #000;*/
@@ -134,7 +136,8 @@ body.home .content {
 .myContainer {
     width: 860px;
     /* temp fix for content displaying behind right sidebar, should be 0 auto 60px if/when that is ever fixed */
-    margin: 0 375px 60px auto;
+    /*margin: 0 375px 60px auto;*/
+    margin: 0 auto 60px;
 }
 
 
@@ -501,49 +504,26 @@ body.latifah .filter {
     position: relative;
 }
 
-/*
 .swipe .info-bg {
-    background: url('/images/bokeh.png') center bottom no-repeat;
-    background-size: 100%;
     position: relative;
     height: 100%;
-    margin-top: -90px;
-}*/
+}
 
 .swipe #a .info-bg {
     background: url('/images/1_overlay.png') center bottom no-repeat;
     background-size: 100%;
-    position: relative;
-    height: 100%;
-    margin-top: -90px;
-}
-
-.swipe #b .info-bg {
-    background: none;
-    background-size: 100%;
-    position: relative;
-    height: 100%;
-    margin-top: -90px;
-}
-
-.swipe #c .info-bg {
-    background: none;
-    background-size: 100%;
-    position: relative;
-    height: 100%;
-    margin-top: -90px;
 }
 
 .swipe .info {
     position: absolute;
-    bottom: 20px;
+    bottom: 120px;
     left: 50%;
-    margin-left: -333px; /*-233px*/
-    /*margin: 0 auto;*/
+    margin-left: -233px; /*-233px*/
     width: 500px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
+    height: 255px;
 }
 
 .swipe .info h1 {
@@ -575,6 +555,8 @@ body.latifah .filter {
     background: url('/images/watch-video.png') no-repeat;
     text-indent: -9999em;
     margin: 0 auto 30px;
+} .watch-video:hover {
+    background-position: 0 -52px;
 }
 
 #myswipe {
@@ -591,8 +573,8 @@ body.latifah .filter {
 #position {
     position: absolute;
 z-index: 10;
-left: 40%;
-bottom: 380px;
+left: 37%;
+bottom: 290px;
 } #position li {
     float: left;
     width: 10px;
@@ -609,14 +591,16 @@ bottom: 380px;
 }
 
 
-
-
+/* body not home .content */
+body:not(.home) .content {
+    margin-left: 180px; /*width of left sidebar*/
+}
 
 
 body.home .content, body.living .content {
-    left: 0;
-    width: 100% !important;
-    margin-left: 0;
+    /* left: 0; /* need to remove*/
+    /* width: 100% !important; /* need to remove*/
+    /* margin-left: 0; /* need to remove*/
 }
 
 body.home .filter {
@@ -626,6 +610,7 @@ body.home .filter {
 body.latifah .content {
     display: block;
     left: 150px;
+
 }
 
 body.latifah .content img.page {
@@ -709,40 +694,99 @@ a.logo {
     background: #c8d3d0;
 }
 
+
+/* Social
+-------------------------------------------------- */
 .social {
     height: 52px;
     border-bottom: 1px solid #a0a7a5;
-    overflow: hidden;
+    margin: 0;
+    /*overflow: hidden;*/
+  } .social li {
+    /*line-height: 52px;*/
+    /*margin: 0 20px*/
+  } .social li a {
+    background: url(/images/social@2x.png) no-repeat;
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-size: 52px;
+    text-indent: -9999em;
+    margin: 12px 18px;
+} .social li.fb a:hover{
+    background-position: -26px 0;
 }
 
-.social ul {
-    list-style: none;
-    margin: 0 0 0 10px;
-    padding: 0;
+.social li.t a{
+    background-position: 0 -26px;
+} .social li.t a:hover{
+    background-position: -26px -26px;
 }
 
-.social ul li {
-    float: left;
-    line-height: 52px;
-    margin: 0 20px
+.social li.i a{
+    background-position: 0 -52px;
+} .social li.i a:hover{
+    background-position: -26px -52px;
 }
 
+.social li.yt a{
+    background-position: 0 -78px;
+} .social li.yt a:hover{
+    background-position: -26px -78px;
+}
+
+
+/* Queue
+-------------------------------------------------- */
 .daily .dose {
-    background: url(/images/daily-dose_bg.png);
+    /*background: url(/images/daily-dose_bg.png);*/
+    background: url('/images/queue@2x.png') no-repeat;
+    background-size: 300px;
     border-right: 1px solid #a0a7a5;
-
+} .daily .dose:hover {
+    background-position: 0 -50px;
 }
 
 .daily .join {
-    background: url(/images/join_bg.png);
+    /*background: url(/images/join_bg.png);*/
+    background: url('/images/queue@2x.png') no-repeat;
+    background-size: 300px;
+    background-position: -150px 0;
+} .daily .join:hover {
+    background-position: -150px -50px;
 }
 
-ul.watch-widget {
-    padding: 0;
-    margin: 10px 0 0;
-    list-style: none;
 
+/* Where to watch
+-------------------------------------------------- */
+.watch-widget li a {
+    width: 179px;
+    height: 43px;
+    display: block;
+    text-indent: -9999em;
+    background: url('/images/listings-tickets.png') no-repeat;
+  } .watch-widget li.view a {
+
+    } .watch-widget li.view a:hover {
+        background-position: -180px 0;
+
+  } .watch-widget li.tickets a {
+        background-position: 0 -40px;
+    } .watch-widget li.tickets a:hover {
+        background-position: -180px -40px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .living .content .filter {
     display: none;

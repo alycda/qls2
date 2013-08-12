@@ -93,7 +93,7 @@ function switchContent(href) {
             $('body').addClass('home');
 
             // backstretch.js (first)
-            $('#a').backstretch("/images/slide1.jpg");
+            $('#a').addClass('dark').backstretch("/images/slide1.jpg"); //this image is dark, and needs a white logo
             $('#b').backstretch("/images/slide2.jpg");
             $('#c').backstretch("/images/slide3.jpg");
 
@@ -101,8 +101,13 @@ function switchContent(href) {
             window.mySwipe = $('#mySwipe').Swipe({
                 auto: 5000,
                 callback: function(index, element){
-                    // console.log('my number is: '+index);
-                    // console.log('update dots');
+                    if($('.swipe-wrap .img').eq(index).hasClass('dark')) {
+                        // load light logo (for dark backgrounds)
+                    } else {
+                        // load dark logo (for light backgrounds)
+                    }
+
+                    // update slider nav
                     $('#position li').removeClass('on');
                     $('#position li').eq(index).addClass('on');
                 },
@@ -115,8 +120,6 @@ function switchContent(href) {
             }).data('Swipe');
 
             // create nav
-            // console.log('create '+mySwipe.getNumSlides()+' links for slider');
-
             $('#mySwipe').before('<ul id="position" class="nav list-inline"></ul>');
             for (var i = 0; i < mySwipe.getNumSlides(); i++) {
                 // add child

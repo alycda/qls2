@@ -85,18 +85,15 @@ html.no-js(lang='en')
                         | living
                         img(src='/images/nav_arrow.png', class='arrow')
 
-            ul.watch-widget
+            ul.watch-widget.list-unstyled
                 li
-                    a
-                        img(src='/images/where-to-watch.png')
+                    img(src='/images/where-to-watch.png')
 
-                li
-                    a(href="/pdf/where-to-watch-q.pdf", target="_blank")
-                        img(src='/images/view-listings.png')
+                li.view
+                    a(href="/pdf/where-to-watch-q.pdf", target="_blank", title="View Listings") View Listings
 
-                li
-                    a(href="http://1iota.com/Show/305/The-Queen-Latifah-Show", target="_blank")
-                        img(src='/images/get-tickets.png')
+                li.tickets
+                    a(href="http://1iota.com/Show/305/The-Queen-Latifah-Show", target="_blank", title="Get Tickets") Get Tickets
 
 
 
@@ -108,23 +105,15 @@ html.no-js(lang='en')
             block content
 
         div.right-dock
-            div.social
-                ul
-                    li
-                        a(href="https://www.facebook.com/QueenLatifah", target="_blank")
-                            img(src="/images/icon_fb.png")
-
-                    li
-                        a(href="https://twitter.com/IAMQUEENLATIFAH", target="_blank")
-                            img(src="/images/icon_twitter.png")
-
-                    li
-                        a(href="http://instagram.com/queenlatifah", target="_blank")
-                            img(src="/images/icon_instagram.png")
-
-                    li
-                        a(href="http://www.youtube.com/user/QueenLatifahShow", target="_blank")
-                            img(src="/images/icon_youtube.png")
+            ul.social.list-inline
+                li.fb
+                    a(href="https://www.facebook.com/QueenLatifah", target="_blank", title="find me on facebook!") facebook
+                li.t
+                    a(href="https://twitter.com/IAMQUEENLATIFAH", target="_blank", title="shout out on twitter!") twitter
+                li.i
+                    a(href="http://instagram.com/queenlatifah", target="_blank", title="follow me on instagram!") instagram
+                li.yt
+                    a(href="http://www.youtube.com/user/QueenLatifahShow", target="_blank", title="watch me on youtube!") youtube
 
             div.daily
                 a.dose(href='/queue')
