@@ -2,6 +2,9 @@ extends layout
 
 block content
 	div.myContainer
+		div.ads
+			img(src="http://placehold.it/728x90")
+
 		div.sharethis.pull-right
 			span.st_facebook_hcount
 			span.st_fblike_hcount
@@ -11,41 +14,58 @@ block content
 		div.row
 			div#preview.col-12
 				img(src="/images/category-big.jpg")
-				div.bar
+				div(class="bar thumbnails", data-toggle="lightbox" )
 					p.caption
 						| <strong>Janelle Monae</strong> - Turning the event stage into the red carpet
-					a(href="#", class="lightbox-expand pull-right") lightbox
+					a(class="thumbnail lightbox-expand pull-right", href="/images/category-big.jpg", title="Image 1", data-description="") lightbox
 		div.articles
 			div.row
 				div.col-6
 					img(class="pull-left", src="http://placehold.it/180x120", width="180", height="120", alt="FPO")
 					h3(class="pull-left") I want her hair!
 					p all thats going on in the vibrant culinary world of the lorem ipsum dolor sit amet&hellip;
-					a(class="view btn", href="#") view
+					a(class="view btn", href="/article/1") view
 				div.col-6
 					img(class="pull-left", src="http://placehold.it/180x120", width="180", height="120", alt="FPO")
 					h3(class="pull-left") I want her hair!
 					p all thats going on in the vibrant culinary world of the lorem ipsum dolor sit amet&hellip;
-					a(class="view btn", href="#") view
+					a(class="view btn", href="/article/1") view
 			div.row
 				div.col-6
 					img(class="pull-left", src="http://placehold.it/180x120", width="180", height="120", alt="FPO")
 					h3(class="pull-left") I want her hair!
 					p all thats going on in the vibrant culinary world of the lorem ipsum dolor sit amet&hellip;
-					a(class="view btn", href="#") view
+					a(class="view btn", href="/article/1") view
 				div.col-6
 					img(class="pull-left", src="http://placehold.it/180x120", width="180", height="120", alt="FPO")
 					h3(class="pull-left") I want her hair!
 					p all thats going on in the vibrant culinary world of the lorem ipsum dolor sit amet&hellip;
-					a(class="view btn", href="#") view
+					a(class="view btn", href="/article/1") view
 			div.row
 				div.col-6
 					img(class="pull-left", src="http://placehold.it/180x120", width="180", height="120", alt="FPO")
 					h3(class="pull-left") I want her hair!
 					p all thats going on in the vibrant culinary world of the lorem ipsum dolor sit amet&hellip;
-					a(class="view btn", href="#") view
+					a(class="view btn", href="/article/1") view
 				div.col-6
 					img(class="pull-left", src="http://placehold.it/180x120", width="180", height="120", alt="FPO")
 					h3(class="pull-left") I want her hair!
 					p all thats going on in the vibrant culinary world of the lorem ipsum dolor sit amet&hellip;
-					a(class="view btn", href="#") view
+					a(class="view btn", href="/article/1") view
+
+block modal
+	div#img.modal.fade
+		div.modal-dialog
+			div.modal-content
+				div.modal-header
+					button(type="button", class="close", data-dismiss="modal", aria-hidden="true") &times;
+					div.sharethis
+						span.st_facebook_hcount
+						span.st_fblike_hcount
+						span.st_twitter_hcount
+						span.st_pinterest_hcount
+						span.st_email_hcount
+				div.modal-body
+					img(src="/images/category-big.jpg")
+				//div.modal-footer
+					p video controls

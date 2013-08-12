@@ -150,6 +150,20 @@ server.get('/laughing', function(req,res){
         }
     });
 });
+
+// make me dynamic
+server.get('/article/1', function(req,res){
+    res.render('article.jade', {
+        locals : {
+            title : 'Your Page Title'
+            ,description: 'Your Page Description'
+            ,author: 'Your Name'
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'queue'
+        }
+    });
+});
+
 server.get('/queue', function(req,res){
     res.render('queue.jade', {
         locals : {
@@ -161,6 +175,21 @@ server.get('/queue', function(req,res){
         }
     });
 });
+
+// i wanna be dynamic too!
+server.get('/queue/1', function(req,res){
+    res.render('q-article.jade', {
+        locals : {
+            title : 'Your Page Title'
+            ,description: 'Your Page Description'
+            ,author: 'Your Name'
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'queue'
+        }
+    });
+});
+
+
 //A Route for Creating a 500 Error (Useful to keep around)
 server.get('/500', function(req, res){
     throw new Error('This is a 500 Error');

@@ -138,6 +138,9 @@ body.home .content {
     /* temp fix for content displaying behind right sidebar, should be 0 auto 60px if/when that is ever fixed */
     /*margin: 0 375px 60px auto;*/
     margin: 0 auto 60px;
+} .myContainer .ads {
+    margin: 0 auto 30px;
+    width: 728px;
 }
 
 

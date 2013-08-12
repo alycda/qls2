@@ -155,6 +155,8 @@ function switchContent(href) {
             $('#videoModal').on('show.bs.modal', function () {
               // pause current slide immediately, before modal transition is complete
               mySwipe.stop();
+              // should wait until fully visible...
+              sublime.player('promo').play();
             }).on('hidden.bs.modal', function () {
               // pause video
               sublime.player('promo').pause();
