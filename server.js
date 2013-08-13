@@ -194,6 +194,18 @@ server.get('/queue/1', function(req,res){
     });
 });
 
+server.get('/ip', function(req,res){
+    res.render('ip.jade', {
+        locals : {
+            title : 'Your Page Title'
+            ,description: 'Your Page Description'
+            ,author: 'Your Name'
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'queue'
+        }
+    });
+});
+
 
 //A Route for Creating a 500 Error (Useful to keep around)
 server.get('/500', function(req, res){
