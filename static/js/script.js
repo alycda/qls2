@@ -69,6 +69,15 @@ function switchContent(href) {
     $('body').removeClass()
     switch(href) {
         case '/':
+            var city = geoip_city().toLowerCase().replace(' ', '');
+            var state = geoip_region_name().toLowerCase();
+            var where = eval('listings.'+state+'.'+city);
+
+            console.log(eval('listings.'+state+'.'+city+'.station'))
+
+            $('.watch-widget .schedule').html(where.time[0]);
+            $('.watch-widget .station').html(where.station[0]+'<br>'+where.network[0]);
+
             $('.logo img').attr('src', '/images/qls-logo_white.png');
 
             $('body').addClass('home');
