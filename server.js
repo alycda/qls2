@@ -76,9 +76,9 @@ server.get('/gettweets', auth, function(req,res){
 server.get('/', auth, function(req,res){
   res.render('index.jade', {
     locals : {
-              title : 'Your Page Title'
-             ,description: 'Your Page Description'
-             ,author: 'Your Name'
+              title : 'Queen Latifah'
+             ,description: ''
+             ,author: ''
              ,analyticssiteid: 'XXXXXXX'
              ,pageid: 'home'
             }
@@ -94,9 +94,9 @@ server.get('/static', auth, function(req,res){
 server.get('/grid', function(req,res){
     res.render('grid.jade', {
         locals : {
-            title : 'Your Page Title'
-            ,description: 'Your Page Description'
-            ,author: 'Your Name'
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
             ,analyticssiteid: 'XXXXXXX'
         }
     });
@@ -105,9 +105,9 @@ server.get('/grid', function(req,res){
 server.get('/latifah.html', function(req,res){
     res.render('latifah.jade', {
         locals : {
-            title : 'Your Page Title'
-            ,description: 'Your Page Description'
-            ,author: 'Your Name'
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
             ,analyticssiteid: 'XXXXXXX'
             ,pageid: 'latifah'
         }
@@ -117,9 +117,9 @@ server.get('/latifah.html', function(req,res){
 server.get('/living.html', function(req,res){
     res.render('living.jade', {
         locals : {
-            title : 'Your Page Title'
-            ,description: 'Your Page Description'
-            ,author: 'Your Name'
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
             ,analyticssiteid: 'XXXXXXX'
             ,pageid: 'living'
         }
@@ -129,9 +129,9 @@ server.get('/living.html', function(req,res){
 server.get('/loving.html', function(req,res){
     res.render('loving.jade', {
         locals : {
-            title : 'Your Page Title'
-            ,description: 'Your Page Description'
-            ,author: 'Your Name'
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
             ,analyticssiteid: 'XXXXXXX'
             ,pageid: 'loving'
         }
@@ -141,9 +141,9 @@ server.get('/loving.html', function(req,res){
 server.get('/learning.html', function(req,res){
     res.render('learning.jade', {
         locals : {
-            title : 'Your Page Title'
-            ,description: 'Your Page Description'
-            ,author: 'Your Name'
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
             ,analyticssiteid: 'XXXXXXX'
             ,pageid: 'learning'
         }
@@ -153,9 +153,9 @@ server.get('/learning.html', function(req,res){
 server.get('/laughing.html', function(req,res){
     res.render('laughing.jade', {
         locals : {
-            title : 'Your Page Title'
-            ,description: 'Your Page Description'
-            ,author: 'Your Name'
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
             ,analyticssiteid: 'XXXXXXX'
             ,pageid: 'laughing'
         }
@@ -166,9 +166,9 @@ server.get('/laughing.html', function(req,res){
 server.get('/article/1', function(req,res){
     res.render('article.jade', {
         locals : {
-            title : 'Your Page Title'
-            ,description: 'Your Page Description'
-            ,author: 'Your Name'
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
             ,analyticssiteid: 'XXXXXXX'
             ,pageid: 'article'
         }
@@ -179,9 +179,9 @@ server.get('/article/1', function(req,res){
 server.get('/queue', function(req,res){
     res.render('queue.jade', {
         locals : {
-            title : 'Your Page Title'
-            ,description: 'Your Page Description'
-            ,author: 'Your Name'
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
             ,analyticssiteid: 'XXXXXXX'
             ,pageid: 'queue'
         }
@@ -193,9 +193,9 @@ server.get('/queue', function(req,res){
 server.get('/queue/1', function(req,res){
     res.render('q-article.jade', {
         locals : {
-            title : 'Your Page Title'
-            ,description: 'Your Page Description'
-            ,author: 'Your Name'
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
             ,analyticssiteid: 'XXXXXXX'
             ,pageid: 'q-article'
         }
@@ -206,9 +206,9 @@ server.get('/queue/1', function(req,res){
 server.get('/ip', function(req,res){
     res.render('ip.jade', {
         locals : {
-            title : 'Your Page Title'
-            ,description: 'Your Page Description'
-            ,author: 'Your Name'
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
             ,analyticssiteid: 'XXXXXXX'
             ,pageid: 'queue'
         }
