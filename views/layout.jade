@@ -84,8 +84,28 @@ html.no-js(lang='en')
                         img(src='/images/icon_living.png', class='icon')
                         | living
                         img(src='/images/nav_arrow.png', class='arrow')
+            div.where-to-watch
+                h2 Where to watch
+                div.clearfix
+                    div.time.col-6
+                        h3 Weekdays
+                        ul.list-inline
+                            li 11am
+                            li 2pm
+                    div.channel.col-6
+                        h3.hidden Channels
+                        ul.list-inline
+                            li CBS 2 <span class="muted">|</span> CHI
+                            li WCIU <span class="muted">|</span> ABC
 
-            ul.watch-widget.list-unstyled
+                ul.links.list-unstyled
+                    li.col-6
+                        a(class="view-all", href="/pdf/where-to-watch-q.pdf", target="_blank", title="View Listings") View All
+                    li.col-6
+                        a(class="my-area", href="#") My Area
+                a(class="get-tix", href="http://1iota.com/Show/305/The-Queen-Latifah-Show", target="_blank", title="Get Tickets") Get Tickets!
+
+            //ul.watch-widget.list-unstyled
                 li
                     img(src='/images/where-to-watch.png')
 
@@ -147,8 +167,8 @@ html.no-js(lang='en')
         //script(src='/js/bootstrap.modal.min.js')
         script(src='/js/bootstrap.min.js')
         script(src='/js/bootstrap.lightbox.js')
-        script(src='/js/underscore-min.js')
-        script(src='/js/backbone-min.js')
+        //script(src='/js/underscore-min.js')
+        // script(src='/js/backbone-min.js')
         script(src='/js/jquery.mosaicflow.min.js')
         script
           window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\\/script>')

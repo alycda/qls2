@@ -796,6 +796,81 @@ a.logo {
 
 
 
+.where-to-watch {
+   width: 180px;
+   background: #829c9f;
+   color: #fff;
+} .where-to-watch h2 {
+    width: 180px;
+    height: 46px;
+    display: block;
+    background: url(/images/where-to-watch.png) no-repeat;
+    text-indent: -9999em
+} .where-to-watch .time {
+    margin: 0;
+    padding: 5px 0 0;
+    text-align: center;
+    border-right: 1px dotted;
+} .where-to-watch .time h3, .where-to-watch .channel h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .15em
+} .where-to-watch .time ul {
+    font-family: 'Glegoo', "Times New Roman";
+    font-size: 12px;
+    margin: 10px 0;
+} .where-to-watch .time ul li {
+    border-right: 1px solid #b2c4c5;
+} .where-to-watch .time ul li:last-child {
+    border-right: 0;
+} .where-to-watch .channel {
+    margin: 0;
+    padding: 5px 0 0;
+    text-align: center;
+} .where-to-watch .channel ul {
+    font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
+    text-transform: uppercase;
+} .where-to-watch .muted {
+    color: #b2c4c5;
+} .where-to-watch .links {
+    margin: 10px 0 0 ;
+    height: 31px;
+    border-top: 1px solid #aec5c4;
+    border-bottom: 1px solid #aec5c4;
+} .where-to-watch .links li {
+    margin: 0;
+    padding: 0;
+} .where-to-watch .links a {
+    width: 89px;
+    height: 29px;
+    display: block;
+    text-indent: -9999em;
+} .where-to-watch .links .view-all {
+    background: url(/images/view-all.png) no-repeat;
+} .where-to-watch .links .my-area {
+    background: url(/images/my-area.png) no-repeat;
+} .where-to-watch .get-tix {
+    width: 179px;
+    height: 43px;
+    display: block;
+    text-indent: -9999em;
+    background: url('/images/listings-tickets.png') no-repeat;
+    background-position: 0 -40px;
+} .where-to-watch .get-tix:hover {
+    background-position: -180px -40px;
+}
+
+
+
+
+
+
+
+
 
 
 
