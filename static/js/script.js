@@ -30,6 +30,13 @@ $(document).ready(function() {
         }
     });
 
+    $('#watchModal #zip-box').change(function() {
+        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+$('#zip-box').val()+'&sensor=true', function(data) {
+            var where = ('listings.'+data.results[0].address_components[3].long_name+'.'+data.results[0].address_components[1].long_name).toLowerCase().replace(' ', '');
+            console.log(('listings.'+data.results[0].address_components[3].long_name+'.'+data.results[0].address_components[1].long_name).toLowerCase().replace(' ', ''))
+
+        })
+    })
 }); // end $(document).ready()
 
 sublime.ready(function(){
@@ -82,7 +89,7 @@ function switchContent(href) {
         $('.where-to-watch .channel .list-inline').append('<li>'+val+'<br>'+where.network[idx]+'<br><img src="/images/'+where.network[idx]+'.png" vspace=5></li>');
     });
 
-    switch(href) {
+    switch(href.replace('.html', '')) {
         case '/':
 
             $('.logo img').attr('src', '/images/qls-logo_white.png');

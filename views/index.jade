@@ -34,20 +34,30 @@ block content
                     | Premiering September 16th
 
 block modal
-  div#videoModal.modal.fade
-    div.modal-dialog
-      div.modal-content
-        div.modal-header
-          button(type="button", class="close", data-dismiss="modal", aria-hidden="true") &times;
-          div.sharethis
-            span.st_facebook_hcount
-            span.st_fblike_hcount
-            span.st_twitter_hcount
-            span.st_pinterest_hcount
-            span.st_email_hcount
-        div.modal-body
-          video(id="promo", class="sublime", poster="http://qls.herokuapp.com/mov/poster.png", width="640", height="360", title="Midnight Sun", data-uid="promo", preload="none")
-            source(src="http://qls.herokuapp.com/mov/latifah_promo.mp4", data-quality="hd")
-            source(src="http://qls.herokuapp.com/mov/latifah_promo.webm", data-quality="hd")
-        //div.modal-footer
-          p video controls
+    div#videoModal.modal.fade
+      div.modal-dialog
+        div.modal-content
+          div.modal-header
+            button(type="button", class="close", data-dismiss="modal", aria-hidden="true") &times;
+            div.sharethis
+              span.st_facebook_hcount
+              span.st_fblike_hcount
+              span.st_twitter_hcount
+              span.st_pinterest_hcount
+              span.st_email_hcount
+          div.modal-body
+            video(id="promo", class="sublime", poster="http://qls.herokuapp.com/mov/poster.png", width="640", height="360", title="Midnight Sun", data-uid="promo", preload="none")
+              source(src="http://qls.herokuapp.com/mov/latifah_promo.mp4", data-quality="hd")
+              source(src="http://qls.herokuapp.com/mov/latifah_promo.webm", data-quality="hd")
+          //div.modal-footer
+            p video controls
+    div#watchModal.modal.fade
+        div.modal-dialog
+            div.modal-content
+                div.modal-header
+                    button(type="button", class="close", data-dismiss="modal", aria-hidden="true") &times;
+                div.modal-body
+                    div.location.
+                        My Location: <span>Los Angeles, CA</span>
+                    div.zip.
+                        Change Zip code <input type="text" name="zip" id="zip-box">
