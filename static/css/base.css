@@ -864,7 +864,10 @@ a.logo {
     background-position: -180px -40px;
 }
 
-
+.where-to-watch .channel .list-inline {
+    font-size: 10px;
+    line-height: 10px;
+}
 
 
 

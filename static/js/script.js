@@ -79,7 +79,9 @@ function switchContent(href) {
                 $('.where-to-watch .time .list-inline').append('<li>'+val+'</li>');
             });
 
-            $('.watch-widget .station').html(where.station[0]+'<br>'+where.network[0]);
+            $.each(where.station, function(idx, val) {
+                $('.where-to-watch .channel .list-inline').append('<li>'+val+'<br>'+where.network[idx]+'<br><img src="/images/'+where.network[idx]+'.png" vspace=5></li>');
+            });
 
             $('.logo img').attr('src', '/images/qls-logo_white.png');
 
