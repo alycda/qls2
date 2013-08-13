@@ -75,7 +75,10 @@ function switchContent(href) {
 
             console.log(eval('listings.'+state+'.'+city+'.station'))
 
-            $('.watch-widget .schedule').html(where.time[0]);
+            $.each(where.time, function(idx, val) {
+                $('.where-to-watch .time .list-inline').append('<li>'+val+'</li>');
+            });
+
             $('.watch-widget .station').html(where.station[0]+'<br>'+where.network[0]);
 
             $('.logo img').attr('src', '/images/qls-logo_white.png');
