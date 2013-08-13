@@ -158,7 +158,18 @@ html.no-js(lang='en')
 
     block footer
       block modal
-      footer
+    div#watchModal.modal.fade
+        div.modal-dialog
+            div.modal-content
+                div.modal-header
+                    button(type="button", class="close", data-dismiss="modal", aria-hidden="true") &times;
+                div.modal-body
+                    div.location.
+                        My Location: <span>Los Angeles, CA</span>
+                    div.zip.
+                        Change Zip code <input type="text" name="zip" id="zip-box">
+
+        footer
         script(src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
         script(src='/js/jquery.backstretch.min.js')
         script(src='/js/jquery.imagesloaded.js')
