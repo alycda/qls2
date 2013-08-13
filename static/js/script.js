@@ -72,6 +72,36 @@ function func(data) {
         },9500);
 }
 
+function getLocation(state) {
+    var onSuccess = function(data){
+        console.log();
+
+        var where = eval('listings.'+state+'.'+data.location.time_zone.replace('America/', '').replace('_', '').toLowerCase());
+
+        $.each(where.time, function(idx, val) {
+            $('.where-to-watch .time .list-inline').append('<li>'+val+'</li>');
+        });
+
+        $.each(where.station, function(idx, val) {
+            $('.where-to-watch .channel .list-inline').append('<li>'+val+'<br>'+where.network[idx]+'<br><img src="/images/'+where.network[idx]+'.png" vspace=5></li>');
+        });
+
+//        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?latlng='+data.location.latitude+','+data.location.longitude+'&sensor=false', function(data) {
+//            console.log(data)
+//        });
+    };
+
+    var onError = function(error){
+        console.log(
+            "Error:\n\n"
+                + JSON.stringify(error, undefined, 4)
+        );
+    };
+
+    geoip2.city(onSuccess, onError, { w3cGeolocationDisabled: true });
+
+}
+
 function switchContent(href) {
     $('body').removeClass()
 
@@ -79,15 +109,21 @@ function switchContent(href) {
     var state = geoip_region_name().toLowerCase();
     var where = eval('listings.'+state+'.'+city);
 
-    console.log(eval('listings.'+state+'.'+city+'.station'))
+    if (!where) {
+        getLocation(state);
+    } else {
 
-    $.each(where.time, function(idx, val) {
-        $('.where-to-watch .time .list-inline').append('<li>'+val+'</li>');
-    });
+        console.log(eval('listings.'+state+'.'+city+'.station'))
 
-    $.each(where.station, function(idx, val) {
-        $('.where-to-watch .channel .list-inline').append('<li>'+val+'<br>'+where.network[idx]+'<br><img src="/images/'+where.network[idx]+'.png" vspace=5></li>');
-    });
+        $.each(where.time, function(idx, val) {
+            $('.where-to-watch .time .list-inline').append('<li>'+val+'</li>');
+        });
+
+        $.each(where.station, function(idx, val) {
+            $('.where-to-watch .channel .list-inline').append('<li>'+val+'<br>'+where.network[idx]+'<br><img src="/images/'+where.network[idx]+'.png" vspace=5></li>');
+        });
+
+    }
 
     switch(href.replace('.html', '')) {
         case '/':
