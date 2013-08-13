@@ -67,21 +67,23 @@ function func(data) {
 
 function switchContent(href) {
     $('body').removeClass()
+
+    var city = geoip_city().toLowerCase().replace(' ', '');
+    var state = geoip_region_name().toLowerCase();
+    var where = eval('listings.'+state+'.'+city);
+
+    console.log(eval('listings.'+state+'.'+city+'.station'))
+
+    $.each(where.time, function(idx, val) {
+        $('.where-to-watch .time .list-inline').append('<li>'+val+'</li>');
+    });
+
+    $.each(where.station, function(idx, val) {
+        $('.where-to-watch .channel .list-inline').append('<li>'+val+'<br>'+where.network[idx]+'<br><img src="/images/'+where.network[idx]+'.png" vspace=5></li>');
+    });
+
     switch(href) {
         case '/':
-            var city = geoip_city().toLowerCase().replace(' ', '');
-            var state = geoip_region_name().toLowerCase();
-            var where = eval('listings.'+state+'.'+city);
-
-            console.log(eval('listings.'+state+'.'+city+'.station'))
-
-            $.each(where.time, function(idx, val) {
-                $('.where-to-watch .time .list-inline').append('<li>'+val+'</li>');
-            });
-
-            $.each(where.station, function(idx, val) {
-                $('.where-to-watch .channel .list-inline').append('<li>'+val+'<br>'+where.network[idx]+'<br><img src="/images/'+where.network[idx]+'.png" vspace=5></li>');
-            });
 
             $('.logo img').attr('src', '/images/qls-logo_white.png');
 
