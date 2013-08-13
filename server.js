@@ -83,7 +83,13 @@ server.get('/', auth, function(req,res){
              ,pageid: 'home'
             }
   });
+  // res.sendfile('index.html');
 });
+
+server.get('/static', auth, function(req,res){
+    res.sendfile('static/html/index.html');
+});
+
 
 server.get('/grid', function(req,res){
     res.render('grid.jade', {
@@ -106,6 +112,7 @@ server.get('/latifah', function(req,res){
             ,pageid: 'latifah'
         }
     });
+    // res.sendfile('latifah.html');
 });
 
 server.get('/living', function(req,res){
@@ -118,6 +125,7 @@ server.get('/living', function(req,res){
             ,pageid: 'living'
         }
     });
+    // res.sendfile('living.html');
 });
 
 server.get('/loving', function(req,res){
@@ -130,6 +138,7 @@ server.get('/loving', function(req,res){
             ,pageid: 'loving'
         }
     });
+    // res.sendfile('loving.html');
 });
 
 server.get('/learning', function(req,res){
@@ -142,6 +151,7 @@ server.get('/learning', function(req,res){
             ,pageid: 'learning'
         }
     });
+    // res.sendfile('learning.html');
 });
 
 server.get('/laughing', function(req,res){
@@ -154,6 +164,7 @@ server.get('/laughing', function(req,res){
             ,pageid: 'laughing'
         }
     });
+    // res.sendfile('laughing.html');
 });
 
 // make me dynamic
@@ -167,6 +178,7 @@ server.get('/article/1', function(req,res){
             ,pageid: 'article'
         }
     });
+    // res.sendfile('article-1.html');
 });
 
 server.get('/queue', function(req,res){
@@ -179,6 +191,7 @@ server.get('/queue', function(req,res){
             ,pageid: 'queue'
         }
     });
+    // res.sendfile('queue.html');
 });
 
 // i wanna be dynamic too!
@@ -192,6 +205,7 @@ server.get('/queue/1', function(req,res){
             ,pageid: 'q-article'
         }
     });
+    // res.sendfile('queue-1.html');
 });
 
 server.get('/ip', function(req,res){

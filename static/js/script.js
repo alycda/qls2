@@ -189,7 +189,7 @@ function switchContent(href) {
 
             break;
         case '/queue/1':
-            $('body').addClass('q-article');
+            $('body').addClass('queue article');
 
             // refresh addThis widget?
 
