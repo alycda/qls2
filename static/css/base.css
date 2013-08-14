@@ -137,6 +137,219 @@ body.home .content {
     box-sizing: border-box;
 }
 
+
+
+/* dropdown
+-------------------------------------------------- */
+.left-dock .newNav {
+    position: relative;
+    font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
+    } .left-dock .newNav > li > a {
+        width : 180px;
+        height: 52px;
+        font-size: 18px;
+        line-height: 3em;
+        display: block;
+        background: #e0b66a;
+        color: #fff;
+        text-align: center;
+        letter-spacing: 1.5pt;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        } .left-dock .newNav > li > a:hover {
+            background: #e18367;
+    } .left-dock .newNav a {
+        text-decoration: none;
+        }.left-dock .newNav .icon {
+            margin-top: -2px;
+            margin-right: 12px;
+        } .left-dock .dropdown {
+            position: static;
+            } .left-dock li.dropdown:hover ul.dropdown-menu{
+                /* display on hover */
+                display: block;
+            }
+
+body.loving .left-dock li.loving.dropdown:hover ul.dropdown-menu,
+body.learning .left-dock li.learning.dropdown:hover ul.dropdown-menu,
+body.laughing .left-dock li.laughing.dropdown:hover ul.dropdown-menu,
+body.living .left-dock li.living.dropdown:hover ul.dropdown-menu {
+    /* don't show on respective pages*/
+    display: none;
+}
+
+            .left-dock .dropdown-menu {
+                z-index: -1;
+
+                top: 0;
+                left: 100%;
+                width: 345px;
+                border: 0 none;
+                border-radius: 0;
+                background: #dd8266;
+                color: #fff;
+                margin: 0;
+                padding: 0 5px 0 24px;
+                font-size: 12px;
+                letter-spacing: .1em;
+                height: 260px; /*exact height of top-level buttons*/
+
+                } .left-dock .dropdown-menu li {
+                    border-bottom: 2px dotted #e39b86;
+                    padding: 5px;
+                    margin: 3px 10px 3px 0;
+                    height: 86px; /*roughly 1/3 of .left-dock .dropdown-menu height*/
+                } .left-dock .dropdown-menu li:last-child {
+                    border-bottom: none;
+                    } .left-dock .dropdown-menu a.link {
+                        color: inherit;
+                        padding: 3px 0 8px 24px;
+                        } .left-dock .dropdown-menu a:hover{
+                            background: #d0785e;
+                        } .left-dock .dropdown-menu img {
+                            margin-right: 18px;
+                        } .left-dock .dropdown-menu p {
+                            width: 280px;
+                            white-space: normal;
+                            margin-bottom: 8px;
+                        } .left-dock .dropdown-menu .view {
+                            width: 45px;
+                            height: 15px;
+                            display: inline-block;
+                            background: url(/images/tiny-view.png) no-repeat;
+                            text-indent: -9999px;
+}
+
+
+.newNav > li.latifah > a, .newNav > li.living > a{
+    /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(left, #e0b66a 0%, #b39359 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(left, #e0b66a 0%, #b39359 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(left, #e0b66a 0%, #b39359 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #e0b66a), color-stop(1, #b39359));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(left, #e0b66a 0%, #b39359 100%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to right, #e0b66a 0%, #b39359 100%);
+}
+
+.newNav > li.learning > a{
+    /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(left, #b39359 0%, #e0b66a 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(left, #b39359 0%, #e0b66a 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(left, #b39359 0%, #e0b66a 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #b39359), color-stop(1, #e0b66a));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(left, #b39359 0%, #e0b66a 100%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to right, #b39359 0%, #e0b66a 100%);
+}
+
+.home .left-dock .newNav > li.loving > a, .home .left-dock .newNav > li.laughing > a {
+    width: 193px;
+} .home .left-dock .newNav > li.learning > a {
+    width: 206px;
+}
+
+.left-dock .newNav > li > a:hover {
+    width: 190px !important;
+/* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #e18367), color-stop(1, #aa634e));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to right, #e18367 0%, #aa634e 100%);
+}
+
+
+body.loving li.loving > a, body.loving li.loving > a:hover,
+body.learning li.learning > a, body.learning li.learning > a:hover,
+body.laughing li.laughing > a, body.laughing li.laughing > a:hover,
+body.living li.living > a, body.living li.living > a:hover {
+    width: 200px !important;
+    background-image: -ms-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #e18367), color-stop(1, #aa634e));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to right, #e18367 0%, #aa634e 100%);
+}
+
+/*
+-------------------------------------------------- */
+
+.nav li a:hover {
+    width: 170px;
+    padding-left: 40px;
+}
+
+.nav li a:hover img {
+    margin-left: -40px;
+}
+
+.nav .icon {
+    margin-top: -2px;
+    margin-right: 5px;
+}
+
+.nav .arrow {
+    position: absolute;
+    right: 5px;
+    top: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .myContainer {
     width: 860px;
     /* temp fix for content displaying behind right sidebar, should be 0 auto 60px if/when that is ever fixed */
@@ -296,114 +509,13 @@ p.date:before, p.date:after {
 
 
 
-/*
--------------------------------------------------- */
 
-body.living .nav li.living a,
-body.loving .nav li.loving a,
-body.learning .nav li.learning a,
-body.laughing .nav li.laughing a,
-body.latifah .nav li.latifah a {
-    width: 200px;
-    /*padding-left: 40px;*/
-    /* IE10 Consumer Preview */
-    background-image: -ms-linear-gradient(left, #e18367 0%, #aa634e 100%);
 
-    /* Mozilla Firefox */
-    background-image: -moz-linear-gradient(left, #e18367 0%, #aa634e 100%);
 
-    /* Opera */
-    background-image: -o-linear-gradient(left, #e18367 0%, #aa634e 100%);
 
-    /* Webkit (Safari/Chrome 10) */
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #e18367), color-stop(1, #aa634e));
 
-    /* Webkit (Chrome 11+) */
-    background-image: -webkit-linear-gradient(left, #e18367 0%, #aa634e 100%);
 
-    /* W3C Markup, IE10 Release Preview */
-    background-image: linear-gradient(to right, #e18367 0%, #aa634e 100%);
-}
 
-.nav .living a, .nav .latifah a {
-    /* IE10 Consumer Preview */
-    background-image: -ms-linear-gradient(left, #e0b66a 0%, #b39359 100%);
-
-    /* Mozilla Firefox */
-    background-image: -moz-linear-gradient(left, #e0b66a 0%, #b39359 100%);
-
-    /* Opera */
-    background-image: -o-linear-gradient(left, #e0b66a 0%, #b39359 100%);
-
-    /* Webkit (Safari/Chrome 10) */
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #e0b66a), color-stop(1, #b39359));
-
-    /* Webkit (Chrome 11+) */
-    background-image: -webkit-linear-gradient(left, #e0b66a 0%, #b39359 100%);
-
-    /* W3C Markup, IE10 Release Preview */
-    background-image: linear-gradient(to right, #e0b66a 0%, #b39359 100%);
-}
-
-.nav .learning a {
-    /* IE10 Consumer Preview */
-    background-image: -ms-linear-gradient(left, #b39359 0%, #e0b66a 100%);
-
-    /* Mozilla Firefox */
-    background-image: -moz-linear-gradient(left, #b39359 0%, #e0b66a 100%);
-
-    /* Opera */
-    background-image: -o-linear-gradient(left, #b39359 0%, #e0b66a 100%);
-
-    /* Webkit (Safari/Chrome 10) */
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #b39359), color-stop(1, #e0b66a));
-
-    /* Webkit (Chrome 11+) */
-    background-image: -webkit-linear-gradient(left, #b39359 0%, #e0b66a 100%);
-
-    /* W3C Markup, IE10 Release Preview */
-    background-image: linear-gradient(to right, #b39359 0%, #e0b66a 100%);
-}
-
-.nav a:hover {
-    /* IE10 Consumer Preview */
-    background-image: -ms-linear-gradient(left, #e18367 0%, #aa634e 100%);
-
-    /* Mozilla Firefox */
-    background-image: -moz-linear-gradient(left, #e18367 0%, #aa634e 100%);
-
-    /* Opera */
-    background-image: -o-linear-gradient(left, #e18367 0%, #aa634e 100%);
-
-    /* Webkit (Safari/Chrome 10) */
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #e18367), color-stop(1, #aa634e));
-
-    /* Webkit (Chrome 11+) */
-    background-image: -webkit-linear-gradient(left, #e18367 0%, #aa634e 100%);
-
-    /* W3C Markup, IE10 Release Preview */
-    background-image: linear-gradient(to right, #e18367 0%, #aa634e 100%);
-}
-
-.nav li a:hover {
-    width: 170px;
-    padding-left: 40px;
-}
-
-.nav li a:hover img {
-    margin-left: -40px;
-}
-
-.nav .icon {
-    margin-top: -2px;
-    margin-right: 5px;
-}
-
-.nav .arrow {
-    position: absolute;
-    right: 5px;
-    top: 14px;
-}
 
 .filter {
     display: none;

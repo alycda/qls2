@@ -2093,6 +2093,15 @@ input[type="button"].btn-block {
 /* ==========================================================================
  * Dropdowns
  * ==========================================================================
+*/
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle:focus {
+  outline: 0;
+}
 
 .dropdown-menu {
   position: absolute;
@@ -2104,6 +2113,7 @@ input[type="button"].btn-block {
   min-width: 160px;
   padding: 5px 0;
   margin: 2px 0 0;
+  font-size: 14px;
   list-style: none;
   background-color: #ffffff;
   border: 1px solid #cccccc;
@@ -4425,7 +4435,6 @@ a.list-group-item.active > .badge,
 /* ==========================================================================
  * Accordion
  * ==========================================================================
-
 
 .accordion {
   margin-bottom: 20px;

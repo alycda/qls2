@@ -210,7 +210,7 @@ server.get('/ip', function(req,res){
             ,description: ''
             ,author: ''
             ,analyticssiteid: 'XXXXXXX'
-            ,pageid: 'queue'
+            ,pageid: 'ip'
         }
     });
 });

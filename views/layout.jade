@@ -38,6 +38,9 @@ html.no-js(lang='en')
 
     script(src="http://cdn.sublimevideo.net/js/j2zp1tsa.js")
 
+    script(src="//j.maxmind.com/js/geoip.js")
+    script(src="//j.maxmind.com/js/apis/geoip2/v2.0/geoip2.js")
+
   body(class=pageid)
     block header
 
@@ -56,35 +59,99 @@ html.no-js(lang='en')
         div.left-dock
             a(href='/', class='logo')
                 img(src='/images/queen-latifah.png')
-            ul.nav.list-unstyled.uc
 
+
+            ul.newNav.list-unstyled.uc
                 li.latifah
-                    a(href='/latifah.html')
+                    a(href="latifah.html")
                         img(src='/images/icon_q.png', class='icon')
-                        | latifah
+                        | Latifah
                         img(src='/images/nav_arrow.png', class='arrow')
-
-                li.loving
-                    a(href='/loving.html')
+                li.loving.dropdown
+                    a(data-toggle="dropdown", href="loving.html")
                         img(src='/images/icon_loving.png', class='icon')
-                        | loving
+                        | Loving
                         img(src='/images/nav_arrow.png', class='arrow')
-                li.learning
-                    a(href='/learning.html')
+                        ul(class="dropdown-menu")
+                            li
+                                a(class="link", href="article/1")
+                                    img(class="pull-left", src="http://placehold.it/90x55")
+                                    p go behind the scenes with Queen Latifah
+                                    span.view view
+                            li
+                                a(class="link", href="article/1")
+                                    img(class="pull-left", src="http://placehold.it/90x55")
+                                    p go behind the scenes with Queen Latifah
+                                    span.view view
+                            li
+                                a(class="link", href="article/1")
+                                    img(class="pull-left", src="http://placehold.it/90x55")
+                                    p go behind the scenes with Queen Latifah
+                                    span.view view
+                li.learning.dropdown
+                    a(data-toggle="dropdown", href="learning.html")
                         img(src='/images/icon_learning.png', class='icon')
-                        | learning
+                        | Learning
                         img(src='/images/nav_arrow.png', class='arrow')
-                li.laughing
-                    a(href='/laughing.html')
+                        ul(class="dropdown-menu")
+                            li
+                                a(class="link", href="article/1")
+                                    img(class="pull-left", src="http://placehold.it/90x55")
+                                    p a hot time in chicago chicago chicago
+                                    span.view view
+                            li
+                                a(class="link", href="article/1")
+                                    img(class="pull-left", src="http://placehold.it/90x55")
+                                    p a hot time in chicago
+                                    span.view view
+                            li
+                                a(class="link", href="article/1")
+                                    img(class="pull-left", src="http://placehold.it/90x55")
+                                    p a hot time in chicago
+                                    span.view view
+                li.laughing.dropdown
+                    a(data-toggle="dropdown", href="laughing.html")
                         img(src='/images/icon_laughing.png', class='icon')
-                        | laughing
+                        | Laughing
                         img(src='/images/nav_arrow.png', class='arrow')
-
-                li.living
-                    a(href='/living.html')
+                        ul(class="dropdown-menu")
+                            li
+                                a(class="link", href="article/1")
+                                    img(class="pull-left", src="http://placehold.it/90x55")
+                                    p Latifah helps with
+                                    span.view view
+                            li
+                                a(class="link", href="article/1")
+                                    img(class="pull-left", src="http://placehold.it/90x55")
+                                    p Latifah helps with
+                                    span.view view
+                            li
+                                a(class="link", href="article/1")
+                                    img(class="pull-left", src="http://placehold.it/90x55")
+                                    p Latifah helps with
+                                    span.view view
+                li.living.dropdown
+                    a(data-toggle="dropdown", href="living.html")
                         img(src='/images/icon_living.png', class='icon')
-                        | living
+                        | Living
                         img(src='/images/nav_arrow.png', class='arrow')
+                        ul(class="dropdown-menu")
+                            li
+                                a(class="link", href="article/1")
+                                    img(class="pull-left", src="http://placehold.it/90x55")
+                                    p the weather forecast
+                                    span.view view
+                            li
+                                a(class="link", href="article/1")
+                                    img(class="pull-left", src="http://placehold.it/90x55")
+                                    p the weather forecast
+                                    span.view view
+                            li
+                                a(class="link", href="article/1")
+                                    img(class="pull-left", src="http://placehold.it/90x55")
+                                    p the weather forecast
+                                    span.view view
+
             div.where-to-watch
                 h2 Where to watch
                 div.clearfix
@@ -101,20 +168,6 @@ html.no-js(lang='en')
                     li.col-6
                         a(class="my-area", data-toggle="modal", href='#watchModal') My Area
                 a(class="get-tix", href="http://1iota.com/Show/305/The-Queen-Latifah-Show", target="_blank", title="Get Tickets") Get Tickets!
-
-            //ul.watch-widget.list-unstyled
-                li
-                    img(src='/images/where-to-watch.png')
-
-                li.view
-                    a(href="/pdf/where-to-watch-q.pdf", target="_blank", title="View Listings") View Listings
-
-                li.tickets
-                    a(href="http://1iota.com/Show/305/The-Queen-Latifah-Show", target="_blank", title="Get Tickets") Get Tickets
-                li.schedule
-                li.station
-
-
 
         div.content
             block content
@@ -171,7 +224,7 @@ html.no-js(lang='en')
                         div.col-7.text-center
                             p(style="border-right:1px solid") my location:
                                 span.city
-                                    script(src="//j.maxmind.com/js/geoip.js")
+
                                     script
                                         document.write( ' '+geoip_city()+', '+geoip_region() );
                         div.col-5.alpha.omega
@@ -198,29 +251,15 @@ html.no-js(lang='en')
                             img(class="col3", src="http://placehold.it/30x30")
                 div.modal-footer.row.alpha.omega
                     p.col-8.alpha Watch the Queen Latifah Show Live!
-                    a(class="btn w2w-tix pull-left", href="#") Get Tickets
-
-
-
-                    //div.location.
-                        My Location: <span>Los Angeles, CA</span>
-                    //div.zip.
-                        Change Zip code <input type="text" name="zip" id="zip-box">
+                    a(class="btn w2w-tix pull-left", href="http://1iota.com/Show/305/The-Queen-Latifah-Show", target="_blank", title="See the Queen live!") Get Tickets
 
         footer
         script(src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
         script(src='/js/jquery.backstretch.min.js')
         script(src='/js/jquery.imagesloaded.js')
-        //script(src='/js/bootstrap.modal.min.js')
-        script(src='/js/bootstrap.min.js')
-        script(src='/js/bootstrap.lightbox.js')
-        //script(src='/js/underscore-min.js')
-        // script(src='/js/backbone-min.js')
+        script(src='/js/bootstrap.custom.min.js')
         script(src='/js/jquery.mosaicflow.min.js')
         script(src='/js/tvguide.js')
-        script(src="//j.maxmind.com/js/geoip.js")
-        script(src="//j.maxmind.com/js/apis/geoip2/v2.0/geoip2.js")
-
         script
               window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\\/script>')
         //-script(defer, src='js/plugins.js')
@@ -231,5 +270,3 @@ html.no-js(lang='en')
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
-
-
