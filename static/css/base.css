@@ -743,7 +743,7 @@ body.latifah .filter {
     position: absolute;
     bottom: 120px;
     left: 50%;
-    margin-left: -233px; /*-233px*/
+    margin-left: -253px;
     width: 500px;
     text-align: center;
     font-family: proxima-nova, 'Open Sans', sans-serif;
