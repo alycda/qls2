@@ -36,7 +36,8 @@ $(document).ready(function() {
             console.log(('listings.'+data.results[0].address_components[3].long_name+'.'+data.results[0].address_components[1].long_name).toLowerCase().replace(' ', ''))
 
         })
-    })
+    });
+
 }); // end $(document).ready()
 
 sublime.ready(function(){
