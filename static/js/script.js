@@ -213,6 +213,26 @@ function switchContent(href) {
             $('body').addClass('loving');
 
             break;
+        case '/loving/1':
+        case '/loving/2':
+        case '/loving/3':
+            $('body').addClass('loving article');
+
+
+            window.mySwipe = $('#slider').Swipe({
+                auto: 5000,
+                callback: function(index, element){
+                    // update slider nav
+                    // $('#position li').removeClass('on');
+                    // $('#position li').eq(index).addClass('on');
+                },
+                transitionEnd: function(index, element) {
+                    // update lightbox link
+                }
+            }).data('Swipe');
+
+            break;
+
         case '/learning':
             $('body').addClass('learning');
 

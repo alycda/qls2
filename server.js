@@ -138,6 +138,46 @@ server.get('/loving.html', function(req,res){
     });
 });
 
+// make me dynamic
+server.get('/loving/1', function(req,res){
+    res.render('loving1.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'loving article1'
+        }
+    });
+    // res.sendfile('article-1.html');
+});
+// make me dynamic
+server.get('/loving/2', function(req,res){
+    res.render('loving2.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'loving article2'
+        }
+    });
+    // res.sendfile('article-1.html');
+});
+// make me dynamic
+server.get('/loving/3', function(req,res){
+    res.render('loving3.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'loving article3'
+        }
+    });
+    // res.sendfile('article-1.html');
+});
+
 server.get('/learning.html', function(req,res){
     res.render('learning.jade', {
         locals : {

@@ -1,0 +1,103 @@
+extends layout
+
+block content
+	div.myContainer
+		div.ads.
+			<!-- begin ad tag (tile=1) -->
+			<script type="text/javascript">
+			//<![CDATA[
+			var ord=Math.random()*10000000000000000;
+			document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/queen.opus/home;tile=1;sz=728x90,970x90;ord=' + ord + '?"><\/sc'+'ript>');
+			//]]>
+			</script>
+			<noscript><a href="http://ad.doubleclick.net/jump/queen.opus/home;tile=1;sz=970x30,970x90;ord=123456789?" target="_blank" ><img src="http://ad.doubleclick.net/ad/queen.opus/home;tile=1;sz=970x30,970x90;ord=123456789?" border="0" alt="" /></a></noscript>
+			<!-- end ad tag -->
+
+		div.sharethis.pull-right
+			span.st_facebook_hcount
+			span.st_fblike_hcount
+			span.st_twitter_hcount
+			span.st_pinterest_hcount
+			span.st_email_hcount
+		div.row
+			div.col-7
+				div.small.preview
+					img(src="/images/articles/rihanna.jpg", width="465", height="270", alt="Rihanna FPO")
+					div(class="bar thumbnails", data-toggle="lightbox" )
+						a(class="thumbnail lightbox-expand pull-right", href="/images/articles/rihanna.jpg", title="Image 1", data-description="") lightbox
+
+				h2 Mateo Rising
+				p.callout
+					| If you hadn't heard of Mateo before now, don’t feel too bad. He isn’t exactly a household name -- yet. But if he has his way, Mateo will be very famous, very soon. And unlike so many other stars these days, he'll be known for his music and not his off-hours antics.
+				p.byline Article by:
+				a.author Tim Snell
+			div.col-5
+				h3.suggested You may also like:
+				ul.more-articles.list-unstyled
+					li
+						img(class="pull-left", src="http://placehold.it/240x140", width="120", height="70", alt="FPO")
+						h3(class="pull-left") I want her hair!
+						a(class="view btn", href="#") view
+					li
+						img(class="pull-left", src="http://placehold.it/240x140", width="120", height="70", alt="FPO")
+						h3(class="pull-left") I want her hair!
+						a(class="view btn", href="#") view
+					li
+						img(class="pull-left", src="http://placehold.it/240x140", width="120", height="70", alt="FPO")
+						h3(class="pull-left") I want her hair!
+						a(class="view btn", href="#") view
+
+		div.row.alpha.omega
+			div.col12
+				p
+					| Mateo, named Iman Jordan at birth, was born into a musical family in Cincinnati, Ohio. Mateo’s grandfather, Freddy Jordan, was a jazz and session guitarist at the historic King Records playing for the likes of James Brown, Freddie King and Charles Brown. His grandmother toured as a singer working in the northeastern United States and Canada. Mateo was raised playing classical piano and began singing at age five. He then attended Morehouse College as a business and music major, heading to New York City after graduation where he worked as a strategy consultant. He did that for a year before turning his sights to music full time. He started writing and recording music during his off hours -- which he refers to as his “5-9.” During those early days he also performed live, but soon the call for doing music was too strong and he moved to Los Angeles to pursue his “5-9” passion full-time.
+				p
+					| Mateo is the product of the new generation of YouTube-discovered talent. He first gained popularity and recognition after several of his mixtapes garnered over a million views. He created a fan base and Mateo, the Internet star, was born. But it wasn’t until the Grammy-award winning producer Kerry “Krucial” Brothers, known for his work with Alicia Keys, Nas and Drake, took notice of the young artist that things really took off for him. The producer began working with Mateo, helping him mold his style. Krucial paired Mateo with Alicia Keys on the track “Say It’s So” from the Love & Stadium II mixtape. She is now one of his biggest supporters.
+
+				p
+				| So intrigued were we when we heard of Mateo’s upcoming single release, we decided to chat with him to learn more about his story, his passions and inspiration.
+		div.row
+			div.col-12
+				div#slider.swipe
+					div.swipe-wrap
+						div
+							img(src="/images/articles/laughing/chicago/1.jpg")
+						div
+							img(src="/images/articles/laughing/chicago/2.jpg")
+						div
+							img(src="/images/articles/laughing/chicago/3.jpg")
+						div
+							img(src="/images/articles/laughing/chicago/4.jpg")
+						div
+							img(src="/images/articles/laughing/chicago/5.jpg")
+						div
+							img(src="/images/articles/laughing/chicago/6.jpg")
+
+			//div#preview.col-12
+				img(src="/images/articles/article-big.jpg", alt="FPO")
+				div(class="bar", data-toggle="lightbox" )
+					p.caption
+						| <strong>Janelle Monae</strong> - Turning the event stage into the red carpet
+					a(class="thumbnail lightbox-expand pull-right", href="/images/articles/article-big.jpg", title="Image 1", data-description="") lightbox
+
+				ul(class="thumbnails", data-toggle="lightbox" )
+					li
+						a(class="thumbnail", href="/images/articles/laughing/scenes/5MSP5218_RT.jpg") *
+					li
+						a(class="thumbnail", href="/images/articles/laughing/scenes/20130806_145008.jpg") *
+					li
+						a(class="thumbnail", href="/images/articles/laughing/scenes/GN3A5949.jpg") *
+					li
+						a(class="thumbnail", href="/images/articles/laughing/scenes/GN3A5959.jpg") *
+					li
+						a(class="thumbnail", href="/images/articles/laughing/scenes/IMG_6797.jpg") *
+					li
+						a(class="thumbnail", href="/images/articles/laughing/scenes/IMG_6828.jpg") *
+					li
+						a(class="thumbnail", href="/images/articles/laughing/scenes/IMG_7131.jpg") *
+					li
+						a(class="thumbnail", href="/images/articles/laughing/scenes/J+L-DAY1-12.jpg") *
+					li
+						a(class="thumbnail", href="/images/articles/laughing/scenes/Latifah_show_1173_0640.jpg") *
+
+
