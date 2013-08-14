@@ -1339,6 +1339,10 @@ ul.tweets {
     height: auto;
 }
 
+.mosaicflow:hover > .mosaicflow__item img {
+    -webkit-filter: brightness(50%);
+}
+
 .mosaicflow__item .description {
     color: #ffffff;
     background-color: #a3cab0;
@@ -1352,8 +1356,14 @@ ul.tweets {
     -ms-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
+    text-transform: uppercase;
 }
 
 .mosaicflow__item:hover .description {
     bottom: 0px;
+
+}
+
+.mosaicflow__item:hover img {
+    -webkit-filter: brightness(120%);
 }
