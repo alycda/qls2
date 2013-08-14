@@ -153,10 +153,10 @@ function switchContent(href) {
                     $('#position li').eq(index).addClass('on');
                 },
                 transitionEnd: function(index, element) {
-                    if (index == 0)
-                        $('.logo img').attr('src', '/images/layout/qls-logo_white.png');
-                    else
+                    if (index == 1)
                         $('.logo img').attr('src', '/images/layout/queen-latifah.png');
+                    else
+                        $('.logo img').attr('src', '/images/layout/qls-logo_white.png');
                     // re-hide all other elements so the transition will work
                     $(element).siblings('.img').find('.info-bg').fadeOut(10);
                     // call the transition on the current element
