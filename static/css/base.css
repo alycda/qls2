@@ -375,7 +375,6 @@ body.living li.living > a, body.living li.living > a:hover {
     position: absolute;
     bottom: 0;
     width: 865px;
-
 }
 
 #preview .caption {
@@ -446,6 +445,80 @@ a.view:hover {
 -------------------------------------------------- */
 .article {
 
+} .article h2 {
+    font-family: 'Glegoo', "Times New Roman";
+} .article .callout {
+    font-family: 'Glegoo', "Times New Roman";
+    font-size: 18px;
+} .byline {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    display: inline-block;
+    /*text-decoration: underline;*/
+    margin-right: 12px;
+}
+a.author {
+font-family: 'Glegoo', "Times New Roman";
+text-decoration: none;
+/*color: #c2d9d0;*/
+}
+
+.preview.small {
+    height: 270px;
+    position: relative;
+} .preview .bar {
+    height: 43px;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    position: absolute;
+    bottom: 0;
+    width: 465px;
+
+} .preview .bar .lightbox-expand {
+    width: 43px;
+    height: 43px;
+    display: block;
+    background: url(/images/lightbox-expand@2x.png);
+    background-size: 43px 43px;
+    text-indent: -9999em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0
+}
+
+.article h3.suggested {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+margin: 0 0 24px;
+padding: 0;
+border-bottom: 1px solid;
+display: inline-block;
+
+}
+
+.more-articles li {
+    margin-bottom: 48px;
+}
+
+.more-articles li img {
+    margin-right: 18px;
+}
+
+.article li h3 {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    color: #5a4040;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    height: 42px;
 }
 
 

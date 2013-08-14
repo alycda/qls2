@@ -208,31 +208,60 @@ function switchContent(href) {
         case '/living':
             $('body').addClass('living');
 
-            // refresh addThis widget? or this will be fixed when we go static?
-
             break;
         case '/loving':
             $('body').addClass('loving');
-
-            // refresh addThis widget?
 
             break;
         case '/learning':
             $('body').addClass('learning');
 
-            // refresh addThis widget?
-
             break;
         case '/laughing':
             $('body').addClass('laughing');
 
-            // refresh addThis widget?
+            break;
+
+        case '/laughing/go-behind-the-scenes':
+            $('body').addClass('laughing article article1');
+
+            window.mySwipe = $('#slider').Swipe({
+                auto: 5000,
+                callback: function(index, element){
+                    // update slider nav
+                    // $('#position li').removeClass('on');
+                    // $('#position li').eq(index).addClass('on');
+                },
+                transitionEnd: function(index, element) {
+                    // update lightbox link
+                }
+            }).data('Swipe');
 
             break;
+        case '/laughing/latifah-helps-with-the-weather':
+            $('body').addClass('laughing article article2');
+
+            break;
+        case '/laughing/hot-time-in-chicago':
+            $('body').addClass('laughing article article3');
+
+            window.mySwipe = $('#slider').Swipe({
+                auto: 5000,
+                callback: function(index, element){
+                    // update slider nav
+                    // $('#position li').removeClass('on');
+                    // $('#position li').eq(index).addClass('on');
+                },
+                transitionEnd: function(index, element) {
+                    // update lightbox link
+                }
+            }).data('Swipe');
+
+
+            break;
+
         case '/article/1':
             $('body').addClass('article');
-
-            // refresh addThis widget?
 
             break;
         case '/latifah':
@@ -244,13 +273,9 @@ function switchContent(href) {
         case '/queue':
             $('body').addClass('queue');
 
-            // refresh addThis widget?
-
             break;
         case '/queue/1':
             $('body').addClass('queue article');
-
-            // refresh addThis widget?
 
             break;
     }

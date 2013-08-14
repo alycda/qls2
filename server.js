@@ -163,18 +163,47 @@ server.get('/laughing.html', function(req,res){
 });
 
 // make me dynamic
-server.get('/article/1', function(req,res){
-    res.render('article.jade', {
+server.get('/laughing/go-behind-the-scenes.html', function(req,res){
+    res.render('laughing1.jade', {
         locals : {
             title : 'Queen Latifah'
             ,description: ''
             ,author: ''
             ,analyticssiteid: 'XXXXXXX'
-            ,pageid: 'article'
+            ,pageid: 'laughing article1'
         }
     });
     // res.sendfile('article-1.html');
 });
+
+// make me dynamic
+server.get('/laughing/latifah-helps-with-the-weather.html', function(req,res){
+    res.render('laughing2.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'laughing article2'
+        }
+    });
+    // res.sendfile('article-1.html');
+});
+
+// make me dynamic
+server.get('/laughing/hot-time-in-chicago.html', function(req,res){
+    res.render('laughing3.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'laughing article3'
+        }
+    });
+    // res.sendfile('article-1.html');
+});
+
 
 server.get('/queue', function(req,res){
     res.render('queue.jade', {
