@@ -833,6 +833,14 @@ pre code {
   padding-left: 15px;
 }
 
+.alpha {
+margin-left: 0;
+padding-left: 0;
+  } .omega {
+margin-right: 0;
+padding-right: 0;
+  }
+
 .col-1,
 .col-2,
 .col-3,

@@ -774,7 +774,7 @@ a.logo {
 }
 
 
-/* Where to watch
+/* Where to watch (sidebar links)
 -------------------------------------------------- */
 .watch-widget li a {
     width: 179px;
@@ -876,9 +876,121 @@ a.logo {
 
 
 
+/* Where to watch (widget)
+-------------------------------------------------- */
+#watchModal {
+
+} #watchModal .modal-dialog {
+    padding-top: 160px;
+}
+
+#watchModal .modal-content {
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 0;
+    width: 540px;
+height: 530px;
+background: url(/images/where-to-watch-bg.png) no-repeat;
+} #watchModal .modal-header {
+    height: 115px;
+} #watchModal .modal-title {
+    padding: 10px;
+width: 464px;
+height: 36px;
+margin: 27px auto;
+background: url(/images/where-to-watch-h1.png) no-repeat;
+text-indent: -9999em;
+} #watchModal .close {
+    top: -12px;
+} #watchModal .modal-body {
+    padding: 0;
+} #watchModal .location {
+    height: 55px;
+    color: #fff;
+    font-family: 'Glegoo', "Times New Roman";
+    font-size: 13px;
+
+    letter-spacing: .1em;
+} #watchModal .location p {
+    text-transform: uppercase;
+    line-height: 2.5em;
+    /*border-right: 1px solid;*/
+    margin: 10px 0;
+    overflow: hidden;
+} #watchModal .location .city {
+    font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 10px;
+    text-transform: none;
+} #watchModal .location input {
+width: 120px;
+   height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  margin: 10px 0 0 10px;
+  border: none;
+  background: #ede3df;
+} #watchModal .location input:active, #watchModal .location input:hover {
+    background: #fff;
+} #watchModal .location .change-zipcode{
+    margin-top: 10px;
+float: left;
+padding: 0;
+width: 16px;
+height: 30px;
+display: block;
+background: url(/images/go.png) no-repeat;
+text-indent: -9999px;
+}
 
 
+#watchModal .listings {
+    font-family: 'Glegoo', "Times New Roman";
+    padding: 20px;
+    height: 280px;
+    overflow-y: scroll;
 
+
+} #watchModal .listings li {
+    border-bottom: 2px dotted #bbb;
+    padding: 10px;
+    margin-bottom: 10px;
+}#watchModal .listings li:last-child {
+    border-bottom: none;
+}
+
+#watchModal .listings p {
+    border-right: 1px solid;
+    font-weight: bold;
+} #watchModal .listings p:last-child {
+    border-right: none;
+}
+
+#watchModal .modal-footer {
+    border: none;
+    color:#fff;
+    font-family: 'Glegoo', "Times New Roman";
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+} #watchModal .modal-footer p {
+    border-right: 1px dotted;
+    line-height: 1.5em;
+margin: 16px 0;
+}
+
+#watchModal .w2w-tix {
+    width: 144px;
+    height: 52px;
+    display: inline-block;
+    text-indent: -9999em;
+    background: url(/images/w2w-get-tickets.png) no-repeat;
+    margin-left: 16px;
+}
 
 
 
@@ -980,7 +1092,7 @@ ul.tweets {
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 }
 
-#videoModal .close {
+.modal-dialog .close {
     background: #d4c8aa;
     padding: 10px;
     z-index: 10;

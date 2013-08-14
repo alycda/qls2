@@ -159,15 +159,52 @@ html.no-js(lang='en')
 
     block footer
       block modal
+
     div#watchModal.modal.fade
         div.modal-dialog
             div.modal-content
                 div.modal-header
+                    h4.modal-title Where to Watch
                     button(type="button", class="close", data-dismiss="modal", aria-hidden="true") &times;
                 div.modal-body
-                    div.location.
+                    div.row.location
+                        div.col-7.text-center
+                            p(style="border-right:1px solid") my location:
+                                span.city
+                                    script(src="//j.maxmind.com/js/geoip.js")
+                                    script
+                                        document.write( ' '+geoip_city()+', '+geoip_region() );
+                        div.col-5.alpha.omega
+                            p.pull-left change:
+                            form
+                                //limit to
+                                input(class="pull-left", placeholder="zip code")
+                                a.btn.change-zipcode go
+                    ul.listings.list-unstyled.text-center
+                        li
+                            p.col-3 11am
+                            p.col-3.uc cbs2-la
+                            p.col-3.uc chnl 565
+                            img(class="col3", src="http://placehold.it/30x30")
+                        li
+                            p.col-3 11am
+                            p.col-3.uc cbs2-la
+                            p.col-3.uc chnl 565
+                            img(class="col3", src="http://placehold.it/30x30")
+                        li
+                            p.col-3 11am
+                            p.col-3.uc cbs2-la
+                            p.col-3.uc chnl 565
+                            img(class="col3", src="http://placehold.it/30x30")
+                div.modal-footer.row.alpha.omega
+                    p.col-8.alpha Watch the Queen Latifah Show Live!
+                    a(class="btn w2w-tix pull-left", href="#") Get Tickets
+
+
+
+                    //div.location.
                         My Location: <span>Los Angeles, CA</span>
-                    div.zip.
+                    //div.zip.
                         Change Zip code <input type="text" name="zip" id="zip-box">
 
         footer
