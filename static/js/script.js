@@ -128,14 +128,14 @@ function switchContent(href) {
     switch(href.replace('.html', '')) {
         case '/':
 
-            $('.logo img').attr('src', '/images/qls-logo_white.png');
+            $('.logo img').attr('src', '/images/layout/qls-logo_white.png');
 
             $('body').addClass('home');
 
             // backstretch.js (first)
-            $('#a').addClass('dark').backstretch("/images/slide1.jpg"); //this image is dark, and needs a white logo
-            $('#b').backstretch("/images/slide2.jpg");
-            $('#c').backstretch("/images/slide3.jpg");
+            $('#a').addClass('dark').backstretch("/images/home/slide1.jpg"); //this image is dark, and needs a white logo
+            $('#b').backstretch("/images/home/slide2.jpg");
+            $('#c').backstretch("/images/home/slide3.jpg");
 
             // swipe.js (second)
             window.mySwipe = $('#mySwipe').Swipe({
@@ -153,9 +153,9 @@ function switchContent(href) {
                 },
                 transitionEnd: function(index, element) {
                     if (index == 0)
-                        $('.logo img').attr('src', '/images/qls-logo_white.png');
+                        $('.logo img').attr('src', '/images/layout/qls-logo_white.png');
                     else
-                        $('.logo img').attr('src', '/images/queen-latifah.png');
+                        $('.logo img').attr('src', '/images/layout/queen-latifah.png');
                     // re-hide all other elements so the transition will work
                     $(element).siblings('.img').find('.info-bg').fadeOut(10);
                     // call the transition on the current element

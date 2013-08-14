@@ -27,7 +27,7 @@ body.home #topadunit {
     display: block;
     /* fallback */
     background-color: #202020;
-    background-image: url(/images/radial_bg.jpg);
+    background-image: url(/images/layout/radial_bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
 
@@ -72,7 +72,7 @@ body.home .content {
     top: 0;
     left: 0;
     z-index: 10;
-    background: url(/images/left-dock_bg.png);
+    background: url(/images/layout/left-dock_bg.png);
 }
 
 .home .left-dock {
@@ -219,7 +219,7 @@ body.living .left-dock li.living.dropdown:hover ul.dropdown-menu {
                             width: 45px;
                             height: 15px;
                             display: inline-block;
-                            background: url(/images/tiny-view.png) no-repeat;
+                            background: url(/images/layout/tiny-view.png) no-repeat;
                             text-indent: -9999px;
 }
 
@@ -365,7 +365,10 @@ body.living li.living > a, body.living li.living > a:hover {
 -------------------------------------------------- */
 #preview {
     height: 504px;
-    margin-bottom: 60px;
+    margin: 0 auto 60px;
+    width: 895px;
+overflow: hidden;
+float: none;
 }
 
 #preview .bar {
@@ -399,7 +402,7 @@ body.living li.living > a, body.living li.living > a:hover {
     width: 43px;
     height: 43px;
     display: block;
-    background: url(/images/lightbox-expand@2x.png);
+    background: url(/images/layout/lightbox-expand@2x.png);
     background-size: 43px 43px;
     text-indent: -9999em;
     position: absolute;
@@ -421,7 +424,7 @@ body.living li.living > a, body.living li.living > a:hover {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    width: 210px;
+    width: 260px;
     margin: 0 0 9px;
     font-weight: bold;
 
@@ -481,7 +484,7 @@ text-decoration: none;
     width: 43px;
     height: 43px;
     display: block;
-    background: url(/images/lightbox-expand@2x.png);
+    background: url(/images/layout/lightbox-expand@2x.png);
     background-size: 43px 43px;
     text-indent: -9999em;
     position: absolute;
@@ -530,7 +533,7 @@ display: inline-block;
     width: 409px;
     height: 74px;
     margin: 0 auto;
-    background: url(/images/the-daily-queue.png);
+    background: url(/images/layout/the-daily-queue.png);
     text-indent: -9999em;
     margin-top: 40px;
 }
@@ -726,7 +729,7 @@ body.latifah .filter {
 }
 
 .swipe #a .info-bg {
-    background: url('/images/1_overlay.png') center bottom no-repeat;
+    background: url('/images/layout/1_overlay.png') center bottom no-repeat;
     background-size: 100%;
 }
 
@@ -768,7 +771,7 @@ body.latifah .filter {
     display: block;
     width: 140px;
     height: 50px;
-    background: url('/images/watch-video.png') no-repeat;
+    background: url('/images/layout/watch-video.png') no-repeat;
     text-indent: -9999em;
     margin: 0 auto 30px;
 } .watch-video:hover {
@@ -797,7 +800,7 @@ bottom: 290px;
     width: 10px;
     height: 10px;
     display: block;
-    background: url(/images/slider-nav-circles.png);
+    background: url(/images/layout/slider-nav-circles.png);
     text-indent: -9999em;
     margin: 5px 15px;
     background-size: 10px;
@@ -909,7 +912,7 @@ a.logo {
     /*line-height: 52px;*/
     /*margin: 0 20px*/
   } .social li a {
-    background: url(/images/social@2x.png) no-repeat;
+    background: url(/images/layout/social@2x.png) no-repeat;
     width: 26px;
     height: 26px;
     display: block;
@@ -942,8 +945,8 @@ a.logo {
 /* Queue
 -------------------------------------------------- */
 .daily .dose {
-    /*background: url(/images/daily-dose_bg.png);*/
-    background: url('/images/queue@2x.png') no-repeat;
+    /*background: url(/images/layout/daily-dose_bg.png);*/
+    background: url('/images/layout/queue@2x.png') no-repeat;
     background-size: 300px;
     border-right: 1px solid #a0a7a5;
 } .daily .dose:hover {
@@ -951,8 +954,8 @@ a.logo {
 }
 
 .daily .join {
-    /*background: url(/images/join_bg.png);*/
-    background: url('/images/queue@2x.png') no-repeat;
+    /*background: url(/images/layout/join_bg.png);*/
+    background: url('/images/layout/queue@2x.png') no-repeat;
     background-size: 300px;
     background-position: -150px 0;
 } .daily .join:hover {
@@ -967,7 +970,7 @@ a.logo {
     height: 43px;
     display: block;
     text-indent: -9999em;
-    background: url('/images/listings-tickets.png') no-repeat;
+    background: url('/images/layout/listings-tickets.png') no-repeat;
   } .watch-widget li.view a {
 
     } .watch-widget li.view a:hover {
@@ -990,7 +993,7 @@ a.logo {
     width: 180px;
     height: 46px;
     display: block;
-    background: url(/images/where-to-watch.png) no-repeat;
+    background: url(/images/layout/where-to-watch.png) no-repeat;
     text-indent: -9999em
 } .where-to-watch .time {
     margin: 0;
@@ -1036,15 +1039,15 @@ a.logo {
     display: block;
     text-indent: -9999em;
 } .where-to-watch .links .view-all {
-    background: url(/images/view-all.png) no-repeat;
+    background: url(/images/layout/view-all.png) no-repeat;
 } .where-to-watch .links .my-area {
-    background: url(/images/my-area.png) no-repeat;
+    background: url(/images/layout/my-area.png) no-repeat;
 } .where-to-watch .get-tix {
     width: 179px;
     height: 43px;
     display: block;
     text-indent: -9999em;
-    background: url('/images/listings-tickets.png') no-repeat;
+    background: url('/images/layout/listings-tickets.png') no-repeat;
     background-position: 0 -40px;
 } .where-to-watch .get-tix:hover {
     background-position: -180px -40px;
@@ -1077,7 +1080,7 @@ a.logo {
     border-radius: 0;
     width: 540px;
 height: 530px;
-background: url(/images/where-to-watch-bg.png) no-repeat;
+background: url(/images/layout/where-to-watch-bg.png) no-repeat;
 } #watchModal .modal-header {
     height: 115px;
 } #watchModal .modal-title {
@@ -1085,7 +1088,7 @@ background: url(/images/where-to-watch-bg.png) no-repeat;
 width: 464px;
 height: 36px;
 margin: 27px auto;
-background: url(/images/where-to-watch-h1.png) no-repeat;
+background: url(/images/layout/where-to-watch-h1.png) no-repeat;
 text-indent: -9999em;
 } #watchModal .close {
     top: -12px;
@@ -1129,7 +1132,7 @@ padding: 0;
 width: 16px;
 height: 30px;
 display: block;
-background: url(/images/go.png) no-repeat;
+background: url(/images/layout/go.png) no-repeat;
 text-indent: -9999px;
 }
 
@@ -1174,7 +1177,7 @@ margin: 16px 0;
     height: 52px;
     display: inline-block;
     text-indent: -9999em;
-    background: url(/images/w2w-get-tickets.png) no-repeat;
+    background: url(/images/layout/w2w-get-tickets.png) no-repeat;
     margin-left: 16px;
 }
 
