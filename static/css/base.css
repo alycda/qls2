@@ -1511,3 +1511,7 @@ ul.tweets {
 .mosaicflow__item:hover img {
     -webkit-filter: brightness(120%);
 }
+
+.filter .sharethis {
+    margin-top: 6px;
+}
