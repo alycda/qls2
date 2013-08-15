@@ -153,7 +153,7 @@ function switchContent(href) {
                     $('#position li').eq(index).addClass('on');
                 },
                 transitionEnd: function(index, element) {
-                    if (index == 1)
+                    if (index == 3)
                         $('.logo img').attr('src', '/images/layout/queen-latifah.png');
                     else
                         $('.logo img').attr('src', '/images/layout/qls-logo_white.png');
