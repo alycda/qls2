@@ -144,8 +144,12 @@ function switchContent(href) {
                 callback: function(index, element){
                     if($('.swipe-wrap .img').eq(index).hasClass('dark')) {
                         // load light logo (for dark backgrounds)
+                        //console.log('light logo');
+                        $('.logo img').attr('src', '/images/layout/qls-logo_white.png');
                     } else {
                         // load dark logo (for light backgrounds)
+                        //console.log('dark logo');
+                        $('.logo img').attr('src', '/images/layout/queen-latifah.png');
                     }
 
                     // update slider nav
@@ -153,10 +157,10 @@ function switchContent(href) {
                     $('#position li').eq(index).addClass('on');
                 },
                 transitionEnd: function(index, element) {
-                    if (index == 2)
-                        $('.logo img').attr('src', '/images/layout/queen-latifah.png');
-                    else
-                        $('.logo img').attr('src', '/images/layout/qls-logo_white.png');
+                    //if (index == 2)
+                    //    $('.logo img').attr('src', '/images/layout/queen-latifah.png');
+                    //else
+                    //    $('.logo img').attr('src', '/images/layout/qls-logo_white.png');
                     // re-hide all other elements so the transition will work
                     $(element).siblings('.img').find('.info-bg').fadeOut(10);
                     // call the transition on the current element
@@ -214,7 +218,7 @@ function switchContent(href) {
             $('body').addClass('loving');
 
             break;
-        case '/loving/1':
+        case '/loving/hollywood-cover-girl':
         case '/loving/2':
         case '/loving/3':
             $('body').addClass('loving article');

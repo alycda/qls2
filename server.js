@@ -139,7 +139,7 @@ server.get('/loving.html', function(req,res){
 });
 
 // make me dynamic
-server.get('/loving/1', function(req,res){
+server.get('/loving/hollywood-cover-girl.html', function(req,res){
     res.render('loving1.jade', {
         locals : {
             title : 'Queen Latifah'
