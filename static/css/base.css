@@ -219,8 +219,7 @@ padding: 8px 0 6px 24px;
 }
 
 .left-dock .dropdown-menu a:hover {
-    /*background: #d0785e;*/
-    background: none;
+    background: #d0785e;
 }
 
 .left-dock .dropdown-menu img {
