@@ -218,8 +218,12 @@ a:hover {}
 padding: 8px 0 6px 24px;
 }
 
+/*bootstrap seems to be duplicating the trigger element inside of the dropdown, temp fix to make it less visible*/
 .left-dock .dropdown-menu a:hover {
     background: #d0785e;
+}
+.left-dock .dropdown-menu a.link:hover {
+    min-height: 69px;
 }
 
 .left-dock .dropdown-menu img {
@@ -400,6 +404,7 @@ padding: 8px 0 6px 24px;
 
 .internalcta a:hover {
     text-decoration: none;
+    background: url(/images/layout/cta-hover.png) no-repeat;
 }
 
 
