@@ -1300,22 +1300,20 @@ a.logo {
 /* Twitter
 -------------------------------------------------- */
 ul.tweets {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     width: 223px;
     margin: 5px auto;
     border-top: 1px solid #a0a7a5;
-    padding-top: 5px;
-    text-align: center;
+    padding: 18px 0 0;
     color: #3a3a3a;
     font-family: 'Glegoo', "Times New Roman";
-    line-height: 16px;
+    font-size: 19px;
+    line-height: 1.3em;
 }
 
 .twitter h3 {
     text-align: center;
     margin-bottom: 5px;
+    font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
 }
 
 .twitter h3 a {
