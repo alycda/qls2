@@ -138,41 +138,51 @@ body.home .content {
     box-sizing: border-box;
 }
 
-
-
 /* dropdown
 -------------------------------------------------- */
 .left-dock .newNav {
     position: relative;
     font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
-    } .left-dock .newNav > li > a {
-        width : 180px;
-        height: 52px;
-        font-size: 18px;
-        line-height: 3em;
-        display: block;
-        background: #e0b66a;
-        color: #fff;
-        text-align: center;
-        letter-spacing: 1.5pt;
-        -webkit-transition: all 0.2s ease-out;
-        -moz-transition: all 0.2s ease-out;
-        -ms-transition: all 0.2s ease-out;
-        -o-transition: all 0.2s ease-out;
-        transition: all 0.2s ease-out;
-        } .left-dock .newNav > li > a:hover {
-            background: #e18367;
-    } .left-dock .newNav a {
-        text-decoration: none;
-        }.left-dock .newNav .icon {
-            margin-top: -2px;
-            margin-right: 12px;
-        } .left-dock .dropdown {
-            position: static;
-            } .left-dock li.dropdown:hover ul.dropdown-menu{
-                /* display on hover */
-                display: block;
-            }
+}
+
+.left-dock .newNav > li > a {
+    width: 180px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 3em;
+    display: block;
+    background: #e0b66a;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1.5pt;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.left-dock .newNav > li > a:hover {
+    background: #e18367;
+}
+
+.left-dock .newNav a {
+    text-decoration: none;
+}
+
+.left-dock .newNav .icon {
+    margin-top: -2px;
+    margin-right: 12px;
+}
+
+.left-dock .dropdown {
+    position: static;
+}
+
+.left-dock li.dropdown:hover ul.dropdown-menu {
+    /* display on hover */
+    display: block;
+}
 
 body.loving .left-dock li.loving.dropdown:hover ul.dropdown-menu,
 body.learning .left-dock li.learning.dropdown:hover ul.dropdown-menu,
@@ -182,50 +192,63 @@ body.living .left-dock li.living.dropdown:hover ul.dropdown-menu {
     display: none;
 }
 
-            .left-dock .dropdown-menu {
-                z-index: -1;
+.left-dock .dropdown-menu {
+    z-index: -1;
 
-                top: 0;
-                left: 100%;
-                width: 345px;
-                border: 0 none;
-                border-radius: 0;
-                background: #dd8266;
-                color: #fff;
-                margin: 0;
-                padding: 0 5px 0 24px;
-                font-size: 12px;
-                letter-spacing: .1em;
-                height: 260px; /*exact height of top-level buttons*/
+    top: 0;
+    left: 100%;
+    width: 345px;
+    border: 0 none;
+    border-radius: 0;
+    background: #dd8266;
+    color: #fff;
+    margin: 0;
+    padding: 0 5px 0 24px;
+    font-size: 12px;
+    letter-spacing: .1em;
+    height: 260px; /*exact height of top-level buttons*/
 
-                } .left-dock .dropdown-menu li {
-                    border-bottom: 2px dotted #e39b86;
-                    padding: 5px;
-                    margin: 3px 10px 3px 0;
-                    height: 86px; /*roughly 1/3 of .left-dock .dropdown-menu height*/
-                } .left-dock .dropdown-menu li:last-child {
-                    border-bottom: none;
-                    } .left-dock .dropdown-menu a.link {
-                        color: inherit;
-                        padding: 3px 0 8px 24px;
-                        } .left-dock .dropdown-menu a:hover{
-                            background: #d0785e;
-                        } .left-dock .dropdown-menu img {
-                            margin-right: 18px;
-                        } .left-dock .dropdown-menu p {
-                            width: 280px;
-                            white-space: normal;
-                            margin-bottom: 8px;
-                        } .left-dock .dropdown-menu .view {
-                            width: 45px;
-                            height: 15px;
-                            display: inline-block;
-                            background: url(/images/layout/tiny-view.png) no-repeat;
-                            text-indent: -9999px;
 }
 
+.left-dock .dropdown-menu li {
+    border-bottom: 2px dotted #e39b86;
+    padding: 5px;
+    margin: 3px 10px 3px 0;
+    height: 86px; /*roughly 1/3 of .left-dock .dropdown-menu height*/
+}
 
-.newNav > li.latifah > a, .newNav > li.living > a{
+.left-dock .dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.left-dock .dropdown-menu a.link {
+    color: inherit;
+    padding: 3px 0 8px 24px;
+}
+
+.left-dock .dropdown-menu a:hover {
+    background: #d0785e;
+}
+
+.left-dock .dropdown-menu img {
+    margin-right: 18px;
+}
+
+.left-dock .dropdown-menu p {
+    width: 280px;
+    white-space: normal;
+    margin-bottom: 8px;
+}
+
+.left-dock .dropdown-menu .view {
+    width: 45px;
+    height: 15px;
+    display: inline-block;
+    background: url(/images/layout/tiny-view.png) no-repeat;
+    text-indent: -9999px;
+}
+
+.newNav > li.latifah > a, .newNav > li.living > a {
     /* IE10 Consumer Preview */
     background-image: -ms-linear-gradient(left, #e0b66a 0%, #b39359 100%);
 
@@ -245,7 +268,7 @@ body.living .left-dock li.living.dropdown:hover ul.dropdown-menu {
     background-image: linear-gradient(to right, #e0b66a 0%, #b39359 100%);
 }
 
-.newNav > li.learning > a{
+.newNav > li.learning > a {
     /* IE10 Consumer Preview */
     background-image: -ms-linear-gradient(left, #b39359 0%, #e0b66a 100%);
 
@@ -267,13 +290,15 @@ body.living .left-dock li.living.dropdown:hover ul.dropdown-menu {
 
 .home .left-dock .newNav > li.loving > a, .home .left-dock .newNav > li.laughing > a {
     width: 193px;
-} .home .left-dock .newNav > li.learning > a {
+}
+
+.home .left-dock .newNav > li.learning > a {
     width: 206px;
 }
 
 .left-dock .newNav > li > a:hover {
     width: 190px !important;
-/* IE10 Consumer Preview */
+    /* IE10 Consumer Preview */
     background-image: -ms-linear-gradient(left, #e18367 0%, #aa634e 100%);
 
     /* Mozilla Firefox */
@@ -291,7 +316,6 @@ body.living .left-dock li.living.dropdown:hover ul.dropdown-menu {
     /* W3C Markup, IE10 Release Preview */
     background-image: linear-gradient(to right, #e18367 0%, #aa634e 100%);
 }
-
 
 body.loving li.loving > a, body.loving li.loving > a:hover,
 body.learning li.learning > a, body.learning li.learning > a:hover,
@@ -339,29 +363,19 @@ body.living li.living > a, body.living li.living > a:hover {
     top: 14px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .myContainer {
-    max-width:1020px;
+    max-width: 1020px;
     /* temp fix for content displaying behind right sidebar, should be 0 auto 60px if/when that is ever fixed */
     /*margin: 0 375px 60px auto;*/
     margin: 0 auto 60px;
-
     background: url(/images/page_bg.png);
     box-shadow: 0px 0px 10px #888888;
     -moz-box-shadow: 0px 0px 10px #888888;
     -webkit-box-shadow: 0px 0px 10px #888888;
-} .myContainer .ads {
+    padding-bottom: 60px;
+}
+
+.myContainer .ads {
     margin: 0 auto 22px;
     width: 728px;
 }
@@ -372,8 +386,8 @@ body.living li.living > a, body.living li.living > a:hover {
     height: 504px;
     margin: 0 auto 60px;
     width: 895px;
-overflow: hidden;
-float: none;
+    overflow: hidden;
+    float: none;
 }
 
 #preview .bar {
@@ -418,6 +432,8 @@ float: none;
 
 .articles {
     color: #5a4040;
+    max-width: 865px;
+    margin: 0 auto;
 }
 
 .articles img {
@@ -454,12 +470,18 @@ a.view:hover {
 -------------------------------------------------- */
 .article {
 
-} .article h2 {
+}
+
+.article h2 {
     font-family: 'Glegoo', "Times New Roman";
-} .article .callout {
+}
+
+.article .callout {
     font-family: 'Glegoo', "Times New Roman";
     font-size: 18px;
-} .byline {
+}
+
+.byline {
     text-transform: uppercase;
     font-family: proxima-nova, 'Open Sans', sans-serif;
     font-weight: bold;
@@ -468,16 +490,19 @@ a.view:hover {
     /*text-decoration: underline;*/
     margin-right: 12px;
 }
+
 a.author {
-font-family: 'Glegoo', "Times New Roman";
-text-decoration: none;
-/*color: #c2d9d0;*/
+    font-family: 'Glegoo', "Times New Roman";
+    text-decoration: none;
+    /*color: #c2d9d0;*/
 }
 
 .preview.small {
     height: 270px;
     position: relative;
-} .preview .bar {
+}
+
+.preview .bar {
     height: 43px;
     opacity: 0.9;
     filter: alpha(opacity=90);
@@ -485,7 +510,9 @@ text-decoration: none;
     bottom: 0;
     width: 465px;
 
-} .preview .bar .lightbox-expand {
+}
+
+.preview .bar .lightbox-expand {
     width: 43px;
     height: 43px;
     display: block;
@@ -503,10 +530,10 @@ text-decoration: none;
     font-size: 15px;
     font-family: proxima-nova, 'Open Sans', sans-serif;
     font-weight: bold;
-margin: 0 0 24px;
-padding: 0;
-border-bottom: 1px solid;
-display: inline-block;
+    margin: 0 0 24px;
+    padding: 0;
+    border-bottom: 1px solid;
+    display: inline-block;
 
 }
 
@@ -529,8 +556,6 @@ display: inline-block;
     font-weight: bold;
     height: 42px;
 }
-
-
 
 /* Queue (page)
 -------------------------------------------------- */
@@ -577,7 +602,9 @@ p.date:before, p.date:after {
     text-align: center;
     margin: 30px auto;
     color: #5f5f5f;
-} .queue.article h3.fancy:before, .queue.article h3.fancy:after {
+}
+
+.queue.article h3.fancy:before, .queue.article h3.fancy:after {
     content: "";
     display: table-cell;
     width: 40%;
@@ -585,19 +612,6 @@ p.date:before, p.date:after {
     background: linear-gradient(#a8a8a8, #a8a8a8) repeat-x left center;
     background-size: 1px 1px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .filter {
     display: none;
@@ -780,7 +794,9 @@ body.latifah .filter {
     background: url('/images/layout/watch-video.png') no-repeat;
     text-indent: -9999em;
     margin: 0 auto 30px;
-} .watch-video:hover {
+}
+
+.watch-video:hover {
     background-position: 0 -52px;
 }
 
@@ -797,10 +813,12 @@ body.latifah .filter {
 
 #position {
     position: absolute;
-z-index: 10;
-left: 37%;
-bottom: 290px;
-} #position li {
+    z-index: 10;
+    left: 37%;
+    bottom: 290px;
+}
+
+#position li {
 
     float: left;
     width: 10px;
@@ -906,7 +924,6 @@ a.logo {
     background: #c8d3d0;
 }
 
-
 /* Social
 -------------------------------------------------- */
 .social {
@@ -914,10 +931,14 @@ a.logo {
     border-bottom: 1px solid #a0a7a5;
     margin: 0;
     /*overflow: hidden;*/
-  } .social li {
+}
+
+.social li {
     /*line-height: 52px;*/
     /*margin: 0 20px*/
-  } .social li a {
+}
+
+.social li a {
     background: url(/images/layout/social@2x.png) no-repeat;
     width: 26px;
     height: 26px;
@@ -925,28 +946,35 @@ a.logo {
     background-size: 52px;
     text-indent: -9999em;
     margin: 12px 18px;
-} .social li.fb a:hover{
+}
+
+.social li.fb a:hover {
     background-position: -26px 0;
 }
 
-.social li.t a{
+.social li.t a {
     background-position: 0 -26px;
-} .social li.t a:hover{
+}
+
+.social li.t a:hover {
     background-position: -26px -26px;
 }
 
-.social li.i a{
+.social li.i a {
     background-position: 0 -52px;
-} .social li.i a:hover{
+}
+
+.social li.i a:hover {
     background-position: -26px -52px;
 }
 
-.social li.yt a{
+.social li.yt a {
     background-position: 0 -78px;
-} .social li.yt a:hover{
-    background-position: -26px -78px;
 }
 
+.social li.yt a:hover {
+    background-position: -26px -78px;
+}
 
 /* Queue
 -------------------------------------------------- */
@@ -955,7 +983,9 @@ a.logo {
     background: url('/images/layout/queue@2x.png') no-repeat;
     background-size: 300px;
     border-right: 1px solid #a0a7a5;
-} .daily .dose:hover {
+}
+
+.daily .dose:hover {
     background-position: 0 -50px;
 }
 
@@ -964,10 +994,11 @@ a.logo {
     background: url('/images/layout/queue@2x.png') no-repeat;
     background-size: 300px;
     background-position: -150px 0;
-} .daily .join:hover {
-    background-position: -150px -50px;
 }
 
+.daily .join:hover {
+    background-position: -150px -50px;
+}
 
 /* Where to watch (sidebar links)
 -------------------------------------------------- */
@@ -977,36 +1008,47 @@ a.logo {
     display: block;
     text-indent: -9999em;
     background: url('/images/layout/listings-tickets.png') no-repeat;
-  } .watch-widget li.view a {
-
-    } .watch-widget li.view a:hover {
-        background-position: -180px 0;
-
-  } .watch-widget li.tickets a {
-        background-position: 0 -40px;
-    } .watch-widget li.tickets a:hover {
-        background-position: -180px -40px;
 }
 
+.watch-widget li.view a {
 
+}
 
+.watch-widget li.view a:hover {
+    background-position: -180px 0;
+
+}
+
+.watch-widget li.tickets a {
+    background-position: 0 -40px;
+}
+
+.watch-widget li.tickets a:hover {
+    background-position: -180px -40px;
+}
 
 .where-to-watch {
-   width: 180px;
-   background: #829c9f;
-   color: #fff;
-} .where-to-watch h2 {
+    width: 180px;
+    background: #829c9f;
+    color: #fff;
+}
+
+.where-to-watch h2 {
     width: 180px;
     height: 46px;
     display: block;
     background: url(/images/layout/where-to-watch.png) no-repeat;
     text-indent: -9999em
-} .where-to-watch .time {
+}
+
+.where-to-watch .time {
     margin: 0;
     padding: 5px 0 0;
     text-align: center;
     border-right: 1px dotted;
-} .where-to-watch .time h3, .where-to-watch .channel h3 {
+}
+
+.where-to-watch .time h3, .where-to-watch .channel h3 {
     margin: 0;
     padding: 0;
     font-size: 12px;
@@ -1014,48 +1056,74 @@ a.logo {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: .15em
-} .where-to-watch .time ul {
+}
+
+.where-to-watch .time ul {
     font-family: 'Glegoo', "Times New Roman";
     font-size: 12px;
     margin: 10px 0;
-} .where-to-watch .time ul li {
+}
+
+.where-to-watch .time ul li {
     border-right: 1px solid #b2c4c5;
-} .where-to-watch .time ul li:last-child {
+}
+
+.where-to-watch .time ul li:last-child {
     border-right: 0;
-} .where-to-watch .channel {
+}
+
+.where-to-watch .channel {
     margin: 0;
     padding: 5px 0 0;
     text-align: center;
-} .where-to-watch .channel ul {
+}
+
+.where-to-watch .channel ul {
     font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
     text-transform: uppercase;
-} .where-to-watch .muted {
+}
+
+.where-to-watch .muted {
     color: #b2c4c5;
-} .where-to-watch .links {
-    margin: 10px 0 0 ;
+}
+
+.where-to-watch .links {
+    margin: 10px 0 0;
     height: 31px;
     border-top: 1px solid #aec5c4;
     border-bottom: 1px solid #aec5c4;
-} .where-to-watch .links li {
+}
+
+.where-to-watch .links li {
     margin: 0;
     padding: 0;
-} .where-to-watch .links a {
+}
+
+.where-to-watch .links a {
     width: 89px;
     height: 29px;
     display: block;
     text-indent: -9999em;
-} .where-to-watch .links .view-all {
+}
+
+.where-to-watch .links .view-all {
     background: url(/images/layout/view-all.png) no-repeat;
-} .where-to-watch .links .my-area {
+}
+
+.where-to-watch .links .my-area {
     background: url(/images/layout/my-area.png) no-repeat;
-} .where-to-watch .get-tix {
+}
+
+.where-to-watch .get-tix {
     width: 179px;
     height: 43px;
     display: block;
     text-indent: -9999em;
     background: url('/images/layout/listings-tickets.png') no-repeat;
     background-position: 0 -40px;
-} .where-to-watch .get-tix:hover {
+}
+
+.where-to-watch .get-tix:hover {
     background-position: -180px -40px;
 }
 
@@ -1069,13 +1137,13 @@ a.logo {
     width: 720px;
 }
 
-
-
 /* Where to watch (widget)
 -------------------------------------------------- */
 #watchModal {
 
-} #watchModal .modal-dialog {
+}
+
+#watchModal .modal-dialog {
     padding-top: 160px;
 }
 
@@ -1085,63 +1153,82 @@ a.logo {
     -webkit-box-shadow: none;
     border-radius: 0;
     width: 540px;
-height: 530px;
-background: url(/images/layout/where-to-watch-bg.png) no-repeat;
-} #watchModal .modal-header {
+    height: 530px;
+    background: url(/images/layout/where-to-watch-bg.png) no-repeat;
+}
+
+#watchModal .modal-header {
     height: 115px;
-} #watchModal .modal-title {
+}
+
+#watchModal .modal-title {
     padding: 10px;
-width: 464px;
-height: 36px;
-margin: 27px auto;
-background: url(/images/layout/where-to-watch-h1.png) no-repeat;
-text-indent: -9999em;
-} #watchModal .close {
+    width: 464px;
+    height: 36px;
+    margin: 27px auto;
+    background: url(/images/layout/where-to-watch-h1.png) no-repeat;
+    text-indent: -9999em;
+}
+
+#watchModal .close {
     top: -12px;
-} #watchModal .modal-body {
+}
+
+#watchModal .modal-body {
     padding: 0;
-} #watchModal .location {
+}
+
+#watchModal .location {
     height: 55px;
     color: #fff;
     font-family: 'Glegoo', "Times New Roman";
     font-size: 13px;
 
     letter-spacing: .1em;
-} #watchModal .location p {
+}
+
+#watchModal .location p {
     text-transform: uppercase;
     line-height: 2.5em;
     /*border-right: 1px solid;*/
     margin: 10px 0;
     overflow: hidden;
-} #watchModal .location .city {
+}
+
+#watchModal .location .city {
     font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
     font-weight: bold;
     font-size: 16px;
     margin-left: 10px;
     text-transform: none;
-} #watchModal .location input {
-width: 120px;
-   height: 30px;
-  padding: 5px 10px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
-  margin: 10px 0 0 10px;
-  border: none;
-  background: #ede3df;
-} #watchModal .location input:active, #watchModal .location input:hover {
-    background: #fff;
-} #watchModal .location .change-zipcode{
-    margin-top: 10px;
-float: left;
-padding: 0;
-width: 16px;
-height: 30px;
-display: block;
-background: url(/images/layout/go.png) no-repeat;
-text-indent: -9999px;
 }
 
+#watchModal .location input {
+    width: 120px;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    margin: 10px 0 0 10px;
+    border: none;
+    background: #ede3df;
+}
+
+#watchModal .location input:active, #watchModal .location input:hover {
+    background: #fff;
+}
+
+#watchModal .location .change-zipcode {
+    margin-top: 10px;
+    float: left;
+    padding: 0;
+    width: 16px;
+    height: 30px;
+    display: block;
+    background: url(/images/layout/go.png) no-repeat;
+    text-indent: -9999px;
+}
 
 #watchModal .listings {
     font-family: 'Glegoo', "Times New Roman";
@@ -1149,33 +1236,40 @@ text-indent: -9999px;
     height: 280px;
     overflow-y: scroll;
 
+}
 
-} #watchModal .listings li {
+#watchModal .listings li {
     border-bottom: 2px dotted #bbb;
     padding: 10px;
     margin-bottom: 10px;
-}#watchModal .listings li:last-child {
+}
+
+#watchModal .listings li:last-child {
     border-bottom: none;
 }
 
 #watchModal .listings p {
     border-right: 1px solid;
     font-weight: bold;
-} #watchModal .listings p:last-child {
+}
+
+#watchModal .listings p:last-child {
     border-right: none;
 }
 
 #watchModal .modal-footer {
     border: none;
-    color:#fff;
+    color: #fff;
     font-family: 'Glegoo', "Times New Roman";
     font-size: 17px;
     margin: 0;
     padding: 0;
-} #watchModal .modal-footer p {
+}
+
+#watchModal .modal-footer p {
     border-right: 1px dotted;
     line-height: 1.5em;
-margin: 16px 0;
+    margin: 16px 0;
 }
 
 #watchModal .w2w-tix {
@@ -1186,14 +1280,6 @@ margin: 16px 0;
     background: url(/images/layout/w2w-get-tickets.png) no-repeat;
     margin-left: 16px;
 }
-
-
-
-
-
-
-
-
 
 .living .content .filter {
     display: none;
@@ -1339,7 +1425,6 @@ ul.tweets {
     display: block;
     overflow: hidden;
 }
-
 
 .mosaicflow__item img {
     display: block;
