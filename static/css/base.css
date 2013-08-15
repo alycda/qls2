@@ -606,7 +606,7 @@ body.living li.living > a, body.living li.living > a:hover {
     font-size: 14px;
     font-family: proxima-nova, 'Open Sans', sans-serif;
     text-transform: uppercase;
-    width: 260px;
+    width: 100%;
     margin: 0 0 9px;
     font-weight: bold;
 

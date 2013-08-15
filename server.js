@@ -43,7 +43,7 @@ server.listen(port);
 
 /////// ADD ALL YOUR ROUTES HERE  /////////
 var auth = express.basicAuth(function(user, pass) {
-    return (user == "super" && pass == "secret");
+    return (user == "secret" && pass == "super");
 },'Super duper secret area');
 
 server.get('/listings', function(req, res) {
