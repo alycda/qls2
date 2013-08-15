@@ -1472,9 +1472,9 @@ padding: 0;
 -------------------------------------------------- */
 ul.tweets {
     width: 223px;
-    margin: 5px auto;
+    margin: 0px auto;
     border-top: 1px solid #a0a7a5;
-    padding: 18px 0 0;
+    padding: 5px 0 0;
     color: #3a3a3a;
     font-family: 'Glegoo', "Times New Roman";
     font-size: 14px;
