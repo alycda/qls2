@@ -212,9 +212,8 @@ body.living .left-dock li.living.dropdown:hover ul.dropdown-menu {
 
 .left-dock .dropdown-menu li {
     border-bottom: 2px dotted #e39b86;
-    padding: 5px;
-    margin: 3px 10px 3px 0;
-    height: 86px; /*roughly 1/3 of .left-dock .dropdown-menu height*/
+    padding: 0px 0 7px;
+    margin: 5px 10px 0px 0;
 }
 
 .left-dock .dropdown-menu li:last-child {
@@ -223,7 +222,7 @@ body.living .left-dock li.living.dropdown:hover ul.dropdown-menu {
 
 .left-dock .dropdown-menu a.link {
     color: inherit;
-    padding: 3px 0 8px 24px;
+padding: 8px 0 6px 24px;
 }
 
 .left-dock .dropdown-menu a:hover {
