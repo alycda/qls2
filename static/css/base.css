@@ -72,6 +72,12 @@ a:hover {}
     z-index: 1;
 }
 
+@-moz-document url-prefix() {
+    .content {
+        margin-right: 286px;
+        }
+}
+
 .right-dock {
     width: 300px;
     height: 100%;
