@@ -1,15 +1,5 @@
-* {
-    /*req'd for sticky footer*/
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%; /*req'd for sticky footer*/
-    /* The html and body elements cannot have any padding or margin. */
-}
-
+/* Scaffolding
+-------------------------------------------------- */
 body {
     min-width: 960px;
     background: #d9d7d6;
@@ -17,46 +7,28 @@ body {
     max-width: 1800px;
 }
 
-/* Scaffolding
+
+/* Typography
+-------------------------------------------------- */
+
+h1 {}
+h2 {}
+h3 {}
+
+p {}
+
+a {}
+a:hover {}
+
+
+/* Layout
 -------------------------------------------------- */
 #topadunit {
-    display: none;
-}
-
-body.home #topadunit {
-    position: fixed;
-    display: block;
-    /* fallback */
-    background-color: #202020;
-    background-image: url(/images/layout/radial_bg.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-
-    /* Safari 4-5, Chrome 1-9 */
-    /* Can't specify a percentage size? Laaaaaame. */
-    background: -webkit-gradient(radial, center center, 0, center center, 460, from(#60452e), to(#202020));
-
-    /* Safari 5.1+, Chrome 10+ */
-    background: -webkit-radial-gradient(circle, #60452e, #202020);
-
-    /* Firefox 3.6+ */
-    background: -moz-radial-gradient(circle, #60452e, #202020);
-
-    /* IE 10 */
-    background: -ms-radial-gradient(circle, #60452e, #202020);
-    height: 90px;
-    width: 100%;
-}
-
-#topadunit img {
+	display: none;
+	} #topadunit img {
     display: block;
     margin: 0 auto;
 }
-
-body.home .content {
-    margin-top: 90px;
-}
-
 .wrapper {
     width: 100%;
     height: 100%;
@@ -76,9 +48,6 @@ body.home .content {
     background: url(/images/layout/left-dock_bg.png);
 }
 
-.home .left-dock {
-    background: transparent;
-}
 
 .left-dock .logo {
     padding-top: 30px;
@@ -138,8 +107,9 @@ body.home .content {
     box-sizing: border-box;
 }
 
+
 /* dropdown
--------------------------------------------------- */
+----------- */
 .left-dock .newNav {
     position: relative;
     font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
@@ -184,13 +154,6 @@ body.home .content {
     display: block;
 }
 
-body.loving .left-dock li.loving.dropdown:hover ul.dropdown-menu,
-body.learning .left-dock li.learning.dropdown:hover ul.dropdown-menu,
-body.laughing .left-dock li.laughing.dropdown:hover ul.dropdown-menu,
-body.living .left-dock li.living.dropdown:hover ul.dropdown-menu {
-    /* don't show on respective pages*/
-    display: none;
-}
 
 .left-dock .dropdown-menu {
     z-index: -1;
@@ -207,6 +170,24 @@ body.living .left-dock li.living.dropdown:hover ul.dropdown-menu {
     font-size: 12px;
     letter-spacing: .1em;
     height: 260px; /*exact height of top-level buttons*/
+
+    /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(left, #d38068 0%, #e18569 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(left, #d38068 0%, #e18569 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(left, #d38068 0%, #e18569 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #d38068), color-stop(1, #e18569));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(left, #d38068 0%, #e18569 100%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to right, #d38068 0%, #e18569 100%);
 
 }
 
@@ -287,14 +268,6 @@ padding: 8px 0 6px 24px;
     background-image: linear-gradient(to right, #b39359 0%, #e0b66a 100%);
 }
 
-.home .left-dock .newNav > li.loving > a, .home .left-dock .newNav > li.laughing > a {
-    width: 193px;
-}
-
-.home .left-dock .newNav > li.learning > a {
-    width: 206px;
-}
-
 .left-dock .newNav > li > a:hover {
     width: 190px !important;
     /* IE10 Consumer Preview */
@@ -316,31 +289,8 @@ padding: 8px 0 6px 24px;
     background-image: linear-gradient(to right, #e18367 0%, #aa634e 100%);
 }
 
-body.loving li.loving > a, body.loving li.loving > a:hover,
-body.learning li.learning > a, body.learning li.learning > a:hover,
-body.laughing li.laughing > a, body.laughing li.laughing > a:hover,
-body.living li.living > a, body.living li.living > a:hover {
-    width: 200px !important;
-    background-image: -ms-linear-gradient(left, #e18367 0%, #aa634e 100%);
-
-    /* Mozilla Firefox */
-    background-image: -moz-linear-gradient(left, #e18367 0%, #aa634e 100%);
-
-    /* Opera */
-    background-image: -o-linear-gradient(left, #e18367 0%, #aa634e 100%);
-
-    /* Webkit (Safari/Chrome 10) */
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #e18367), color-stop(1, #aa634e));
-
-    /* Webkit (Chrome 11+) */
-    background-image: -webkit-linear-gradient(left, #e18367 0%, #aa634e 100%);
-
-    /* W3C Markup, IE10 Release Preview */
-    background-image: linear-gradient(to right, #e18367 0%, #aa634e 100%);
-}
-
-/*
--------------------------------------------------- */
+/* old
+------- */
 
 .nav li a:hover {
     width: 170px;
@@ -378,8 +328,176 @@ body.living li.living > a, body.living li.living > a:hover {
     width: 728px;
 }
 
-/* Categories (page)
+
+.internalcta {
+    position: relative;
+    border-bottom: 1px solid #a0a7a5;
+    overflow: hidden;
+    width: 300px;
+}
+
+.internalcta h2 {
+    font-family: proxima-nova, 'Open Sans', sans-serif;
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.internalcta .text {
+    background: #ffe1ac;
+    width: 100%;
+    opacity: .9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: 'Glegoo', "Times New Roman";
+    padding: 25px;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    color: #4e585c;
+}
+
+.internalcta a:hover {
+    text-decoration: none;
+}
+
+
+
+/* Layout - Home
 -------------------------------------------------- */
+body.home #topadunit {
+    position: fixed;
+    display: block;
+    /* fallback */
+    background-color: #202020;
+    background-image: url(/images/layout/radial_bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /* Safari 4-5, Chrome 1-9 */
+    /* Can't specify a percentage size? Laaaaaame. */
+    background: -webkit-gradient(radial, center center, 0, center center, 460, from(#60452e), to(#202020));
+
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-radial-gradient(circle, #60452e, #202020);
+
+    /* Firefox 3.6+ */
+    background: -moz-radial-gradient(circle, #60452e, #202020);
+
+    /* IE 10 */
+    background: -ms-radial-gradient(circle, #60452e, #202020);
+    height: 90px;
+    width: 100%;
+}
+
+body.home .content {
+    margin-top: 90px;
+}
+
+.home .left-dock {
+    background: transparent;
+}
+
+.home .left-dock .newNav > li.loving > a, .home .left-dock .newNav > li.laughing > a {
+    width: 193px;
+}
+
+.home .left-dock .newNav > li.learning > a {
+    width: 206px;
+}
+
+/* Layout - Latifah
+-------------------------------------------------- */
+.grid {
+    /*margin: 35px 300px 0 180px;*/
+    margin: 35px 0;
+}
+
+.mosaicflow__column {
+    float: left;
+}
+
+.mosaicflow__item {
+    border: 1px solid #fff;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.mosaicflow__item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.mosaicflow:hover > .mosaicflow__item img {
+    -webkit-filter: brightness(50%);
+}
+
+.mosaicflow__item .description {
+    color: #ffffff;
+    background-color: #a3cab0;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    padding: 5px;
+    width: 100%;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    text-transform: uppercase;
+}
+
+.mosaicflow__item:hover .description {
+    bottom: 0px;
+
+}
+
+.mosaicflow__item:hover img {
+    -webkit-filter: brightness(120%);
+}
+
+
+/* Layout - Category
+-------------------------------------------------- */
+
+body.loving .left-dock li.loving.dropdown:hover ul.dropdown-menu,
+body.learning .left-dock li.learning.dropdown:hover ul.dropdown-menu,
+body.laughing .left-dock li.laughing.dropdown:hover ul.dropdown-menu,
+body.living .left-dock li.living.dropdown:hover ul.dropdown-menu {
+    /* don't show on respective pages*/
+    /*display: none;*/
+}
+
+body.loving li.loving > a, body.loving li.loving > a:hover,
+body.learning li.learning > a, body.learning li.learning > a:hover,
+body.laughing li.laughing > a, body.laughing li.laughing > a:hover,
+body.living li.living > a, body.living li.living > a:hover {
+    width: 200px !important;
+    background-image: -ms-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #e18367), color-stop(1, #aa634e));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(left, #e18367 0%, #aa634e 100%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to right, #e18367 0%, #aa634e 100%);
+}
+
 #preview {
     height: 504px;
     margin: 0 auto 60px;
@@ -477,8 +595,9 @@ a.view:hover {
     text-decoration: none;
 }
 
-/* Article (page)
+/* Layout - Article
 -------------------------------------------------- */
+
 .article {
 
 } .article .row {
@@ -597,8 +716,9 @@ text-indent: -9999em;
 
 }
 
-/* Queue (page)
+/* Layout - Queue
 -------------------------------------------------- */
+
 .queue h1 {
     width: 409px;
     height: 74px;
@@ -633,7 +753,7 @@ p.date:before, p.date:after {
     background-size: 1px 1px;
 }
 
-/* Queue Article (page)
+/* Queue Article
 -------------------------------------------------- */
 .queue.article h3.fancy {
     font-family: proxima-nova, 'Open Sans', sans-serif;
@@ -653,11 +773,14 @@ p.date:before, p.date:after {
     background-size: 1px 1px;
 }
 
+
+
+/* Widgets
+-------------------------------------------------- */
+
 .filter {
     display: none;
-}
-
-body.latifah .filter {
+} body.latifah .filter {
     display: block;
     width: 100%;
     background: #b8c9be;
@@ -667,6 +790,11 @@ body.latifah .filter {
     top: 0px;
     padding-right: 400px;
 }
+
+
+
+
+
 
 #tiles {
     position: relative;
@@ -708,41 +836,9 @@ body.latifah .filter {
     overflow: hidden;
 }
 
-.internalcta {
-    position: relative;
-    border-bottom: 1px solid #a0a7a5;
-    overflow: hidden;
-    width: 300px;
-}
 
-.internalcta h2 {
-    font-family: proxima-nova, 'Open Sans', sans-serif;
-    font-size: 19px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-}
 
-.internalcta .text {
-    background: #ffe1ac;
-    width: 100%;
-    opacity: .9;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-family: 'Glegoo', "Times New Roman";
-    padding: 25px;
-    font-size: 20px;
-    display: block;
-    text-align: center;
-    color: #4e585c;
-}
 
-.internalcta a:hover {
-    text-decoration: none;
-}
 
 .weather {
     margin-top: 20px;
@@ -763,6 +859,10 @@ body.latifah .filter {
     border-bottom: 1px solid #a0a7a5;
 
 }
+
+
+
+
 
 /* swipe carousel
 -------------------------------------------------- */
@@ -965,6 +1065,9 @@ a.logo {
     background: #c8d3d0;
 }
 
+
+
+
 /* Social
 -------------------------------------------------- */
 .social {
@@ -1040,6 +1143,12 @@ a.logo {
 .daily .join:hover {
     background-position: -150px -50px;
 }
+
+
+
+
+
+
 
 /* Where to watch (sidebar links)
 -------------------------------------------------- */
@@ -1349,15 +1458,11 @@ ul.tweets {
     font-family: 'Glegoo', "Times New Roman";
     font-size: 19px;
     line-height: 1.3em;
-}
-
-.twitter h3 {
+} .twitter h3 {
     text-align: center;
     margin-bottom: 5px;
     font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
-}
-
-.twitter h3 a {
+} .twitter h3 a {
     color: #3a3a3a;
     font-size: 17px;
 }
@@ -1373,11 +1478,8 @@ ul.tweets {
     font-size: 12px;
     line-height: 21px;
     font-family: 'Glegoo', Arial;
-    max-width: 1500px;
-
-}
-
-#footer a {
+    /*max-width: 1500px;*/
+	} #footer a {
     color: #727272;
 }
 
@@ -1385,45 +1487,23 @@ ul.tweets {
 -------------------------------------------------- */
 #videoModal {
 
-}
-
-#videoModal .modal-dialog {
+	} #videoModal .modal-dialog {
     width: 662px;
     margin-left: -331px;
     padding-top: 180px;
-}
-
-#videoModal .modal-dialog .modal-content {
-    background: none;
-    border: none;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-}
-
-#videoModal .modal-dialog .modal-header {
-    border: none;
-    padding: 0;
-}
-
-#videoModal .modal-dialog .modal-body {
-    padding: 0;
-}
-
-#videoModal .modal-dialog .modal-footer {
-    padding: 0;
-    margin: 0;
-}
-
-#videoModal .sharethis {
-    background: #d4c8aa;
-    padding: 10px;
-    height: 40px;
-    width: 412px;
-    position: absolute;
-    z-index: 10;
-    right: 40px;
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+		} #videoModal .modal-content {
+  	  background: none;
+    	border: none;
+    	box-shadow: none;
+    	-webkit-box-shadow: none;
+			} #videoModal .modal-header {
+    		border: none;
+    		padding: 0;
+			} #videoModal .modal-body {
+    		padding: 0;
+			} #videoModal .modal-footer {
+		    padding: 0;
+    		margin: 0;
 }
 
 .modal-dialog .close {
@@ -1438,6 +1518,18 @@ ul.tweets {
     margin: 0 -10px 0 0;
     width: 40px;
     height: 40px;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
+#videoModal .sharethis {
+    background: #d4c8aa;
+    padding: 10px;
+    height: 40px;
+    width: 412px;
+    position: absolute;
+    z-index: 10;
+    right: 40px;
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 }
@@ -1459,55 +1551,4 @@ ul.tweets {
 
 .container {
     width: 100%;
-}
-
-.grid {
-    /*margin: 35px 300px 0 180px;*/
-    margin: 35px 0;
-}
-
-.mosaicflow__column {
-    float: left;
-}
-
-.mosaicflow__item {
-    border: 1px solid #fff;
-    position: relative;
-    display: block;
-    overflow: hidden;
-}
-
-.mosaicflow__item img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.mosaicflow:hover > .mosaicflow__item img {
-    -webkit-filter: brightness(50%);
-}
-
-.mosaicflow__item .description {
-    color: #ffffff;
-    background-color: #a3cab0;
-    position: absolute;
-    bottom: -80px;
-    left: 0;
-    padding: 5px;
-    width: 100%;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-    text-transform: uppercase;
-}
-
-.mosaicflow__item:hover .description {
-    bottom: 0px;
-
-}
-
-.mosaicflow__item:hover img {
-    -webkit-filter: brightness(120%);
 }
