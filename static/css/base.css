@@ -1469,7 +1469,7 @@ ul.tweets {
 
 #footer {
     width: 100%;
-    height: 21px;
+    height: 31px;
     background: #d9d6d6;
     position: fixed;
     bottom: 0;
@@ -1481,7 +1481,13 @@ ul.tweets {
     /*max-width: 1500px;*/
 	} #footer a {
     color: #727272;
-}
+} #footer div.hr {
+            height: 12px;
+            border: 0;
+            box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+            margin-top:5px;
+        }
+
 
 /* Video Player
 -------------------------------------------------- */
