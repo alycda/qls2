@@ -25,6 +25,7 @@ a:hover {}
 /* Layout
 -------------------------------------------------- */
 #topadunit {
+    z-index: 1000;
 	display: none;
 	} #topadunit img {
     display: block;
