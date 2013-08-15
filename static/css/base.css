@@ -158,7 +158,7 @@ a:hover {}
 }
 
 .left-dock .dropdown {
-    position: static;
+    /*position: static;*/
 }
 
 .left-dock li.dropdown:hover ul.dropdown-menu {
