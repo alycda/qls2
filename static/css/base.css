@@ -330,6 +330,7 @@ padding: 8px 0 6px 24px;
 
 .myContainer {
     max-width: 1020px;
+    min-width: 882px;
     /* temp fix for content displaying behind right sidebar, should be 0 auto 60px if/when that is ever fixed */
     /*margin: 0 375px 60px auto;*/
     margin: 0 auto 0px;
