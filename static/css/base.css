@@ -637,6 +637,7 @@ body.latifah .filter {
     position: fixed;
     z-index: 10;
     top: 0px;
+    padding-right: 400px;
 }
 
 #tiles {

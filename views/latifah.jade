@@ -3,7 +3,13 @@ extends layout
 block content
     div.filter
         img(src='/images/layout/filter.png')
-        img(src='/images/layout/social-bar.jpg', class='socialbar')
+        //img(src='/images/layout/social-bar.jpg', class='socialbar')
+        div.sharethis.pull-right
+            span.st_facebook_hcount
+            span.st_fblike_hcount
+            span.st_twitter_hcount
+            span.st_pinterest_hcount
+            span.st_email_hcount
 
     div.grid.mosaicflow.clearfix
         a.mosaicflow__item(href="#")
