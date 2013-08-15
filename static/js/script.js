@@ -292,6 +292,7 @@ function switchContent(href) {
         case '/latifah':
             $('body').addClass('latifah');
             $('.mosaicflow').mosaicflow();
+            $('.logo img').attr('src', '/images/latifah/QL_Page_logo.png');
 
             break;
 
