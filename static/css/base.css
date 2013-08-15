@@ -481,10 +481,17 @@ a.view:hover {
 -------------------------------------------------- */
 .article {
 
+} .article .row {
+    width: 860px;
+    margin: 0 auto;
 }
 
 .article h2 {
-    font-family: 'Glegoo', "Times New Roman";
+    /*font-family: 'Glegoo', "Times New Roman";*/
+    font-family: proxima-nova, 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 18px;
 }
 
 .article .callout {
@@ -549,7 +556,14 @@ a.author {
 }
 
 .more-articles li {
-    margin-bottom: 48px;
+    margin-bottom: 36px;
+    font-size: 11px;
+    font-family: 'Glegoo', "Times New Roman";
+}
+
+.more-articles li a {
+    color:#5e5e5e;
+    text-decoration: none;
 }
 
 .more-articles li img {
@@ -559,13 +573,28 @@ a.author {
 .article li h3 {
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 180px;
     color: #5a4040;
     text-transform: uppercase;
     font-size: 15px;
     font-family: proxima-nova, 'Open Sans', sans-serif;
     font-weight: bold;
-    height: 42px;
+    margin-bottom: 8px;
+}
+
+.article .copy {
+    padding: 15px;
+    font-family: 'Glegoo', "Times New Roman";
+}
+
+
+.end {
+    width: 23px;
+height: 23px;
+display: inline-block;
+background: url(/images/layout/q-footer.png) no-repeat;
+text-indent: -9999em;
+
 }
 
 /* Queue (page)
