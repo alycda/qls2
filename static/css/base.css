@@ -1184,6 +1184,16 @@ a.logo {
 
 }
 
+.modal-header .close span {
+background: url(/images/layout/close@2x.png) no-repeat;
+height: 14px;
+width: 14px;
+display: block;
+background-size: 14px;
+text-indent: -9999em;
+margin: 3px;
+}
+
 #watchModal .modal-dialog {
     padding-top: 160px;
 }
@@ -1250,7 +1260,7 @@ a.logo {
     padding: 5px 10px;
     font-size: 12px;
     line-height: 1.5;
-    border-radius: 3px;
+    border-radius: 0;
     margin: 10px 0 0 10px;
     border: none;
     background: #ede3df;
@@ -1275,7 +1285,7 @@ a.logo {
     font-family: 'Glegoo', "Times New Roman";
     padding: 20px;
     height: 280px;
-    overflow-y: scroll;
+    overflow-y: auto;
 
 }
 
@@ -1311,6 +1321,8 @@ a.logo {
     border-right: 1px dotted;
     line-height: 1.5em;
     margin: 16px 0;
+    text-align: center;
+padding: 0;
 }
 
 #watchModal .w2w-tix {
