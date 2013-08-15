@@ -338,7 +338,7 @@ padding: 8px 0 6px 24px;
 
 .right-dock .internalcta h2 {
     font-family: proxima-nova, 'Open Sans', sans-serif;
-    font-size: 19px;
+    font-size: 19px!important;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     margin: 0;
