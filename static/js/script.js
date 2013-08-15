@@ -99,30 +99,40 @@ function getLocation(state) {
         );
     };
 
-    geoip2.city(onSuccess, onError, { w3cGeolocationDisabled: true });
+    try {
+        geoip2.city(onSuccess, onError, { w3cGeolocationDisabled: true });
+
+    } catch(e) {
+
+    }
 
 }
 
 function switchContent(href) {
     $('body').removeClass()
 
-    var city = geoip_city().toLowerCase().replace(' ', '');
-    var state = geoip_region_name().toLowerCase();
-    var where = eval('listings.'+state+'.'+city);
+    try {
+        var city = geoip_city().toLowerCase().replace(' ', '');
+        var state = geoip_region_name().toLowerCase();
+        var where = eval('listings.'+state+'.'+city);
 
-    if (!where) {
-        getLocation(state);
-    } else {
+        if (!where) {
+            getLocation(state);
+        } else {
 
-        console.log(eval('listings.'+state+'.'+city+'.station'))
+            console.log(eval('listings.'+state+'.'+city+'.station'))
 
-        $.each(where.time, function(idx, val) {
-            $('.where-to-watch .time .list-inline').append('<li>'+val+'</li>');
-        });
+            $.each(where.time, function(idx, val) {
+                $('.where-to-watch .time .list-inline').append('<li>'+val+'</li>');
+            });
 
-        $.each(where.station, function(idx, val) {
-            $('.where-to-watch .channel .list-inline').append('<li>'+val+'<br>'+where.network[idx]+'<br><img src="/images/'+where.network[idx]+'.png" vspace=5></li>');
-        });
+            $.each(where.station, function(idx, val) {
+                $('.where-to-watch .channel .list-inline').append('<li>'+val+'<br>'+where.network[idx]+'<br><img src="/images/'+where.network[idx]+'.png" vspace=5></li>');
+            });
+
+        }
+
+    } catch(e) {
 
     }
 
