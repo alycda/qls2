@@ -1,7 +1,8 @@
 /* Scaffolding
 -------------------------------------------------- */
 body {
-    min-width: 960px;
+    /*min-width: 960px;*/
+    min-width: 1345px;
     background: #d9d7d6;
     min-height: 850px;
     max-width: 1800px;
