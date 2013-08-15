@@ -86,16 +86,16 @@ body.home .content {
 }
 
 .content {
-    margin-right: 300px; /*width of right sidebar*/
+    margin-right: 300px; /*width of right sidebar is 300px. */
+    /*may need to use 285px as a hack to hide empty scrollbars */
 
-    /* width: 100%; /* need to remove*/
+    /* width: 100%; /* no */
     /*max-width: 1200px;*/
     height: 100%;
-    /* position: absolute; /* need to remove*/
+    /* position: absolute; /* no*/
     top: 0;
     left: 0px;
-    /*border: 1px solid #000;*/
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     z-index: 1;
 }
