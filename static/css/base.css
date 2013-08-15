@@ -1468,6 +1468,7 @@ ul.tweets {
     margin-bottom: 5px;
     font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
 } .twitter h3 a {
+        font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
     color: #3a3a3a;
     font-size: 19px;
 }
