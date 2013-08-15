@@ -334,10 +334,12 @@ padding: 8px 0 6px 24px;
     /* temp fix for content displaying behind right sidebar, should be 0 auto 60px if/when that is ever fixed */
     /*margin: 0 375px 60px auto;*/
     margin: 0 auto 0px;
-    background: url(/images/page_bg.png);
+    background: url(/images/page_bg.png) repeat-x;
+    background-color: #e4e2e3;
     box-shadow: 0px 0px 10px #888888;
     -moz-box-shadow: 0px 0px 10px #888888;
     -webkit-box-shadow: 0px 0px 10px #888888;
+    padding-bottom: 60px;
 }
 
 .myContainer .ads {
