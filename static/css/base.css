@@ -333,8 +333,33 @@ padding: 8px 0 6px 24px;
 }
 
 .myContainer .ads {
-    margin: 0 auto 22px;
+    /*margin: 0 auto 22px;*/
+    /*width: 728px;*/
+    /* fallback */
+    background-color: #202020;
+    background-image: url(/images/layout/radial_bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /* Safari 4-5, Chrome 1-9 */
+    /* Can't specify a percentage size? Laaaaaame. */
+    background: -webkit-gradient(radial, center center, 0, center center, 460, from(#60452e), to(#202020));
+
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-radial-gradient(circle, #60452e, #202020);
+
+    /* Firefox 3.6+ */
+    background: -moz-radial-gradient(circle, #60452e, #202020);
+
+    /* IE 10 */
+    background: -ms-radial-gradient(circle, #60452e, #202020);
+    height: 90px;
+    margin-bottom: 36px;
+    /*width: 100%;*/
+} .myContainer .ads img {
     width: 728px;
+    margin: 0 auto;
+    display: block;
 }
 
 
