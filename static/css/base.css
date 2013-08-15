@@ -363,13 +363,6 @@ padding: 8px 0 6px 24px;
 }
 
 
-.internalcta {
-    position: relative;
-    border-bottom: 1px solid #a0a7a5;
-    overflow: hidden;
-    width: 300px;
-}
-
 .right-dock .internalcta h2 {
     font-family: proxima-nova, 'Open Sans', sans-serif;
     font-size: 19px!important;
@@ -378,6 +371,13 @@ padding: 8px 0 6px 24px;
     margin: 0;
     padding: 0;
     font-weight: bold;
+}
+
+.internalcta {
+    position: relative;
+    border-bottom: 1px solid #a0a7a5;
+    overflow: hidden;
+    width: 300px;
 }
 
 .internalcta .text {
@@ -510,6 +510,7 @@ body.living .left-dock li.living.dropdown:hover ul.dropdown-menu {
     /*display: none;*/
 }
 
+body.latifah li.latifah > a, body.latifah li.latifah > a:hover,
 body.loving li.loving > a, body.loving li.loving > a:hover,
 body.learning li.learning > a, body.learning li.learning > a:hover,
 body.laughing li.laughing > a, body.laughing li.laughing > a:hover,
