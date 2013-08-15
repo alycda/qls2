@@ -35,6 +35,8 @@ a:hover {}
     position: relative;
     margin: 0 auto;
     overflow: hidden;
+    max-width: 1800px;
+
 }
 
 .left-dock {
@@ -781,6 +783,8 @@ p.date:before, p.date:after {
 
 .filter {
     display: none;
+    max-width: 1800px;
+
 } body.latifah .filter {
     display: block;
     width: 100%;
@@ -1470,6 +1474,7 @@ ul.tweets {
 
 #footer {
     width: 100%;
+    max-width: 1800px;
     height: 31px;
     background: #d9d6d6;
     position: fixed;
