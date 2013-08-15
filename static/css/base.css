@@ -1275,27 +1275,33 @@ a.logo {
     height: 29px;
     display: block;
     text-indent: -9999em;
+    background: url(/images/layout/view-all-my-area@2x.png) no-repeat;
+    background-size: 180px;
 }
 
 .where-to-watch .links .view-all {
-    background: url(/images/layout/view-all.png) no-repeat;
+
+} .where-to-watch .links .view-all:hover {
+    background-position: 0 -30px;
 }
 
 .where-to-watch .links .my-area {
-    background: url(/images/layout/my-area.png) no-repeat;
+    background-position: -89px 0;
+} .where-to-watch .links .my-area:hover {
+    background-position: -89px -30px;
 }
 
 .where-to-watch .get-tix {
     width: 179px;
-    height: 43px;
-    display: block;
-    text-indent: -9999em;
-    background: url('/images/layout/listings-tickets.png') no-repeat;
-    background-position: 0 -40px;
+height: 46px;
+display: block;
+text-indent: -9999em;
+background: url('/images/layout/get-tickets@2x.png') no-repeat;
+background-size: 179px;
 }
 
 .where-to-watch .get-tix:hover {
-    background-position: -180px -40px;
+    background-position: 0 -46px;
 }
 
 .where-to-watch .channel .list-inline {
@@ -1474,14 +1480,14 @@ ul.tweets {
     width: 223px;
     margin: 0px auto;
     border-top: 1px solid #a0a7a5;
-    padding: 5px 0 0;
+    padding: 18px 0 0;
     color: #3a3a3a;
     font-family: 'Glegoo', "Times New Roman";
     font-size: 14px;
     line-height: 1.3em;
 } .twitter h3 {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
 } .twitter h3 a {
         font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
