@@ -1456,7 +1456,7 @@ ul.tweets {
     padding: 18px 0 0;
     color: #3a3a3a;
     font-family: 'Glegoo', "Times New Roman";
-    font-size: 19px;
+    font-size: 14px;
     line-height: 1.3em;
 } .twitter h3 {
     text-align: center;
@@ -1464,7 +1464,7 @@ ul.tweets {
     font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
 } .twitter h3 a {
     color: #3a3a3a;
-    font-size: 17px;
+    font-size: 19px;
 }
 
 #footer {
@@ -1551,4 +1551,14 @@ ul.tweets {
 
 .container {
     width: 100%;
+}
+
+
+
+
+
+
+
+.filter .sharethis {
+    margin-top: 6px;
 }
