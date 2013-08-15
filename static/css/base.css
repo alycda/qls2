@@ -98,6 +98,7 @@ a:hover {}
     /*border: 1px solid #000;*/
     line-height: 42px;
     font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
+    font-weight: bold;
     font-size: 19px;
     background: #e0b66a;
     color: #fff;
@@ -123,6 +124,7 @@ a:hover {}
 .left-dock .newNav {
     position: relative;
     font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
+    font-weight: bold;
 }
 
 .left-dock .newNav > li > a {
@@ -217,7 +219,8 @@ padding: 8px 0 6px 24px;
 }
 
 .left-dock .dropdown-menu a:hover {
-    background: #d0785e;
+    /*background: #d0785e;*/
+    background: none;
 }
 
 .left-dock .dropdown-menu img {
