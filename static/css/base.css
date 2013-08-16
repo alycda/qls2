@@ -1150,7 +1150,7 @@ a.logo {
         display: block;
         background-size: 52px;
         text-indent: -9999em;
-        margin: 12px;
+        margin: 11px 7px;
 } .social li.fb a:hover {
     background-position: -26px 0;
 } .social li.t a {
@@ -1161,14 +1161,18 @@ a.logo {
     background-position: 0 -52px;
     } .social li.i a:hover {
     background-position: -26px -52px;
-} .social li.yt a {
-    background-position: 0 -78px;
-    } .social li.yt a:hover {
-    background-position: -26px -78px;
 } .social li.p a {
-    background-position: 0 -104px;
+    background-position: 0 -78px;
     } .social li.p a:hover {
+    background-position: -26px -78px;
+} .social li.yt a {
+    background-position: 0 -104px;
+    } .social li.yt a:hover {
     background-position: -26px -104px;
+} .social li.e a {
+    background-position: 0 -130px;
+    } .social li.e a:hover {
+    background-position: -26px -130px;
 }
 
 /* Queue
