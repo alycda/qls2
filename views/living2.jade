@@ -1,61 +1,106 @@
 extends layout
 
 block content
-    div.myContainer
-        div.ads.
-            <!-- begin ad tag (tile=1) -->
-            <script type="text/javascript">
-            //<![CDATA[
-            var ord=Math.random()*10000000000000000;
-            document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/queen.opus/home;tile=1;sz=728x90,970x90;ord=' + ord + '?"><\/sc'+'ript>');
-            //]]>
-            </script>
-            <noscript><a href="http://ad.doubleclick.net/jump/queen.opus/home;tile=1;sz=970x30,970x90;ord=123456789?" target="_blank" ><img src="http://ad.doubleclick.net/ad/queen.opus/home;tile=1;sz=970x30,970x90;ord=123456789?" border="0" alt="" /></a></noscript>
-            <!-- end ad tag -->
+	div.myContainer
+		div.ads.
+			<!-- begin ad tag (tile=1) -->
+			<script type="text/javascript">
+			//<![CDATA[
+			var ord=Math.random()*10000000000000000;
+			document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/queen.opus/home;tile=1;sz=728x90,970x90;ord=' + ord + '?"><\/sc'+'ript>');
+			//]]>
+			</script>
+			<noscript><a href="http://ad.doubleclick.net/jump/queen.opus/home;tile=1;sz=970x30,970x90;ord=123456789?" target="_blank" ><img src="http://ad.doubleclick.net/ad/queen.opus/home;tile=1;sz=970x30,970x90;ord=123456789?" border="0" alt="" /></a></noscript>
+			<!-- end ad tag -->
 
-        div.sharethis.pull-right
-            span.st_facebook_hcount
-            span.st_fblike_hcount
-            span.st_twitter_hcount
-            span.st_pinterest_hcount
-            span.st_email_hcount
-        div.row
-            br
-            br
-            br
-            div.col-7
-                <script type='text/javascript' src='http://CBSCHI.images.worldnow.com/interface/js/WNVideo.js?rnd=294902;hostDomain=video.chicago.cbslocal.com;playerWidth=465;playerHeight=270;isShowIcon=true;clipId=9134943;flvUri=;partnerclipid=;adTag=Weather;advertisingZone=CBS.CHI%252Fworldnowplayer;enableAds=true;landingPage=;islandingPageoverride=false;playerType=STANDARD_EMBEDDEDscript;controlsType=fixed'></script><a href="http://video.chicago.cbslocal.com" title=""></a>
-                div(class="bar thumbnails", data-toggle="lightbox" )
-                    //a(class="thumbnail lightbox-expand pull-right", href="/images/laughing/lg/130725_lea_chi_ql_weather.jpg", title="Image 1", data-description="") lightbox
-                h2 Queen Latifah helps with the weather forecast
+		div.sharethis.pull-right
+			span.st_facebook_hcount
+			span.st_fblike_hcount
+			span.st_twitter_hcount
+			span.st_pinterest_hcount
+			span.st_email_hcount
+		div.row
+			br
+			br
+			br
+			div.col-7
+				div.small.preview
+					img(src="/images/living/md/look_fly_be_cool_header.jpg", height="270", alt="Look Fly, Be Cool")
+					div(class="bar thumbnails", data-toggle="lightbox" )
+						//a(class="thumbnail lightbox-expand pull-right", href="/images/laughing/md/image-1.jpg", title="Image 1", data-description="") lightbox
+				h2 Look Fly, Be Cool -- All in Time for Back to School
+				p.callout
+					| Find out which trends are hitting the hallway this semester, from head to toe (literally).
+				p.byline Article by:
+				a.author Staff
+			div.col-5
+				h3.suggested You may also like:
+				ul.more-articles.list-unstyled
+					li
+						a(href="/laughing/latifah-helps-with-the-weather.html")
+							img(class="pull-left", src="http://placehold.it/180x110", width="120", height="70", alt="FPO")
+							h3(class="pull-left") How to Buy on a Budget
+							p Lorem ipsum &hellip;
+						//a(class="view btn", href="/laughing/latifah-helps-with-the-weather.html") view
+					li
+						a(href="/laughing/hot-time-in-chicago.html")
+							img(class="pull-left", src="http://placehold.it/180x110", width="120", height="70", alt="FPO")
+							h3(class="pull-left") Transitioning Summer Pieces into Fall
+							p Lorem ipsum &hellip;
+							//a(class="view btn", href="/laughing/hot-time-in-chicago.html") view
 
-                p.byline Article by:
-                a.author Staff
-
-
-                p.callout
-                    | Queen Latifah stopped by the
-                    a(href="http://chicago.cbslocal.com/") CBS 2
-                    |  studio during her recent trip to Chicago and helped CBS 2 Meteorologist Megan Glaros
-            div.col-5
-                h3.suggested You may also like:
-                ul.more-articles.list-unstyled
-                    li
-                        a(href="/laughing/latifah-helps-with-the-weather.html")
-                            img(class="pull-left", src="/images/laughing/sm/weather.jpg", width="120", height="70", alt="FPO")
-                            h3(class="pull-left") helping with the weather forecast
-                            p She stopped by the CBS 2 studio &amp; helped Meteorologist Megan&hellip;
-                            //a(class="view btn", href="/laughing/latifah-helps-with-the-weather.html") view
-                    li
-                        a(href="/laughing/hot-time-in-chicago.html")
-                            img(class="pull-left", src="/images/laughing/sm/chicago.jpg", width="120", height="70", alt="FPO")
-                            h3(class="pull-left") Hot Time in Chicago!
-                            p On the road this summer, heading to Chicago to soak in the sights, sounds and smells of the City&hellip;
-                            //a(class="view btn", href="/laughing/hot-time-in-chicago.html") view
-                    li
-                        a(href="/laughing/go-behind-the-scenes.html")
-                            img(class="pull-left", src="/images/laughing/sm/scenes.jpg", width="120", height="70", alt="FPO")
-                            h3(class="pull-left") Behind the scenes
-                            p She shares photos from the set, backstage and more!&hellip;
-                            //a(class="view btn", href="/laughing/go-behind-the-scenes.html") view
+		div.row
+			div.col12
+				p.copy
+					| Before you know it, you'll be sending your kid back to school. Before that first bell rings, check out the hot trends you'll see working the runway, er, hallway, this year.
+		div.row
+			div.col-12
+				div#slider.swipe
+					div.swipe-wrap
+						div
+							img(width=830, src="/images/living/md/backtoschool_carousel/carousel_boy2.jpg")
+						div
+							img(width=830, src="/images/living/md/backtoschool_carousel/carousel_girl.jpg")
+						div
+							img(width=830, src="/images/living/md/backtoschool_carousel/carousel_boy.jpg")
+						div
+							img(width=830, src="/images/living/md/backtoschool_carousel/carousel_boys.jpg")
+				p.copy
+					a(href="http://seventeen.com", target="_blank") Seventeen Magazine 
+					| says gals will be taking a page out of the script of the hit 90s movie “Clueless”. Those penciled skirts, knee-high socks, and cute, see-through accessories are making a comeback.
+				p.copy
+					| We think Cher, Dionne, and Tai made it happen back then – why not give it the go-ahead again? The best thing about those skirts is you can mix and match them and the knee-high socks with multiple different looks. Which is good for Mom’s pocketbook!
+				p.copy
+					| Boys will be donning the ultimate hipster look. Think hats and beanies with an edge. Fun fall colors browns, oranges, reds according to 
+					a(href="http://minihipster.com", target="_blank") MiniHipster
+					| .
+				p.copy
+					| Crisp, oxford-collared shirts and a bold blazer are all the rage as well. These two paired together add a bit of class to your chic high school look.
+				p.copy
+					| Boy tykes will also kick it down the hallway wearing graphic tees and hoodies. MiniHipster says the runways were all covered up, giving boys a handsome way to keep warm during the cooler fall months.
+				p.copy
+					| It's also not just about mini-skirts and blazers. Sometimes, there's the need to let your hair down a bit and experiment with different tennis shoes. And these aren’t just for the gym; ladies of all ages are rocking the kicks all day long. 
+					a(href="http://teenvogue.com", target="_blank") Teen Vogue
+					|  recommends teens put their best foot forward with the high-top sneaker. From 
+					a(href="http://sketchers.com", target="_blank") Skechers
+					|  to 
+					a(href="http://adidas.com", target="_blank") Adidas
+					|  to 
+					a(href="http://converse.com", target="_blank") Converse
+					|  – all your favorite shoe companies have tons of different styles that will match any ensemble you are putting together for a more playful look.
+				p.copy
+					| And, of course, you have to have the best shoes to sport down the hallway before recess... MiniHipster suggests motorcycle combat boots will be a complete smash for dudes.
+				p.copy
+					| Whatever you do, enjoy the fall start-up and let us know what you’re wearing by tweeting us at #QLFallFashionFaves.
+				p.copy
+					| You never know, we may feature some of your outfit selections in a future post on 
+					a(href="http://queenlatifah.com", target="_blank") QueenLatifah.com
+					| .
+					span.end Q
+		div.row
+			div.col-12
+				div#slider.swipe
+					div.swipe-wrap
+						div
+							img(src="/images/laughing/md/photo4.jpg")
 
