@@ -315,7 +315,7 @@ function switchContent(href) {
             break;
         case '/loving/hollywood-cover-girl':
         case '/loving/mateo-rising':
-        case '/loving/flick-pick':
+        case '/loving/flick-pick-lee-daniels-the-butler':
             $('body').addClass('loving article');
 
 
@@ -384,12 +384,12 @@ function switchContent(href) {
             }).data('Swipe');
 
             break;
-        case '/laughing/latifah-helps-with-the-weather':
+        case '/laughing/queen-latifah-takes-over-the-weather':
             $('body').addClass('laughing article article2');
 
             break;
 
-        case '/laughing/chirstina-bianco-remarkable-diva-impressions':
+        case '/laughing/christina-bianco-remarkable-diva-impressions':
             $('body').addClass('laughing article article4');
 
             break;

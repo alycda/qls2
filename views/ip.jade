@@ -1,8 +1,0 @@
-extends layout
-
-block content
-	script(src="//j.maxmind.com/js/geoip.js")
-	h1 city
-	p is:
-		script
-			document.write( ' '+geoip_city()+', '+geoip_region_name() );
