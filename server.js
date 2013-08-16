@@ -240,49 +240,53 @@ server.get('/learning/summer-read-wrap-up.html', function(req,res){
 });
 
 
-server.get('/laughing.jade/chirstina-bianco---remarkable-diva-impressions.html', function(req,res){
-    res.render('laughing.jade', {
+server.get('/laughing/chirstina-bianco-remarkable-diva-impressions.html', function(req,res){
+    res.render('laughing4.jade', {
         locals : {
             title : 'Queen Latifah'
             ,description: ''
             ,author: ''
             ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'laughing article1'
         }
     });
 });
 
 
-server.get('/laughing.jade/go-behind-the-scenes-with-queen-latifah.html', function(req,res){
-    res.render('laughing.jade', {
+server.get('/laughing/go-behind-the-scenes-with-queen-latifah.html', function(req,res){
+    res.render('laughing1.jade', {
         locals : {
             title : 'Queen Latifah'
             ,description: ''
             ,author: ''
             ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'laughing article1'
         }
     });
 });
 
 
-server.get('/laughing.jade/hot-time-in-chicago.html', function(req,res){
-    res.render('laughing.jade', {
+server.get('/laughing/hot-time-in-chicago.html', function(req,res){
+    res.render('laughing3.jade', {
         locals : {
             title : 'Queen Latifah'
             ,description: ''
             ,author: ''
             ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'laughing article3'
         }
     });
 });
 
 
-server.get('/laughing.jade/queen-latifah-takes-over-the-weather.html', function(req,res){
-    res.render('laughing.jade', {
+server.get('/laughing/queen-latifah-takes-over-the-weather.html', function(req,res){
+    res.render('laughing2.jade', {
         locals : {
             title : 'Queen Latifah'
             ,description: ''
             ,author: ''
             ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'laughing article2'
         }
     });
 });

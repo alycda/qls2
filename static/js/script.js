@@ -336,6 +336,11 @@ function switchContent(href) {
             $('body').addClass('laughing article article2');
 
             break;
+
+        case '/laughing/chirstina-bianco-remarkable-diva-impressions':
+            $('body').addClass('laughing article article4');
+
+            break;
         case '/laughing/hot-time-in-chicago':
             $('body').addClass('laughing article article3');
 
