@@ -1294,6 +1294,19 @@ a.logo {
     font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
     text-transform: uppercase;
 }
+.where-to-watch .channel ul li {
+padding-right: 0;
+}
+
+.where-to-watch .channel ul li img {
+border-right: 1px solid #b2c4c5;
+padding-right: 10px;
+}
+
+.where-to-watch .channel ul li:last img {
+    border: none;
+    padding-left: 3px;
+}
 
 .where-to-watch .muted {
     color: #b2c4c5;

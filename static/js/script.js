@@ -145,8 +145,8 @@ function switchContent(href) {
 
             // backstretch.js (first)
             $('#a').addClass('dark').backstretch("/images/home/slide1.jpg"); //this image is dark, and needs a white logo
-            $('#b').backstretch("/images/home/slide3.jpg");
-            $('#c').backstretch("/images/home/slide2.jpg");
+            $('#b').backstretch("/images/home/slide2.jpg");
+            $('#c').backstretch("/images/home/slide3.jpg");
             $('#d').backstretch("/images/home/slide4.jpg");
 
             // swipe.js (second)
