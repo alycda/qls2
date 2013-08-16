@@ -38,6 +38,11 @@ $(document).ready(function() {
         })
     });
 
+
+    $('#videoModal').on('hidden.bs.modal', function () {
+        player.stopVideo();
+    });
+
 }); // end $(document).ready()
 
 sublime.ready(function(){
