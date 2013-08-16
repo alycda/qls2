@@ -11,3 +11,5 @@ static/images/right-placeholder.png
 views/footer.jade
 
 views/index2.jade
+
+*.DS_Store
