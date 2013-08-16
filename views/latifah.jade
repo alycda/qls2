@@ -16,7 +16,7 @@ block content
             img(src="/images/latifah/1.jpg")
             div.description.
                 BlogHer '13 Voices Of The Year
-        a.mosaicflow__item(href="http://www.youtube.com/watch?v=UTx_FOt18nE", target="_blank")
+        a.mosaicflow__item(data-toggle="modal", href='#videoModal')
             img(src="/images/latifah/2.jpg", target="_blank")
             div.description.
                 Live at The Hollywood Bowl
@@ -147,3 +147,40 @@ block content
             img(src="/images/latifah/33.jpg")
             div.description.
                 A Queen Gets a Star!
+    block modal
+        div#videoModal.modal.fade
+          div.modal-dialog
+            div.modal-content
+              div.modal-header
+                button(type="button", class="close", data-dismiss="modal", aria-hidden="true")
+                  span &times;
+                div.sharethis
+                  span.st_facebook_hcount
+                  span.st_fblike_hcount
+                  span.st_twitter_hcount
+                  span.st_pinterest_hcount
+                  span.st_email_hcount
+              div.modal-body
+                  div#youtubemodal
+              //div.modal-footer
+                p video controls
+    script.
+                var player;
+                var tag = document.createElement('script');
+                tag.src = "https://www.youtube.com/iframe_api";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                var player;
+                function onYouTubeIframeAPIReady() {
+                
+                player = new YT.Player('youtubemodal', {
+                    height: '480',
+                    width: '640',
+                    videoId: 'UTx_FOt18nE'
+                    });
+                }
+
+                $('#videoModal').on('hidden', function () {
+                    player.stopVideo();
+                });
+                    
