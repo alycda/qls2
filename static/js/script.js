@@ -248,8 +248,6 @@ function switchContent(href) {
                 }
             }).data('Swipe');
 
-            //document.getElementById('youtubeplayer').addEventListener('onStateChange', 'player_state_changed');
-                //mySwipe.stop();
 
             break;
         case '/living/transitioning-summer-pieces-to-fall':
