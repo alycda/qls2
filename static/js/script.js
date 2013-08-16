@@ -332,6 +332,32 @@ function switchContent(href) {
             $('body').addClass('learning');
 
             break;
+
+
+        case '/learning/shining-a-spotlight-on-south-central-scholars-foundation':
+        case '/learning/homeless-to-harvard-an-incredible-true-story':
+        case '/learning/blogher-13-voices-of-the-year':
+        case '/learning/queen-latifah-awards-ll-cool-j':
+        case '/learning/save-money-go-green':
+        case '/learning/shining-a-spotlight-on-career-wardrobe':
+        case '/learning/summer-read-wrap-up':
+
+                $('body').addClass('learning article');
+                window.mySwipe = $('#slider').Swipe({
+                auto: 5000,
+                callback: function(index, element){
+                    // update slider nav
+                    // $('#position li').removeClass('on');
+                    // $('#position li').eq(index).addClass('on');
+                },
+                transitionEnd: function(index, element) {
+                    // update lightbox link
+                }
+            }).data('Swipe');
+
+            break;
+
+
         case '/laughing':
             $('body').addClass('laughing');
 
@@ -376,7 +402,7 @@ function switchContent(href) {
                     // update lightbox link
                 }
             }).data('Swipe');
-        
+
             break;
 		case '/laughing/chirstina-bianco-remarkable-diva-impressions':
             $('body').addClass('laughing article article4');
@@ -428,7 +454,7 @@ function switchContent(href) {
             break;
         case '/daily-queue/book-lover-s-day-':
             $('body').addClass('queue article');
-			
+
 			window.mySwipe = $('#slider').Swipe({
 			      auto: 5000,
 			      callback: function(index, element){
