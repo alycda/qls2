@@ -227,6 +227,17 @@ function switchContent(href) {
 
         case '/living/kravitz-design-inc':
             $('body').addClass('living article article1');
+            window.mySwipe = $('#slider').Swipe({
+                auto: 5000,
+                callback: function(index, element){
+                    // update slider nav
+                    // $('#position li').removeClass('on');
+                    // $('#position li').eq(index).addClass('on');
+                },
+                transitionEnd: function(index, element) {
+                    // update lightbox link
+                }
+            }).data('Swipe');
 
             break;
         case '/living/look-fly-be-cool':
