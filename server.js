@@ -46,408 +46,6 @@ var auth = express.basicAuth(function(user, pass) {
     return (user == "secret" && pass == "super");
 },'Super duper secret area');
 
-
-
-server.get('/living/kravitz-design-inc.html', function(req,res){
-    res.render('living1.jade', {
-        locals : {
-            title : 'Queen Latifah: Kravitz Design Inc'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-            ,pageid: 'living article1'
-        }
-    });
-});
-
-
-server.get('/living/look-fly-be-cool.html', function(req,res){
-    res.render('living2.jade', {
-        locals : {
-            title : 'Queen Latifah: Look Fly, Be Cool -- All in Time for Back to School'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-            ,pageid: 'living article2'
-        }
-    });
-});
-
-
-server.get('/living/how-to-buy-on-a-budget.html', function(req,res){
-    res.render('living3.jade', {
-        locals : {
-            title : 'Queen Latifah: How to Buy on a Budget, Without Looking Like it'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-            ,pageid: 'living article3'
-        }
-    });
-});
-
-
-server.get('/living/transitioning-summer-pieces-to-fall.html', function(req,res){
-    res.render('living4.jade', {
-        locals : {
-            title : 'Queen Latifah: Transitioning Summer Pieces into Fall'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-            ,pageid: 'living article4'
-        }
-    });
-});
-
-
-server.get('/living/mani-c-monday-fabulous-florals.html', function(req,res){
-    res.render('living5.jade', {
-        locals : {
-            title : 'Queen Latifah: Mani-c Monday: Fabulous Florals'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-            ,pageid: 'living article5'
-        }
-    });
-});
-
-
-server.get('/loving/music---movies/flick-pick--lee-daniels--the-butler.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/loving/mateo-rising.html#sthash.4gAOPjko.dpbs', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/loving/hollywood-cover-girl.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/learning/shining-a-spotlight-on-career-wardrobe.html', function(req,res){
-    res.render('learning1.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-            ,pageid: 'learning article1'
-        }
-    });
-});
-
-
-server.get('/learning/queen-latifah-awards-ll-cool-j.html', function(req,res){
-    res.render('learning2.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-            ,pageid: 'learning article2'
-        }
-    });
-});
-
-
-server.get('/learning/homeless-to-harvard-an-incredible-true-story.html', function(req,res){
-    res.render('learning3.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-            ,pageid: 'learning article3'
-        }
-    });
-});
-
-
-server.get('/learning/blogher-13-voices-of-the-year.html', function(req,res){
-    res.render('learning4.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-            ,pageid: 'learning article4'
-        }
-    });
-});
-
-
-server.get('/learning/save-money-go-green.html', function(req,res){
-    res.render('learning5.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-            ,pageid: 'learning article5'
-        }
-    });
-});
-
-
-server.get('/learning/shining-a-spotlight-on-south-central-scholars-foundation.html', function(req,res){
-    res.render('learning6.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-            ,pageid: 'learning article6'
-        }
-    });
-});
-
-
-server.get('/learning/summer-read-wrap-up.html', function(req,res){
-    res.render('learning7.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-            ,pageid: 'learning article7'
-        }
-    });
-});
-
-
-server.get('/laughing.jade/chirstina-bianco---remarkable-diva-impressions.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/laughing.jade/go-behind-the-scenes-with-queen-latifah.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/laughing.jade/hot-time-in-chicago.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/laughing.jade/queen-latifah-takes-over-the-weather.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/daily-queue/exercise-fads-you-won-t-believe-are-real.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/daily-queue/funny-fake-ads-we-wish-were-real.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/daily-queue/the-five-cutest-animals-to-brighten-your-day.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/daily-queue/happy-birthday-neil-armstrong--five-incredible-images-from-space.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/daily-queue/-i-love-lucy-.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/daily-queue/wonderous-waterfalls-around-the-world.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/daily-queue/throw-back-thursday-.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/daily-queue/book-lover-s-day-.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/daily-queue/what-is-vocal-fry--is-the-epidemic-real--can-it-be-stopped-.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/daily-queue/top-5-internet-memes-we-are-glad-are-over-.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/daily-queue/happy-birthday-steve-martin-.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/daily-queue/throw-back-thursday---driving-in-los-angeles-through-the-ages.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/daily-queue/funny-friday.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-
-
-
-
 server.get('/listings', function(req, res) {
     console.log(require('./tvguide.js').listings.alabama.birmingham);
     res.end();
@@ -646,6 +244,19 @@ server.get('/laughing/hot-time-in-chicago.html', function(req,res){
     // res.sendfile('article-1.html');
 });
 
+// make me dynamic
+server.get('/laughing/chirstina-bianco-remarkable-diva-impressions.html', function(req,res){
+    res.render('laughing4.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'laughing article4'
+        }
+    });
+    // res.sendfile('article-1.html');
+}); 
 
 server.get('/queue', function(req,res){
     res.render('queue.jade', {
@@ -663,6 +274,104 @@ server.get('/queue', function(req,res){
 // i wanna be dynamic too!
 server.get('/queue/1', function(req,res){
     res.render('q-article.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'q-article'
+        }
+    });
+    // res.sendfile('queue-1.html');
+});
+
+// dynamic Queue Article
+server.get('/daily-queue/funny-fake-ads-we-wish-were-real.html', function(req,res){
+    res.render('q-article1.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'q-article'
+        }
+    });
+    // res.sendfile('queue-1.html');
+});
+
+// dynamic Queue Article
+server.get('/daily-queue/the-five-cutest-animals-to-brighten-your-day.html', function(req,res){
+    res.render('q-article2.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'q-article'
+        }
+    });
+    // res.sendfile('queue-1.html');
+});
+
+// dynamic Queue Article
+server.get('/daily-queue/happy-birthday-neil-armstrong--five-incredible-images-from-space.html', function(req,res){
+    res.render('q-article3.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'q-article'
+        }
+    });
+    // res.sendfile('queue-1.html');
+});
+
+// dynamic Queue Article
+server.get('/daily-queue/i-love-lucy.html', function(req,res){
+    res.render('q-article4.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'q-article'
+        }
+    });
+    // res.sendfile('queue-1.html');
+});
+
+// dynamic Queue Article
+server.get('/daily-queue/wonderous-waterfalls-around-the-world.html', function(req,res){
+    res.render('q-article5.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'q-article'
+        }
+    });
+    // res.sendfile('queue-1.html');
+});
+
+// dynamic Queue Article
+server.get('/daily-queue/throw-back-thursday-.html', function(req,res){
+    res.render('q-article6.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'q-article'
+        }
+    });
+    // res.sendfile('queue-1.html');
+});
+
+// dynamic Queue Article
+server.get('/daily-queue/book-lover-s-day-.html', function(req,res){
+    res.render('q-article7.jade', {
         locals : {
             title : 'Queen Latifah'
             ,description: ''

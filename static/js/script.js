@@ -224,27 +224,6 @@ function switchContent(href) {
             $('body').addClass('living');
 
             break;
-
-        case '/living/kravitz-design-inc':
-            $('body').addClass('living article article1');
-
-            break;
-        case '/living/look-fly-be-cool':
-            $('body').addClass('living article article2');
-
-            break;
-        case '/living/how-to-buy-on-a-budget':
-            $('body').addClass('living article article3');
-
-            break;
-        case '/living/transitioning-summer-pieces-to-fall':
-            $('body').addClass('living article article4');
-
-            break;
-        case '/living/mani-c-monday-fabulous-florals':
-            $('body').addClass('living article article5');
-
-            break;
         case '/loving':
             $('body').addClass('loving');
 
@@ -273,31 +252,6 @@ function switchContent(href) {
             $('body').addClass('learning');
 
             break;
-
-        case '/learning/shining-a-spotlight-on-career-wardrobe':
-        case '/learning/queen-latifah-awards-ll-cool-j':
-        case '/learning/homeless-to-harvard-an-incredible-true-story':
-        case '/learning/blogher-13-voices-of-the-year':
-        case '/learning/save-money-go-green':
-        case '/learning/shining-a-spotlight-on-south-central-scholars-foundation':
-        case '/learning/summer-read-wrap-up':
-            $('body').addClass('learning article');
-
-            window.mySwipe = $('#slider').Swipe({
-                auto: 5000,
-                callback: function(index, element){
-                    // update slider nav
-                    // $('#position li').removeClass('on');
-                    // $('#position li').eq(index).addClass('on');
-                },
-                transitionEnd: function(index, element) {
-                    // update lightbox link
-                }
-            }).data('Swipe');
-
-
-            break;
-
         case '/laughing':
             $('body').addClass('laughing');
 
@@ -337,7 +291,10 @@ function switchContent(href) {
                     // update lightbox link
                 }
             }).data('Swipe');
-
+        
+            break;
+		case '/laughing/chirstina-bianco-remarkable-diva-impressions':
+            $('body').addClass('laughing article article4');
 
             break;
 
@@ -358,6 +315,46 @@ function switchContent(href) {
             break;
         case '/queue/1':
             $('body').addClass('queue article');
+
+            break;
+        case '/daily-queue/funny-fake-ads-we-wish-were-real':
+            $('body').addClass('queue article');
+
+            break;
+        case '/daily-queue/the-five-cutest-animals-to-brighten-your-day':
+            $('body').addClass('queue article');
+
+            break;
+        case '/daily-queue/happy-birthday-neil-armstrong--five-incredible-images-from-space':
+            $('body').addClass('queue article');
+
+            break;
+        case '/daily-queue/i-love-lucy':
+            $('body').addClass('queue article');
+
+            break;
+        case '/daily-queue/wonderous-waterfalls-around-the-world':
+            $('body').addClass('queue article');
+
+            break;
+        case '/daily-queue/throw-back-thursday-':
+            $('body').addClass('queue article');
+
+            break;
+        case '/daily-queue/book-lover-s-day-':
+            $('body').addClass('queue article');
+			
+			window.mySwipe = $('#slider').Swipe({
+			      auto: 5000,
+			      callback: function(index, element){
+			       // update slider nav
+			       // $('#position li').removeClass('on');
+			       // $('#position li').eq(index).addClass('on');
+			                },
+			       transitionEnd: function(index, element) {
+			         // update lightbox link
+			                }
+			            }).data('Swipe');
 
             break;
     }
