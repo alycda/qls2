@@ -47,7 +47,6 @@ var auth = express.basicAuth(function(user, pass) {
 },'Super duper secret area');
 
 
-
 server.get('/living/kravitz-design-inc.html', function(req,res){
     res.render('living1.jade', {
         locals : {
@@ -412,10 +411,6 @@ server.get('/daily-queue/funny-friday.html', function(req,res){
 });
 
 
-
-
-
-
 server.get('/listings', function(req, res) {
     console.log(require('./tvguide.js').listings.alabama.birmingham);
     res.end();
@@ -614,6 +609,19 @@ server.get('/laughing/hot-time-in-chicago.html', function(req,res){
     // res.sendfile('article-1.html');
 });
 
+// make me dynamic
+server.get('/laughing/chirstina-bianco-remarkable-diva-impressions.html', function(req,res){
+    res.render('laughing4.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'laughing article4'
+        }
+    });
+    // res.sendfile('article-1.html');
+});
 
 server.get('/queue', function(req,res){
     res.render('queue.jade', {
@@ -631,6 +639,104 @@ server.get('/queue', function(req,res){
 // i wanna be dynamic too!
 server.get('/queue/1', function(req,res){
     res.render('q-article.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'q-article'
+        }
+    });
+    // res.sendfile('queue-1.html');
+});
+
+// dynamic Queue Article
+server.get('/daily-queue/funny-fake-ads-we-wish-were-real.html', function(req,res){
+    res.render('q-article1.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'q-article'
+        }
+    });
+    // res.sendfile('queue-1.html');
+});
+
+// dynamic Queue Article
+server.get('/daily-queue/the-five-cutest-animals-to-brighten-your-day.html', function(req,res){
+    res.render('q-article2.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'q-article'
+        }
+    });
+    // res.sendfile('queue-1.html');
+});
+
+// dynamic Queue Article
+server.get('/daily-queue/happy-birthday-neil-armstrong--five-incredible-images-from-space.html', function(req,res){
+    res.render('q-article3.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'q-article'
+        }
+    });
+    // res.sendfile('queue-1.html');
+});
+
+// dynamic Queue Article
+server.get('/daily-queue/i-love-lucy.html', function(req,res){
+    res.render('q-article4.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'q-article'
+        }
+    });
+    // res.sendfile('queue-1.html');
+});
+
+// dynamic Queue Article
+server.get('/daily-queue/wonderous-waterfalls-around-the-world.html', function(req,res){
+    res.render('q-article5.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'q-article'
+        }
+    });
+    // res.sendfile('queue-1.html');
+});
+
+// dynamic Queue Article
+server.get('/daily-queue/throw-back-thursday-.html', function(req,res){
+    res.render('q-article6.jade', {
+        locals : {
+            title : 'Queen Latifah'
+            ,description: ''
+            ,author: ''
+            ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'q-article'
+        }
+    });
+    // res.sendfile('queue-1.html');
+});
+
+// dynamic Queue Article
+server.get('/daily-queue/book-lover-s-day-.html', function(req,res){
+    res.render('q-article7.jade', {
         locals : {
             title : 'Queen Latifah'
             ,description: ''
