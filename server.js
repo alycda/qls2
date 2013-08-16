@@ -113,42 +113,6 @@ server.get('/living/mani-c-monday-fabulous-florals.html', function(req,res){
 });
 
 
-server.get('/loving/music---movies/flick-pick--lee-daniels--the-butler.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/loving/mateo-rising.html#sthash.4gAOPjko.dpbs', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
-server.get('/loving/hollywood-cover-girl.html', function(req,res){
-    res.render('laughing.jade', {
-        locals : {
-            title : 'Queen Latifah'
-            ,description: ''
-            ,author: ''
-            ,analyticssiteid: 'XXXXXXX'
-        }
-    });
-});
-
-
 server.get('/learning/shining-a-spotlight-on-career-wardrobe.html', function(req,res){
     res.render('learning1.jade', {
         locals : {
@@ -558,7 +522,7 @@ server.get('/loving/hollywood-cover-girl.html', function(req,res){
     // res.sendfile('article-1.html');
 });
 // make me dynamic
-server.get('/loving/2', function(req,res){
+server.get('/loving/mateo-rising.html', function(req,res){
     res.render('loving2.jade', {
         locals : {
             title : 'Queen Latifah'
@@ -571,7 +535,7 @@ server.get('/loving/2', function(req,res){
     // res.sendfile('article-1.html');
 });
 // make me dynamic
-server.get('/loving/3', function(req,res){
+server.get('/loving/flick-pick.html', function(req,res){
     res.render('loving3.jade', {
         locals : {
             title : 'Queen Latifah'
