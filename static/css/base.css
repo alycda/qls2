@@ -1134,49 +1134,35 @@ a.logo {
     border-bottom: 1px solid #a0a7a5;
     margin: 0;
     /*overflow: hidden;*/
-}
-
-.social li {
+    } .social li {
     /*line-height: 52px;*/
     /*margin: 0 20px*/
-}
-
-.social li a {
-    background: url(/images/layout/social@2x.png) no-repeat;
-    width: 26px;
-    height: 26px;
-    display: block;
-    background-size: 52px;
-    text-indent: -9999em;
-    margin: 12px 18px;
-}
-
-.social li.fb a:hover {
+        } .social li a {
+        background: url(/images/layout/social@2x.png) no-repeat;
+        width: 26px;
+        height: 26px;
+        display: block;
+        background-size: 52px;
+        text-indent: -9999em;
+        margin: 12px;
+} .social li.fb a:hover {
     background-position: -26px 0;
-}
-
-.social li.t a {
+} .social li.t a {
     background-position: 0 -26px;
-}
-
-.social li.t a:hover {
+    } .social li.t a:hover {
     background-position: -26px -26px;
-}
-
-.social li.i a {
+} .social li.i a {
     background-position: 0 -52px;
-}
-
-.social li.i a:hover {
+    } .social li.i a:hover {
     background-position: -26px -52px;
-}
-
-.social li.yt a {
+} .social li.yt a {
     background-position: 0 -78px;
-}
-
-.social li.yt a:hover {
+    } .social li.yt a:hover {
     background-position: -26px -78px;
+} .social li.p a {
+    background-position: 0 -104px;
+    } .social li.p a:hover {
+    background-position: -26px -104px;
 }
 
 /* Queue
