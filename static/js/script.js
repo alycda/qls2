@@ -81,11 +81,13 @@ function getLocation(state) {
 
         $.each(where.time, function(idx, val) {
             $('.where-to-watch .time .list-inline').append('<li>'+val+'</li>');
+            $('ul.listings').append('<li><p class="col-3 time">'+val+'<p class="col-3 station">'+where.network[idx]+'</p><img class="col3" src="/images/logos/'+where.logo[idx].replace('.png', '_inverted.png')+'" width="25"></li>');
         });
 
         $.each(where.station, function(idx, val) {
             $('.where-to-watch .channel .list-inline').append('<li>'+val+'<br>'+where.network[idx]+'<br><img src="/images/logos/'+where.logo[idx]+'" vspace=5></li>');
         });
+
 
 //        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?latlng='+data.location.latitude+','+data.location.longitude+'&sensor=false', function(data) {
 //            console.log(data)
@@ -124,6 +126,7 @@ function switchContent(href) {
 
             $.each(where.time, function(idx, val) {
                 $('.where-to-watch .time .list-inline').append('<li>'+val+'</li>');
+                $('ul.listings').append('<li><p class="col-3 time">'+val+'<p class="col-3 station">'+where.network[idx]+'</p><img class="col3" src="/images/logos/'+where.logo[idx].replace('.png', '_inverted.png')+'" width="25"></li>');
             });
 
             $.each(where.station, function(idx, val) {
@@ -145,8 +148,8 @@ function switchContent(href) {
 
             // backstretch.js (first)
             $('#a').addClass('dark').backstretch("/images/home/slide1.jpg"); //this image is dark, and needs a white logo
-            $('#b').backstretch("/images/home/slide3.jpg");
-            $('#c').backstretch("/images/home/slide2.jpg");
+            $('#b').backstretch("/images/home/slide2.jpg");
+            $('#c').backstretch("/images/home/slide3.jpg");
             $('#d').backstretch("/images/home/slide4.jpg");
 
             // swipe.js (second)
@@ -300,6 +303,7 @@ function switchContent(href) {
                 }
             }).data('Swipe');
             break;
+ f975478f67479337f3edb5a448caf191fda84fa5
         case '/loving':
             $('body').addClass('loving');
 
@@ -328,31 +332,6 @@ function switchContent(href) {
             $('body').addClass('learning');
 
             break;
-
-        case '/learning/shining-a-spotlight-on-career-wardrobe':
-        case '/learning/queen-latifah-awards-ll-cool-j':
-        case '/learning/homeless-to-harvard-an-incredible-true-story':
-        case '/learning/blogher-13-voices-of-the-year':
-        case '/learning/save-money-go-green':
-        case '/learning/shining-a-spotlight-on-south-central-scholars-foundation':
-        case '/learning/summer-read-wrap-up':
-            $('body').addClass('learning article');
-
-            window.mySwipe = $('#slider').Swipe({
-                auto: 5000,
-                callback: function(index, element){
-                    // update slider nav
-                    // $('#position li').removeClass('on');
-                    // $('#position li').eq(index).addClass('on');
-                },
-                transitionEnd: function(index, element) {
-                    // update lightbox link
-                }
-            }).data('Swipe');
-
-
-            break;
-
         case '/laughing':
             $('body').addClass('laughing');
 
@@ -397,7 +376,10 @@ function switchContent(href) {
                     // update lightbox link
                 }
             }).data('Swipe');
-
+        
+            break;
+		case '/laughing/chirstina-bianco-remarkable-diva-impressions':
+            $('body').addClass('laughing article article4');
 
             break;
 
@@ -418,6 +400,46 @@ function switchContent(href) {
             break;
         case '/queue/1':
             $('body').addClass('queue article');
+
+            break;
+        case '/daily-queue/funny-fake-ads-we-wish-were-real':
+            $('body').addClass('queue article');
+
+            break;
+        case '/daily-queue/the-five-cutest-animals-to-brighten-your-day':
+            $('body').addClass('queue article');
+
+            break;
+        case '/daily-queue/happy-birthday-neil-armstrong--five-incredible-images-from-space':
+            $('body').addClass('queue article');
+
+            break;
+        case '/daily-queue/i-love-lucy':
+            $('body').addClass('queue article');
+
+            break;
+        case '/daily-queue/wonderous-waterfalls-around-the-world':
+            $('body').addClass('queue article');
+
+            break;
+        case '/daily-queue/throw-back-thursday-':
+            $('body').addClass('queue article');
+
+            break;
+        case '/daily-queue/book-lover-s-day-':
+            $('body').addClass('queue article');
+			
+			window.mySwipe = $('#slider').Swipe({
+			      auto: 5000,
+			      callback: function(index, element){
+			       // update slider nav
+			       // $('#position li').removeClass('on');
+			       // $('#position li').eq(index).addClass('on');
+			                },
+			       transitionEnd: function(index, element) {
+			         // update lightbox link
+			                }
+			            }).data('Swipe');
 
             break;
     }
