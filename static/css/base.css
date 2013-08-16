@@ -601,6 +601,10 @@ body.living li.living > a, body.living li.living > a:hover {
     margin: 0 auto;
 }
 
+.articles .col-6 {
+    min-height: 160px;
+}
+
 .articles img {
     margin-right: 16px;
     margin-bottom: 16px;
@@ -610,7 +614,8 @@ body.living li.living > a, body.living li.living > a:hover {
     font-size: 14px;
     font-family: proxima-nova, 'Open Sans', sans-serif;
     text-transform: uppercase;
-    width: 100%;
+    /*width: 100%;*/
+    width: 200px;
     margin: 0 0 9px;
     font-weight: bold;
 
