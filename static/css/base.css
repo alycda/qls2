@@ -216,6 +216,8 @@ a:hover {}
 .left-dock .dropdown-menu a.link {
     color: inherit;
 padding: 8px 0 6px 24px;
+
+    min-height: 69px;
 }
 
 /*bootstrap seems to be duplicating the trigger element inside of the dropdown, temp fix to make it less visible*/
@@ -223,7 +225,6 @@ padding: 8px 0 6px 24px;
     background: #d0785e;
 }
 .left-dock .dropdown-menu a.link:hover {
-    min-height: 69px;
 }
 
 .left-dock .dropdown-menu img {
@@ -600,6 +601,10 @@ body.living li.living > a, body.living li.living > a:hover {
     margin: 0 auto;
 }
 
+.articles .col-6 {
+    min-height: 160px;
+}
+
 .articles img {
     margin-right: 16px;
     margin-bottom: 16px;
@@ -609,7 +614,8 @@ body.living li.living > a, body.living li.living > a:hover {
     font-size: 14px;
     font-family: proxima-nova, 'Open Sans', sans-serif;
     text-transform: uppercase;
-    width: 100%;
+    /*width: 100%;*/
+    width: 200px;
     margin: 0 0 9px;
     font-weight: bold;
 
@@ -838,7 +844,7 @@ p.date:before, p.date:after {
     position: fixed;
     z-index: 10;
     top: 0px;
-    padding-right: 400px;
+
 }
 
 
@@ -974,7 +980,7 @@ p.date:before, p.date:after {
 
 .swipe .info p {
     font-family: 'Glegoo', "Times New Roman";
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: 14px;
 }
 
@@ -1134,49 +1140,35 @@ a.logo {
     border-bottom: 1px solid #a0a7a5;
     margin: 0;
     /*overflow: hidden;*/
-}
-
-.social li {
+    } .social li {
     /*line-height: 52px;*/
     /*margin: 0 20px*/
-}
-
-.social li a {
-    background: url(/images/layout/social@2x.png) no-repeat;
-    width: 26px;
-    height: 26px;
-    display: block;
-    background-size: 52px;
-    text-indent: -9999em;
-    margin: 12px 18px;
-}
-
-.social li.fb a:hover {
+        } .social li a {
+        background: url(/images/layout/social@2x.png) no-repeat;
+        width: 26px;
+        height: 26px;
+        display: block;
+        background-size: 52px;
+        text-indent: -9999em;
+        margin: 12px;
+} .social li.fb a:hover {
     background-position: -26px 0;
-}
-
-.social li.t a {
+} .social li.t a {
     background-position: 0 -26px;
-}
-
-.social li.t a:hover {
+    } .social li.t a:hover {
     background-position: -26px -26px;
-}
-
-.social li.i a {
+} .social li.i a {
     background-position: 0 -52px;
-}
-
-.social li.i a:hover {
+    } .social li.i a:hover {
     background-position: -26px -52px;
-}
-
-.social li.yt a {
+} .social li.yt a {
     background-position: 0 -78px;
-}
-
-.social li.yt a:hover {
+    } .social li.yt a:hover {
     background-position: -26px -78px;
+} .social li.p a {
+    background-position: 0 -104px;
+    } .social li.p a:hover {
+    background-position: -26px -104px;
 }
 
 /* Queue

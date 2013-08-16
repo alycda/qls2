@@ -273,6 +273,31 @@ function switchContent(href) {
             $('body').addClass('learning');
 
             break;
+
+        case '/learning/shining-a-spotlight-on-career-wardrobe':
+        case '/learning/queen-latifah-awards-ll-cool-j':
+        case '/learning/homeless-to-harvard-an-incredible-true-story':
+        case '/learning/blogher-13-voices-of-the-year':
+        case '/learning/save-money-go-green':
+        case '/learning/shining-a-spotlight-on-south-central-scholars-foundation':
+        case '/learning/summer-read-wrap-up':
+            $('body').addClass('learning article');
+
+            window.mySwipe = $('#slider').Swipe({
+                auto: 5000,
+                callback: function(index, element){
+                    // update slider nav
+                    // $('#position li').removeClass('on');
+                    // $('#position li').eq(index).addClass('on');
+                },
+                transitionEnd: function(index, element) {
+                    // update lightbox link
+                }
+            }).data('Swipe');
+
+
+            break;
+
         case '/laughing':
             $('body').addClass('laughing');
 
