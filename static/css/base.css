@@ -975,7 +975,7 @@ p.date:before, p.date:after {
 
 .swipe .info p {
     font-family: 'Glegoo', "Times New Roman";
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: 14px;
 }
 
