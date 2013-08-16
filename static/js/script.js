@@ -224,6 +224,27 @@ function switchContent(href) {
             $('body').addClass('living');
 
             break;
+
+        case '/living/kravitz-design-inc':
+            $('body').addClass('living article article1');
+
+            break;
+        case '/living/look-fly-be-cool':
+            $('body').addClass('living article article2');
+
+            break;
+        case '/living/how-to-buy-on-a-budget':
+            $('body').addClass('living article article3');
+
+            break;
+        case '/living/transitioning-summer-pieces-to-fall':
+            $('body').addClass('living article article4');
+
+            break;
+        case '/living/mani-c-monday-fabulous-florals':
+            $('body').addClass('living article article5');
+
+            break;
         case '/loving':
             $('body').addClass('loving');
 

@@ -48,61 +48,66 @@ var auth = express.basicAuth(function(user, pass) {
 
 
 
-server.get('/living/kravitz-design-inc--creates-and-styles--big-sexy-.html', function(req,res){
-    res.render('laughing.jade', {
+server.get('/living/kravitz-design-inc.html', function(req,res){
+    res.render('living1.jade', {
         locals : {
-            title : 'Queen Latifah'
+            title : 'Queen Latifah: Kravitz Design Inc'
             ,description: ''
             ,author: ''
             ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'living article1'
         }
     });
 });
 
 
-server.get('/living/look-fly--be-cool----all-in-time-for-back-to-school-.html', function(req,res){
-    res.render('laughing.jade', {
+server.get('/living/look-fly-be-cool.html', function(req,res){
+    res.render('living2.jade', {
         locals : {
-            title : 'Queen Latifah'
+            title : 'Queen Latifah: Look Fly, Be Cool -- All in Time for Back to School'
             ,description: ''
             ,author: ''
             ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'living article2'
         }
     });
 });
 
 
-server.get('/living/how-to-buy-on-a-budget--without-looking-like-it.html', function(req,res){
-    res.render('laughing.jade', {
+server.get('/living/how-to-buy-on-a-budget.html', function(req,res){
+    res.render('living3.jade', {
         locals : {
-            title : 'Queen Latifah'
+            title : 'Queen Latifah: How to Buy on a Budget, Without Looking Like it'
             ,description: ''
             ,author: ''
             ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'living article3'
         }
     });
 });
 
 
-server.get('/living/transitioning-summer-pieces-into-fall-.html', function(req,res){
-    res.render('laughing.jade', {
+server.get('/living/transitioning-summer-pieces-to-fall.html', function(req,res){
+    res.render('living4.jade', {
         locals : {
-            title : 'Queen Latifah'
+            title : 'Queen Latifah: Transitioning Summer Pieces into Fall'
             ,description: ''
             ,author: ''
             ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'living article4'
         }
     });
 });
 
 
-server.get('/living/mani-c-monday--fabulous-florals.html', function(req,res){
-    res.render('laughing.jade', {
+server.get('/living/mani-c-monday-fabulous-florals.html', function(req,res){
+    res.render('living5.jade', {
         locals : {
-            title : 'Queen Latifah'
+            title : 'Queen Latifah: Mani-c Monday: Fabulous Florals'
             ,description: ''
             ,author: ''
             ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'living article5'
         }
     });
 });
