@@ -181,7 +181,7 @@ a:hover {}
     padding: 0 5px 0 24px;
     font-size: 12px;
     letter-spacing: .1em;
-    height: 260px; /*exact height of top-level buttons*/
+    min-height: 260px;  /*exact height of top-level buttons*/
 
     /* IE10 Consumer Preview */
     background-image: -ms-linear-gradient(left, #d38068 0%, #e18569 100%);
