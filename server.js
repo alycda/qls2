@@ -144,85 +144,92 @@ server.get('/loving/hollywood-cover-girl.html', function(req,res){
 });
 
 
-server.get('/learning/shining-a-spotlight-on--career-wardrobe.html', function(req,res){
-    res.render('laughing.jade', {
+server.get('/learning/shining-a-spotlight-on-career-wardrobe.html', function(req,res){
+    res.render('learning1.jade', {
         locals : {
             title : 'Queen Latifah'
             ,description: ''
             ,author: ''
             ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'learning article1'
         }
     });
 });
 
 
 server.get('/learning/queen-latifah-awards-ll-cool-j.html', function(req,res){
-    res.render('laughing.jade', {
+    res.render('learning2.jade', {
         locals : {
             title : 'Queen Latifah'
             ,description: ''
             ,author: ''
             ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'learning article2'
         }
     });
 });
 
 
-server.get('/learning/homeless-to-harvard--an-incredible-true-story.html', function(req,res){
-    res.render('laughing.jade', {
+server.get('/learning/homeless-to-harvard-an-incredible-true-story.html', function(req,res){
+    res.render('learning3.jade', {
         locals : {
             title : 'Queen Latifah'
             ,description: ''
             ,author: ''
             ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'learning article3'
         }
     });
 });
 
 
-server.get('/learning/blogher-13-s-voices-of-the-year.html', function(req,res){
-    res.render('laughing.jade', {
+server.get('/learning/blogher-13-voices-of-the-year.html', function(req,res){
+    res.render('learning4.jade', {
         locals : {
             title : 'Queen Latifah'
             ,description: ''
             ,author: ''
             ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'learning article4'
         }
     });
 });
 
 
-server.get('/learning/save-money---go-green.html', function(req,res){
-    res.render('laughing.jade', {
+server.get('/learning/save-money-go-green.html', function(req,res){
+    res.render('learning5.jade', {
         locals : {
             title : 'Queen Latifah'
             ,description: ''
             ,author: ''
             ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'learning article5'
         }
     });
 });
 
 
-server.get('/learning/shining-a-spotlight-on--south-central-scholars-foundation.html', function(req,res){
-    res.render('laughing.jade', {
+server.get('/learning/shining-a-spotlight-on-south-central-scholars-foundation.html', function(req,res){
+    res.render('learning6.jade', {
         locals : {
             title : 'Queen Latifah'
             ,description: ''
             ,author: ''
             ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'learning article6'
         }
     });
 });
 
 
 server.get('/learning/summer-read-wrap-up.html', function(req,res){
-    res.render('laughing.jade', {
+    res.render('learning7.jade', {
         locals : {
             title : 'Queen Latifah'
             ,description: ''
             ,author: ''
             ,analyticssiteid: 'XXXXXXX'
+            ,pageid: 'learning article7'
         }
     });
 });

@@ -216,6 +216,8 @@ a:hover {}
 .left-dock .dropdown-menu a.link {
     color: inherit;
 padding: 8px 0 6px 24px;
+
+    min-height: 69px;
 }
 
 /*bootstrap seems to be duplicating the trigger element inside of the dropdown, temp fix to make it less visible*/
@@ -223,7 +225,6 @@ padding: 8px 0 6px 24px;
     background: #d0785e;
 }
 .left-dock .dropdown-menu a.link:hover {
-    min-height: 69px;
 }
 
 .left-dock .dropdown-menu img {
