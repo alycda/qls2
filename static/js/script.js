@@ -274,7 +274,17 @@ function switchContent(href) {
             break;
         case '/living/transitioning-summer-pieces-to-fall':
             $('body').addClass('living article article4');
-
+            window.mySwipe = $('#slider').Swipe({
+                auto: 5000,
+                callback: function(index, element){
+                    // update slider nav
+                    // $('#position li').removeClass('on');
+                    // $('#position li').eq(index).addClass('on');
+                },
+                transitionEnd: function(index, element) {
+                    // update lightbox link
+                }
+            }).data('Swipe');
             break;
         case '/living/mani-c-monday-fabulous-florals':
             $('body').addClass('living article article5');
