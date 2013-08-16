@@ -84,7 +84,7 @@ function getLocation(state) {
         });
 
         $.each(where.station, function(idx, val) {
-            $('.where-to-watch .channel .list-inline').append('<li>'+val+'<br>'+where.network[idx]+'<br><img src="/images/'+where.network[idx]+'.png" vspace=5></li>');
+            $('.where-to-watch .channel .list-inline').append('<li>'+val+'<br>'+where.network[idx]+'<br><img src="/images/logos/'+where.logo[idx]+'" vspace=5></li>');
         });
 
 //        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?latlng='+data.location.latitude+','+data.location.longitude+'&sensor=false', function(data) {
@@ -127,7 +127,7 @@ function switchContent(href) {
             });
 
             $.each(where.station, function(idx, val) {
-                $('.where-to-watch .channel .list-inline').append('<li>'+val+'<br>'+where.network[idx]+'<br><img src="/images/'+where.network[idx]+'.png" vspace=5></li>');
+                $('.where-to-watch .channel .list-inline').append('<li>'+val+'<br>'+where.network[idx]+'<br><img src="/images/logos/'+where.logo[idx]+'" vspace=5></li>');
             });
 
         }
@@ -145,8 +145,9 @@ function switchContent(href) {
 
             // backstretch.js (first)
             $('#a').addClass('dark').backstretch("/images/home/slide1.jpg"); //this image is dark, and needs a white logo
-            $('#b').backstretch("/images/home/slide3.jpg");
-            $('#c').backstretch("/images/home/slide2.jpg");
+            $('#b').backstretch("/images/home/slide2.jpg");
+            $('#c').backstretch("/images/home/slide3.jpg");
+            $('#d').backstretch("/images/home/slide4.jpg");
 
             // swipe.js (second)
             window.mySwipe = $('#mySwipe').Swipe({
@@ -224,6 +225,72 @@ function switchContent(href) {
             $('body').addClass('living');
 
             break;
+
+        case '/living/kravitz-design-inc':
+            $('body').addClass('living article article1');
+            window.mySwipe = $('#slider').Swipe({
+                auto: 5000,
+                callback: function(index, element){
+                    // update slider nav
+                    // $('#position li').removeClass('on');
+                    // $('#position li').eq(index).addClass('on');
+                },
+                transitionEnd: function(index, element) {
+                    // update lightbox link
+                }
+            }).data('Swipe');
+
+            break;
+        case '/living/look-fly-be-cool':
+            $('body').addClass('living article article2');
+            window.mySwipe = $('#slider').Swipe({
+                auto: 5000,
+                callback: function(index, element){
+                    // update slider nav
+                    // $('#position li').removeClass('on');
+                    // $('#position li').eq(index).addClass('on');
+                },
+                transitionEnd: function(index, element) {
+                    // update lightbox link
+                }
+            }).data('Swipe');
+            break;
+        case '/living/how-to-buy-on-a-budget':
+            $('body').addClass('living article article3');
+
+            window.mySwipe = $('#slider').Swipe({
+                auto: 5000,
+                callback: function(index, element){
+                    // update slider nav
+                    // $('#position li').removeClass('on');
+                    // $('#position li').eq(index).addClass('on');
+                },
+                transitionEnd: function(index, element) {
+                    // update lightbox link
+                }
+            }).data('Swipe');
+
+
+            break;
+        case '/living/transitioning-summer-pieces-to-fall':
+            $('body').addClass('living article article4');
+
+            break;
+        case '/living/mani-c-monday-fabulous-florals':
+            $('body').addClass('living article article5');
+            window.mySwipe = $('#slider').Swipe({
+                auto: 5000,
+                callback: function(index, element){
+                    // update slider nav
+                    // $('#position li').removeClass('on');
+                    // $('#position li').eq(index).addClass('on');
+                },
+                transitionEnd: function(index, element) {
+                    // update lightbox link
+                }
+            }).data('Swipe');
+            break;
+ f975478f67479337f3edb5a448caf191fda84fa5
         case '/loving':
             $('body').addClass('loving');
 
@@ -275,6 +342,11 @@ function switchContent(href) {
             break;
         case '/laughing/latifah-helps-with-the-weather':
             $('body').addClass('laughing article article2');
+
+            break;
+
+        case '/laughing/chirstina-bianco-remarkable-diva-impressions':
+            $('body').addClass('laughing article article4');
 
             break;
         case '/laughing/hot-time-in-chicago':

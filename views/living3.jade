@@ -40,21 +40,21 @@ block content
 				ul.more-articles.list-unstyled
 					li
 						a(href="/laughing/latifah-helps-with-the-weather.html")
-							img(class="pull-left", src="/images/laughing/sm/weather.jpg", width="120", height="70", alt="FPO")
-							h3(class="pull-left") helping with the weather forecast
-							p She stopped by the CBS 2 studio &amp; helped Meteorologist Megan&hellip;
+							img(class="pull-left", src="http://placehold.it/180x110", width="120", height="70", alt="FPO")
+							h3(class="pull-left") Look Fly, Be Cool -- All in Time for Back to School!
+							p Lorem ipsum &hellip;
 						//a(class="view btn", href="/laughing/latifah-helps-with-the-weather.html") view
 					li
 						a(href="/laughing/hot-time-in-chicago.html")
-							img(class="pull-left", src="/images/laughing/sm/chicago.jpg", width="120", height="70", alt="FPO")
-							h3(class="pull-left") Hot Time in Chicago!
-							p On the road this summer, heading to Chicago to soak in the sights, sounds and smells of the City&hellip;
+							img(class="pull-left", src="http://placehold.it/180x110", width="120", height="70", alt="FPO")
+							h3(class="pull-left") Transitioning Summer Pieces into Fall
+							p Lorem ipsum &hellip;
 							//a(class="view btn", href="/laughing/hot-time-in-chicago.html") view
 					li
 						a(href="/laughing/go-behind-the-scenes.html")
-							img(class="pull-left", src="/images/laughing/sm/scenes.jpg", width="120", height="70", alt="FPO")
-							h3(class="pull-left") Behind the scenes
-							p She shares photos from the set, backstage and more!&hellip;
+							img(class="pull-left", src="http://placehold.it/180x110", width="120", height="70", alt="FPO")
+							h3(class="pull-left") Save Money -- Go Green!
+							p Lorem ipsum &hellip;
 							//a(class="view btn", href="/laughing/go-behind-the-scenes.html") view
 
 		div.row
@@ -62,15 +62,42 @@ block content
 				p.copy
 					| If you think your big fat closet of style only exists for people who are dripping in dough, think again! It's time to realize that you are a smart, savvy shopper, who holds the key to looking like a million bucks but not wasting all of your hard-earned coin. A budget isn't a burden, so you must think of it as a blessing. That may sound ridiculous, BUT being on a budget forces you to make selective, smart decisions on the quality vs. quantity of your purchases. Here are a few polished shopping principles for how to buy a million-dollar style on pennies.
 		div.row
+			script.
+				var tag = document.createElement('script');
+				tag.src = "https://www.youtube.com/iframe_api";
+				var firstScriptTag = document.getElementsByTagName('script')[0];
+				firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+				var player;
+				function onYouTubeIframeAPIReady() {
+				
+					player = new YT.Player('youtubeplayer', {
+						height: '504',
+						width: '830',
+						videoId: 'S38IZph78IM',
+						events: {
+							'onStateChange': onPlayerStateChange
+						}
+						});
+					}
+					
+					function onPlayerStateChange(event) {
+					if (event.data == YT.PlayerState.PLAYING) {
+						mySwipe.stop();
+					}else{
+						mySwipe.start();
+					}
+				}
 			div.col-12
 				div#slider.swipe
 					div.swipe-wrap
 						div
-							img(src="/images/laughing/md/5MSP5218_RT.jpg")
+							div(id="youtubeplayer",style="width:830px;height:504px;")
 						div
-							img(src="/images/laughing/md/20130806_145008.jpg")
+							img(width=830, src="/images/living/md/budget_carousel/2.jpg")
 						div
-							img(src="/images/laughing/md/GN3A5949.jpg")
+							img(width=830, src="/images/living/md/budget_carousel/3.jpg")
+						div
+							img(width=830, src="/images/living/md/budget_carousel/4.jpg")
 				h5 1. Shop for What Pops
 				p.copy
 					| Whether shopping at a department store, thrift store, or online storefront, hit the sale rack! But it's important to gravitate toward items YOU LIKE without swinging through an endless rack of clothes! Now, remember you only have a few bucks to spend so spending it wisely on items that POP off the rack or computer screen will save you time, money, and gas or postage on returns. By picking out clothing, accessories, or shoes that are just as interesting as your personality, those sale rack mountains will be turned into mere mole hills ready for deal-digging!

@@ -8,7 +8,6 @@ body {
     max-width: 1800px;
 }
 
-
 /* Typography
 -------------------------------------------------- */
 
@@ -38,7 +37,6 @@ a:hover {}
     margin: 0 auto;
     overflow: hidden;
     max-width: 1800px;
-
 }
 
 .left-dock {
@@ -216,7 +214,7 @@ a:hover {}
 .left-dock .dropdown-menu a.link {
     color: inherit;
 padding: 8px 0 6px 24px;
-
+font-weight: bold;
     min-height: 69px;
 }
 
@@ -416,6 +414,14 @@ padding: 8px 0 6px 24px;
 
 /* Layout - Home
 -------------------------------------------------- */
+
+body.home {
+    max-width: 100%;
+}body.home .wrapper {
+    max-width: 100%;
+}
+
+
 body.home #topadunit {
     position: fixed;
     display: block;
@@ -1020,8 +1026,9 @@ p.date:before, p.date:after {
 #position {
     position: absolute;
     z-index: 10;
-    left: 37%;
+    left: 50%;
     bottom: 290px;
+    margin-left: -233px; /* offset for 4 items*/
 }
 
 #position li {
@@ -1150,7 +1157,7 @@ a.logo {
         display: block;
         background-size: 52px;
         text-indent: -9999em;
-        margin: 12px;
+        margin: 11px 7px;
 } .social li.fb a:hover {
     background-position: -26px 0;
 } .social li.t a {
@@ -1158,17 +1165,21 @@ a.logo {
     } .social li.t a:hover {
     background-position: -26px -26px;
 } .social li.i a {
-    background-position: 0 -52px;
-    } .social li.i a:hover {
-    background-position: -26px -52px;
-} .social li.yt a {
     background-position: 0 -78px;
-    } .social li.yt a:hover {
+    } .social li.i a:hover {
     background-position: -26px -78px;
 } .social li.p a {
-    background-position: 0 -104px;
+    background-position: 0 -52px;
     } .social li.p a:hover {
+    background-position: -26px -52px;
+} .social li.yt a {
+    background-position: 0 -104px;
+    } .social li.yt a:hover {
     background-position: -26px -104px;
+} .social li.e a {
+    background-position: 0 -130px;
+    } .social li.e a:hover {
+    background-position: -26px -130px;
 }
 
 /* Queue
@@ -1282,6 +1293,19 @@ a.logo {
 .where-to-watch .channel ul {
     font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
     text-transform: uppercase;
+}
+.where-to-watch .channel ul li {
+padding-right: 0;
+}
+
+.where-to-watch .channel ul li img {
+border-right: 1px solid #b2c4c5;
+padding-right: 10px;
+}
+
+.where-to-watch .channel ul li:last-child img {
+    border: none;
+    padding-left: 3px;
 }
 
 .where-to-watch .muted {
@@ -1517,8 +1541,9 @@ ul.tweets {
     line-height: 1.3em;
 } .twitter h3 {
     text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 14px;
     font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
+    font-weight: bold;
 } .twitter h3 a {
         font-family: "proxima-nova", 'Open Sans Bold', sans-serif;
     color: #3a3a3a;
@@ -1538,6 +1563,9 @@ ul.tweets {
     line-height: 21px;
     font-family: 'Glegoo', Arial;
     /*max-width: 1500px;*/
+    -webkit-box-shadow: 0px -1px 5px rgba(50, 50, 50, 0.4);
+-moz-box-shadow:    0px -1px 5px rgba(50, 50, 50, 0.4);
+box-shadow:         0px -1px 5px rgba(50, 50, 50, 0.4);
 	} #footer a {
     color: #727272;
 } #footer div.hr {
