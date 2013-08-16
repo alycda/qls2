@@ -25,14 +25,12 @@ block content
 			br
 			div.col-7
 				div.small.preview
-					img(src="/images/laughing/md/GN3A5959.jpg", width="465", height="270", alt="Rihanna FPO")
+					img(src="/images/living/md/kravitz-design-inc-creates-and-styles-big-sexy_header.jpg", width="465", alt="Kravitz Designs")
 					div(class="bar thumbnails", data-toggle="lightbox" )
-						//a(class="thumbnail lightbox-expand pull-right", href="/images/laughing/md/GN3A5959.jpg", title="Image 1", data-description="") lightbox
-				h2 Go Behind the Scenes with Queen Latifah
+						//a(class="thumbnail lightbox-expand pull-right", href="/images/laughing/md/image-1.jpg", title="Image 1", data-description="") lightbox
+				h2 Kravitz Design Inc. Creates and Styles "Big Sexy"
 				p.callout
-					| Go behind the scenes of The Queen Latifah Show with Queen Latifah herself!
-					| She shares photos from the set, backstage and more!
-					span.end Q
+					| Yes - THAT Kravitz - flexes his designing muscle for The Queen Latifah Show.
 				p.byline Article by:
 				a.author Staff
 			div.col-5
@@ -40,75 +38,73 @@ block content
 				ul.more-articles.list-unstyled
 					li
 						a(href="/laughing/latifah-helps-with-the-weather.html")
-							img(class="pull-left", src="/images/laughing/sm/weather.jpg", width="120", height="70", alt="FPO")
-							h3(class="pull-left") helping with the weather forecast
-							p She stopped by the CBS 2 studio &amp; helped Meteorologist Megan&hellip;
+							img(class="pull-left", src="http://placehold.it/180x110", width="120", height="70", alt="FPO")
+							h3(class="pull-left") Go Behind The Scenes With Queen Latifah
+							p Lorem ipsum &hellip;
 						//a(class="view btn", href="/laughing/latifah-helps-with-the-weather.html") view
 					li
 						a(href="/laughing/hot-time-in-chicago.html")
-							img(class="pull-left", src="/images/laughing/sm/chicago.jpg", width="120", height="70", alt="FPO")
-							h3(class="pull-left") Hot Time in Chicago!
-							p On the road this summer, heading to Chicago to soak in the sights, sounds and smells of the City&hellip;
+							img(class="pull-left", src="http://placehold.it/180x110", width="120", height="70", alt="FPO")
+							h3(class="pull-left") Flick Pick: Lee Daniels' The Butler
+							p Lorem ipsum &hellip;
 							//a(class="view btn", href="/laughing/hot-time-in-chicago.html") view
-					li
-						a(href="/laughing/go-behind-the-scenes.html")
-							img(class="pull-left", src="/images/laughing/sm/scenes.jpg", width="120", height="70", alt="FPO")
-							h3(class="pull-left") Behind the scenes
-							p She shares photos from the set, backstage and more!&hellip;
-							//a(class="view btn", href="/laughing/go-behind-the-scenes.html") view
-		//div.row
+
+		div.row
 			div.col12
 				p.copy
-					| For light eyes, brown, taupe and bronze shades will enhance your look. Check out Cover Girl Queen Collection Eyeshadow Quads: Desert Bronze or Lionqueen. Lose Eyeshadow Crease Apply concealer (Cover Girl Queen Collection Natural Hue Concealer) or foundation (Cover Girl Queen Collection All Day Flawless Foundation) over lids and dust with powder. Then, pat on your eyeshadow for a crease-free look.
+					| Welcome to the Queendom! Stage 23 on the Sony Studios lot in Culver City, CA has become Queen Latifah's new home away from home. The set has been nicknamed "The Big Sexy" by La' because, in her own words, "It's big and sexy!"
+		div.row
+			script.
+				var tag = document.createElement('script');
+				tag.src = "https://www.youtube.com/iframe_api";
+				var firstScriptTag = document.getElementsByTagName('script')[0];
+				firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+				var player;
+				function onYouTubeIframeAPIReady() {
+				
+					player = new YT.Player('youtubeplayer', {
+						height: '504',
+						width: '830',
+						videoId: 'S38IZph78IM',
+						events: {
+							'onStateChange': onPlayerStateChange
+						}
+						});
+					}
+					
+					function onPlayerStateChange(event) {
+					if (event.data == YT.PlayerState.PLAYING) {
+						mySwipe.stop();
+					}else{
+						mySwipe.start();
+					}
+				}
+			div.col-12
+				div#slider.swipe
+					div.swipe-wrap
+						div
+							img(width=830, src="/images/living/md/kravitz_carousel/1.jpg")
+						div
+							img(width=830, src="/images/living/md/kravitz_carousel/2.jpg")
+						div
+							img(width=830, src="/images/living/md/kravitz_carousel/3.jpg")
+						div
+							img(width=830, src="/images/living/md/kravitz_carousel/4.jpg")
+						div
+							img(width=830, src="/images/living/md/kravitz_carousel/5.jpg")
+				p.copy
+					| And whom does Queen Latifah have to thank for her new Big Sexy set? Musician, actor, artist, and now designer Lenny Kravitz, with his design firm Kravitz Design Inc., who [http://www.kravitzdesign.com/] created and styled the set for La's new daytime talk show.
+				p.copy
+					| "It's a thrill to be designing the set for The Queen Latifah Show," says Lenny. "This is the first time Kravitz Design has created an environment for television, which makes it a very exciting project for us. The set reflects Latifah's personality and spirit and will be an inviting, comfortable space for her guests, studio audience and viewers. I never thought of designing for television but, I suppose, growing up in a TV studio watching my mother has come full circle."
+				p.copy
+					| "Lenny is not only an incredible musician but an incredible designer, and I almost can't believe he is designing the set for my show," says La,. "I can't wait for people to see it."
+				p.copy
+					| QL Show Executive Producer Jada Pinkett Smith says, "Lenny and his Kravitz Design team are designing a set that exceeds everything we ever thought possible for daytime television. Their creation blew us away!"
 					span.end Q
 		div.row
 			div.col-12
 				div#slider.swipe
 					div.swipe-wrap
 						div
-							img(src="/images/laughing/md/5MSP5218_RT.jpg")
-						div
-							img(src="/images/laughing/md/20130806_145008.jpg")
-						div
-							img(src="/images/laughing/md/GN3A5949.jpg")
-						//div
-							img(src="/images/laughing/md/GN3A5959.jpg")
-						div
-							img(src="/images/laughing/md/IMG_6797.jpg")
-						div
-							img(src="/images/laughing/md/IMG_6828.jpg")
-						div
-							img(src="/images/laughing/md/J+L-DAY1-12.jpg")
-						div
-							img(src="/images/laughing/md/Latifah_show_1173_0640.jpg")
-						div
-							img(src="/images/laughing/md/IMG_7131.jpg")
-				br
-				br
-				br
-			//div#preview.col-12
-				img(src="/images/articles/article-big.jpg", alt="FPO")
-				div(class="bar", data-toggle="lightbox" )
-					p.caption
-						| <strong>Janelle Monae</strong> - Turning the event stage into the red carpet
-					a(class="thumbnail lightbox-expand pull-right", href="/images/articles/article-big.jpg", title="Image 1", data-description="") lightbox
+							img(src="/images/laughing/md/photo4.jpg")
 
-				ul(class="thumbnails", data-toggle="lightbox" )
-					li
-						a(class="thumbnail", href="/images/laughing/big/5MSP5218_RT.jpg") *
-					li
-						a(class="thumbnail", href="/images/laughing/big/20130806_145008.jpg") *
-					li
-						a(class="thumbnail", href="/images/laughing/big/GN3A5949.jpg") *
-					li
-						a(class="thumbnail", href="/images/laughing/big/GN3A5959.jpg") *
-					li
-						a(class="thumbnail", href="/images/laughing/big/IMG_6797.jpg") *
-					li
-						a(class="thumbnail", href="/images/laughing/big/IMG_6828.jpg") *
-					li
-						a(class="thumbnail", href="/images/laughing/big/IMG_7131.jpg") *
-					li
-						a(class="thumbnail", href="/images/laughing/big/J+L-DAY1-12.jpg") *
-					li
-						a(class="thumbnail", href="/images/laughing/big/Latifah_show_1173_0640.jpg") *
