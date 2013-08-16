@@ -1158,13 +1158,13 @@ a.logo {
     } .social li.t a:hover {
     background-position: -26px -26px;
 } .social li.i a {
-    background-position: 0 -52px;
-    } .social li.i a:hover {
-    background-position: -26px -52px;
-} .social li.p a {
     background-position: 0 -78px;
-    } .social li.p a:hover {
+    } .social li.i a:hover {
     background-position: -26px -78px;
+} .social li.p a {
+    background-position: 0 -52px;
+    } .social li.p a:hover {
+    background-position: -26px -52px;
 } .social li.yt a {
     background-position: 0 -104px;
     } .social li.yt a:hover {

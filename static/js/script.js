@@ -84,7 +84,7 @@ function getLocation(state) {
         });
 
         $.each(where.station, function(idx, val) {
-            $('.where-to-watch .channel .list-inline').append('<li>'+val+'<br>'+where.network[idx]+'<br><img src="/images/'+where.network[idx]+'.png" vspace=5></li>');
+            $('.where-to-watch .channel .list-inline').append('<li>'+val+'<br>'+where.network[idx]+'<br><img src="/images/logos/'+where.logo[idx]+'" vspace=5></li>');
         });
 
 //        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?latlng='+data.location.latitude+','+data.location.longitude+'&sensor=false', function(data) {
@@ -127,7 +127,7 @@ function switchContent(href) {
             });
 
             $.each(where.station, function(idx, val) {
-                $('.where-to-watch .channel .list-inline').append('<li>'+val+'<br>'+where.network[idx]+'<br><img src="/images/'+where.network[idx]+'.png" vspace=5></li>');
+                $('.where-to-watch .channel .list-inline').append('<li>'+val+'<br>'+where.network[idx]+'<br><img src="/images/logos/'+where.logo[idx]+'" vspace=5></li>');
             });
 
         }
@@ -355,6 +355,11 @@ function switchContent(href) {
             break;
         case '/laughing/latifah-helps-with-the-weather':
             $('body').addClass('laughing article article2');
+
+            break;
+
+        case '/laughing/chirstina-bianco-remarkable-diva-impressions':
+            $('body').addClass('laughing article article4');
 
             break;
         case '/laughing/hot-time-in-chicago':
