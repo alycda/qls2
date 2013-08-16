@@ -81,11 +81,13 @@ function getLocation(state) {
 
         $.each(where.time, function(idx, val) {
             $('.where-to-watch .time .list-inline').append('<li>'+val+'</li>');
+            $('ul.listings').append('<li><p class="col-3 time">'+val+'<p class="col-3 station">'+where.network[idx]+'</p><img class="col3" src="/images/logos/'+where.logo[idx].replace('.png', '_inverted.png')+'" width="25"></li>');
         });
 
         $.each(where.station, function(idx, val) {
             $('.where-to-watch .channel .list-inline').append('<li>'+val+'<br>'+where.network[idx]+'<br><img src="/images/logos/'+where.logo[idx]+'" vspace=5></li>');
         });
+
 
 //        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?latlng='+data.location.latitude+','+data.location.longitude+'&sensor=false', function(data) {
 //            console.log(data)
@@ -124,6 +126,7 @@ function switchContent(href) {
 
             $.each(where.time, function(idx, val) {
                 $('.where-to-watch .time .list-inline').append('<li>'+val+'</li>');
+                $('ul.listings').append('<li><p class="col-3 time">'+val+'<p class="col-3 station">'+where.network[idx]+'</p><img class="col3" src="/images/logos/'+where.logo[idx].replace('.png', '_inverted.png')+'" width="25"></li>');
             });
 
             $.each(where.station, function(idx, val) {
