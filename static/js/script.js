@@ -236,6 +236,21 @@ function switchContent(href) {
         case '/living/how-to-buy-on-a-budget':
             $('body').addClass('living article article3');
 
+            window.mySwipe = $('#slider').Swipe({
+                auto: 5000,
+                callback: function(index, element){
+                    // update slider nav
+                    // $('#position li').removeClass('on');
+                    // $('#position li').eq(index).addClass('on');
+                },
+                transitionEnd: function(index, element) {
+                    // update lightbox link
+                }
+            }).data('Swipe');
+
+            //document.getElementById('youtubeplayer').addEventListener('onStateChange', 'player_state_changed');
+                //mySwipe.stop();
+
             break;
         case '/living/transitioning-summer-pieces-to-fall':
             $('body').addClass('living article article4');
