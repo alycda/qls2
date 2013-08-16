@@ -309,8 +309,8 @@ function switchContent(href) {
 
             break;
         case '/loving/hollywood-cover-girl':
-        case '/loving/2':
-        case '/loving/3':
+        case '/loving/mateo-rising':
+        case '/loving/flick-pick':
             $('body').addClass('loving article');
 
 
